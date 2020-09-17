@@ -250,6 +250,10 @@
   }
 }
 
+.slick-slide {
+  outline: none;
+}
+
 .slick-slide:nth-child(4n + 1) { //Каждый четвертый элемент начинающийся с первого
   .surf-box {
     margin-top: 32px;
