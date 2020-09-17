@@ -245,6 +245,12 @@
   }
 }
 
+@media (max-width: 590px) {
+  .product-item__wrapper {
+    width: 100%;
+  }
+}
+
 @media (max-width: 540px) {
   .footer__top-item {
     width: 100%;
