@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Watch shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+</head>
+<body>
+
+  <header class="catalog__header">
+    <ul class="menu-mobile__list">
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="catalog.html">
+          <p>Каталог</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="#">
+          <p>Акции</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="#">
+          <p>Доставка</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="#">
+          <p>Оплата</p>
+        </a>
+      </li>        
+    </ul>
+    <div class="container">
+      <div class="catalog__header-inner">
+        <nav class="menu menu--catalog">
+          <button class="menu__btn">
+            <div class="menu__btn-line btn-line-1"></div>
+            <div class="menu__btn-line btn-line-2"></div>
+            <div class="menu__btn-line btn-line-3"></div>
+          </button>
+        </nav>
+        <a class="catalog__header-logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo" >
+        </a>
+          <ul class="catalog__menu-list">
+            <li class="catalog__menu-list--item catalog__menu-list--itemactive">
+                <a href="#">Каталог</a>
+            </li>
+            <li class="catalog__menu-list--item">
+                <a href="#">Акции</a>
+            </li>
+            <li class="catalog__menu-list--item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="catalog__menu-list--item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        <ul class="user-list user-list__catalog">
+          <li class="user-list__item">
+            <a href="" class="user-list__link">
+              <img src="images/search.svg" alt="">
+            </a>
+          </li>
+          <li class="user-list__item hearth">
+            <a href="" class="user-list__link">
+              <img src="images/hearth.svg" alt="">
+              <p class="hearth__num">1</p>
+            </a>
+          </li>
+          <li class="user-list__item basket">
+            <a href="" class="user-list__link">
+              <img src="images/basket.svg" alt="">
+              <p class="basket__num" style="display: none;">0</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list mobile-overflow">
+          <li class="breadcrumbs__list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="#">Мужские часы</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>Georg Jensen</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="product-card">
+    <div class="container">
+      <div class="product-card__inner">
+        <div class="product-card__sliders">
+          <div class="product-card__slider1">
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-1.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-2.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-3.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-4.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-1.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-2.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-3.png" alt="">
+            </div>
+            <div class="card-slider1-item">
+              <img class="card-slider1-img"src="images/content/card-4.png" alt="">
+            </div>
+          </div>
+          <div class="product-card__slider2">
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-1.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-2.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-3.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-4.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-1.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-2.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-3.png" alt="">
+            </div>
+            <div class="card-slider2-item">
+              <img src="images/content/card-small-4.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card__content">
+          <h1 class="product-card__title">
+            KULTE, 26 ММ
+          </h1>
+          <button class="product-card__btn product-item__favorite"></button>
+          <p class="product-card__price">
+            12 700
+            <span>
+              <img src="images/ruble-big.svg" alt="">
+            </span>
+          </p>
+          <div class="tabs-wrapper product-card__tabs">
+            <div class="tabs">
+              <a class="tab product-card__tab tab--active" 
+              href="#product-1">Описание</a>
+              <a class="tab product-card__tab"
+              href="#product-2">Технические характеристики</a>
+            </div>
+          </div>
+          <div class="tabs-container tabs-container__invisible">
+            <div id="product-1" class="tabs-content product-card__tab-content tabs-content--active">
+              <p class="tab-content__text">
+                Наручные часы KULTE, разработанные датским дизайнером Хэннингом Коппелем, были выпущены в 1982 году. Они были встречены аплодисментами, а дизайн считался революционным.
+              </p>
+              <p class="tab-content__text">
+                Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм Swiss Made обеспечивает высокий уровень технических характеристик.
+              </p>
+              <p class="tab-content__text">
+                Наручные часы KULTE — это образец датского дизайнерского наследия, история баланса и точности как внутри, так и снаружи.            
+              </p>
+            </div>
+            <div id="product-2" class="tabs-content product-card__tab-content">
+              <p class="tab-content__text">
+                Корпус диаметром 34 мм, из нержавеющей стали с серебристым ионным покрытием. Лицевая панель идеально сочетается с черным ремешком. Роскошный дизайн с минималистскими деталями.
+                Эти часы имеют двойную изогнутую линзу из минерального хрусталя и гладкий круглый циферблат с арабскими цифровыми индексами, а дизайн в виде одной стрелки придает им свежий, современный вид.
+                Водонепроницаемость составляет 10 метров, эти модные часы имеют стильный современный дизайн, они будут сочетаться с любым нарядом.
+              </p>
+            </div>
+          </div>
+          <div class="product-card__btn">
+            <button>В корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="product__slider">
+    <div class="container">
+      <div class="product__slider-info">
+        <h2 class="product__slider-title product__slider-title-2">
+          Вы смотрели
+        </h2>
+      </div>
+      <div class="product__slider-items">
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">TECHNE</h4>
+            <p class="product-item__price">15 700
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/watch-7.png" width="270" height="320" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">TECHNE</h4>
+            <p class="product-item__price">15 700
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/watch-11.png" width="270" height="320" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">TECHNE</h4>
+            <p class="product-item__price">22 700
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/watch-14.png" width="270" height="320" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">TECHNE</h4>
+            <p class="product-item__price">15 700
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/watch-7.png" width="270" height="320" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">TECHNE</h4>
+            <p class="product-item__price">15 700
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/watch-11.png" width="270" height="320" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">TECHNE</h4>
+            <p class="product-item__price">22 700
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/watch-14.png" width="270" height="320" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer__contacts">
+          <a class="footer-logo" href="#">
+            <img class="footer-logo__img" src="images/footer-logo.svg" alt="">
+          </a>
+          <a class="footer__contacts-phone" href="tel:84994504797">8 (499) 450-47-97
+          </a>
+          <a class="footer__contacts-email" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru
+          </a>
+        </div>
+        <div class="footer-item">
+          <h6 class="footer-item__title footer__drop">о компании</h6>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Наши магазины</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Вакансии</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Сертификаты</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h6 class="footer-item__title footer__drop">покупателям</h6>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Как заказать?</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Корпоративным клиентам</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h6 class="footer-item__title footer__drop">оплата и доставка</h6>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Способы оплаты</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Время доставки</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Гарантии и ремонт</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Возврат и компенсация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

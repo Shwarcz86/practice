@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Watch shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+</head>
+<body>
+
+  <header class="catalog__header">
+    <ul class="menu-mobile__list">
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="catalog.html">
+          <p>Каталог</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="#">
+          <p>Акции</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="#">
+          <p>Доставка</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu__mobile-link" href="#">
+          <p>Оплата</p>
+        </a>
+      </li>        
+    </ul>
+    <div class="container">
+      <div class="catalog__header-inner">
+        <nav class="menu menu--catalog">
+          <button class="menu__btn">
+            <div class="menu__btn-line btn-line-1"></div>
+            <div class="menu__btn-line btn-line-2"></div>
+            <div class="menu__btn-line btn-line-3"></div>
+          </button>
+        </nav>
+        <a class="catalog__header-logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo" >
+        </a>
+          <ul class="catalog__menu-list">
+            <li class="catalog__menu-list--item catalog__menu-list--itemactive">
+                <a href="#">Каталог</a>
+            </li>
+            <li class="catalog__menu-list--item">
+                <a href="#">Акции</a>
+            </li>
+            <li class="catalog__menu-list--item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="catalog__menu-list--item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        <ul class="user-list user-list__catalog">
+          <li class="user-list__item">
+            <a href="" class="user-list__link">
+              <img src="images/search.svg" alt="">
+            </a>
+          </li>
+          <li class="user-list__item hearth">
+            <a href="" class="user-list__link">
+              <img src="images/hearth.svg" alt="">
+              <p class="hearth__num">1</p>
+            </a>
+          </li>
+          <li class="user-list__item basket">
+            <a href="" class="user-list__link">
+              <img src="images/basket.svg" alt="">
+              <p class="basket__num" style="display: none;">0</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list mobile-overflow">
+          <li class="breadcrumbs__list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>Мужские часы</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__wrapper">
+        <h2 class="catalog__title">
+          Мужские часы
+        </h2>
+        <div class="catalog__filter-btn">
+          <span class="catalog__filter-title">Сортировать по:</span>
+          <select class="filter-style">
+            <option>по популярности</option>
+            <option>по цене</option>
+            <option>по названию</option>
+          </select>
+        </div>
+      </div>
+      <div class="catalog__filter">
+        <div class="catalog__inner">
+          <div class="aside__btn">
+            Фильтр
+          </div>
+          <aside class="catalog__aside aside-filter">   
+            <form class="aside-filter__form">
+              <ul class="aside-filter__list">
+                <li class="aside-filter__item-drop">
+                  <p class="aside-filter__item-title filter__item-drop">Стоимость</p>
+                  <div class="aside-filter__content">
+                    <input type="text" class="js-range-slider" value=""
+                    data-type="double"
+                    data-min="0"
+                    data-max="140000"
+                    data-from="12000"
+                    data-to="90000"
+                    data-grid="true"
+                    />
+                  </div>
+                </li>
+                <li class="aside-filter__item-drop">
+                  <p class="aside-filter__item-title filter__item-drop">Бренд</p>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="checkbox" checked>
+                        Techne
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="checkbox" checked>
+                        Rado
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="checkbox" checked>
+                        Bvlgari
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="checkbox">
+                        Tissot
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="checkbox">
+                        Omega
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="checkbox">
+                        Montblanc
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li class="aside-filter__item-drop">
+                  <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Механизм</p>
+                  <div class="aside-filter__content aside-filter__content-closed">
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="mechanism">
+                        Кварцевые
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="mechanism" checked>
+                        Механические
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li class="aside-filter__item-drop">
+                  <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Материал</p>
+                  <div class="aside-filter__content aside-filter__content-closed">
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="material">
+                        Сталь
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="material">
+                        Титан
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="material" checked>
+                        Латунь
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li class="aside-filter__item-drop">
+                  <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Цвет</p>
+                  <div class="aside-filter__content aside-filter__content-closed">
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="color">
+                        Золото
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="color">
+                        Металик
+                      </label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <label class="aside-filter__content-label">
+                        <input class="filter-style" type="radio" name="color" checked>
+                        Черный
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li class="aside-filter__item-drop aside-filter__item-btn">
+                  <button class="filter-btn__reset" type="submit">
+                    Сбросить фильтр
+                  </button>
+                </li>
+              </ul>
+            </form>
+          </aside>
+          <div class="catalog__inner-list">
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">12 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-5.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">12 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-6.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">15 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-7.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">15 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-8.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite product-item__favorite--active"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">12 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-9.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__banner">
+              <a class="product-item__banner-link" href="#">
+                <img src="images/content/banner-catalog.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">18 500
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-10.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">15 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-11.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">RADO</h4>
+                <p class="product-item__price">14 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-12.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">BVLGARI</h4>
+                <p class="product-item__price">72 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-13.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">TECHNE</h4>
+                <p class="product-item__price">22 700
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-14.png" alt="">
+              </a>
+            </div>
+            <div class="product-item__wrapper product-item__wrapper-catalog">
+              <button class="product-item__favorite"></button>
+              <button class="product-item__basket">
+                <img src="images/basket.svg" alt="">
+              </button>
+              <a class="product-item" href="item.html">
+                <h4 class="product-item__title">RADO</h4>
+                <p class="product-item__price">22 000
+                  <span>
+                    <img src="images/ruble-small.svg" alt="">
+                  </span>
+                </p>
+                  <img class="product-item__img" src="images/content/watch-15.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagintation-list__item">
+              <a href="#">1</a>
+            </li>
+            <li class="pagintation-list__item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagintation-list__item active">
+              <a href="#">3</a>
+            </li>
+            <li class="pagintation-list__item pagination-list__item--dots">
+              <span>...</span>
+            </li>
+            <li class="pagintation-list__item">
+              <a href="#">12</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="discount">
+    <div class="container">
+      <h6 class="discount__title">подписка на рассылку</h6>
+      <div class="discount-inner">
+        <p class="discount-inner__text">
+          Получить скидку 10% на первую покупку
+        </p>
+        <form class="discount-inner__form">
+          <input class="discount-inner__form-input" placeholder="E-mail:" type="text">
+          <button class="discount__btn-subscription" type="submit">
+            Подписаться
+          </button>
+        </form>
+      </div>
+      <div class="discount__ellipse">
+        <span class="ellipse-8"></span>
+        <span class="ellipse-9"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="product__slider">
+    <div class="container">
+      <div class="product__slider-info">
+        <h2 class="product__slider-title">
+          Ремешки
+        </h2>
+        <a class="product__slider-more" href="#">
+          Смотреть все
+        </a>
+      </div>
+      <div class="product__slider-items">
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">GEORG JENSEN</h4>
+            <p class="product-item__price">6 500
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/band-1.png" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">NATO</h4>
+            <p class="product-item__price">3 000
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/band-2.png" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">SPARK</h4>
+            <p class="product-item__price">5 400
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/band-3.png" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">NATO</h4>
+            <p class="product-item__price">3 000
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/band-2.png" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">GEORG JENSEN</h4>
+            <p class="product-item__price">5 600
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/band-1.png" alt="">
+          </a>
+        </div>
+        <div class="product__slider-item">
+          <button class="product-item__favorite"></button>
+          <button class="product-item__basket">
+            <img src="images/basket.svg" alt="">
+          </button>
+          <a class="product-item" href="#">
+            <h4 class="product-item__title">SPARK</h4>
+            <p class="product-item__price">5 400
+              <span>
+                <img src="images/ruble-small.svg" alt="">
+              </span>
+            </p>
+            <img class="product-item__img" src="images/content/band-3.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer__contacts">
+          <a class="footer-logo" href="#">
+            <img class="footer-logo__img" src="images/footer-logo.svg" alt="">
+          </a>
+          <a class="footer__contacts-phone" href="tel:84994504797">8 (499) 450-47-97
+          </a>
+          <a class="footer__contacts-email" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru
+          </a>
+        </div>
+        <div class="footer-item">
+          <h6 class="footer-item__title footer__drop">о компании</h6>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Наши магазины</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Вакансии</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Сертификаты</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h6 class="footer-item__title footer__drop">покупателям</h6>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Как заказать?</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Корпоративным клиентам</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h6 class="footer-item__title footer__drop">оплата и доставка</h6>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Способы оплаты</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Время доставки</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Гарантии и ремонт</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#">Возврат и компенсация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
