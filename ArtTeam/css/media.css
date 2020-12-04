@@ -1358,6 +1358,7 @@
   }
   .questions-title {
     width: 100%;
+    line-height: 40px;
   }
   .map-wrapper {
     margin-left: 20px;
