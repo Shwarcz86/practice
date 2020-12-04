@@ -481,10 +481,10 @@
   }
   .experience-slider__item-btn {
     height: 83px;
-    box-shadow: 0px -7px 16px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0 16px 0px rgba(0, 0, 0, 0.1);
   }
   .experience-slider__item-btn:hover {
-    box-shadow: 0px -7px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0 16px 0px rgba(0, 0, 0, 0.2);
   }
   .experience-slider__item-text {
     width: 620px;
