@@ -362,10 +362,6 @@ p {
   background-color: #7f7f7f;
 }
 
-.experience-slider__btnnext::before {
-  height: 81px;
-}
-
 .news-slider__btn {
   bottom: 0;
   right: 25.5%;
@@ -374,6 +370,11 @@ p {
 
 .news-slider__btnnext {
   right: calc(25.5% - 86px);
+}
+
+.authorship-slider__btn {
+  bottom: 1px;
+  padding: 26px 35px;
 }
 
 .authorship-slider__btnnext {
@@ -672,6 +673,7 @@ p {
 }
 
 .info-block__img {
+  position: relative;
   width: 49%;
 }
 
@@ -815,7 +817,6 @@ p {
   font-weight: 500;
   width: 770px;
   text-align: center;
-  margin: 0 auto;
   margin-bottom: 60px;
   letter-spacing: 0.13px;
 }
@@ -1077,7 +1078,7 @@ p {
 
 .authorship-info {
   padding: 170px 0 162px 370px;
-  margin-right: 55px;
+
   max-width: 914px;
 }
 
@@ -1097,6 +1098,10 @@ p {
   right: 0;
   width: 100%;
   max-width: 943px;
+  max-height: 689px;
+}
+
+.authorship-slider__item {
   max-height: 689px;
 }
 
@@ -1211,7 +1216,7 @@ p {
 .layout-form {
   display: flex;
   justify-content: center;
-  padding-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .layout-form__input {
@@ -1271,6 +1276,13 @@ p {
 .layout-video__link::before {
   top: 39%;
   right: 44%;
+}
+
+.layout-btn {
+  text-align: center;
+  padding: 27px 0;
+  width: 260px;
+  height: 81px;
 }
 
 .more {
@@ -1385,6 +1397,11 @@ p {
   background-color: #c6ab92;
   transition: all .3s;
 } 
+
+.questions-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #c6ab92;
+}
 
 .questions-link:hover::after {
   background-color: #af967e;
@@ -1671,7 +1688,7 @@ p {
   background-color: rgba(57, 56, 53, 0.95);
   z-index: -1;
   width: 100%;
-  transform: translateY(-500px);
+  transform: translateY(-600px);
   transition: all .3s;
   margin-top: -1px;
 }
