@@ -15,7 +15,7 @@ $(function(){
     speed: 1500,
     prevArrow: '<button class="news-slider__btn news-slider__btnprev"><img src="images/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button class="news-slider__btn news-slider__btnnext"><img src="images/arrow-next.svg" alt=""></button>',
-    adaptiveHeight: true //адаптивная высота слайдов
+    //adaptiveHeight: true адаптивная высота слайдов
   });
 
   //Выезжающее меню
