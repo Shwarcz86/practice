@@ -287,6 +287,8 @@ p {
   max-width: 705px;
   margin-bottom: 20px;
   letter-spacing: 0.13px;
+  height: 75px;
+  overflow: auto;
 }
 
 .project-slider__item-btn {
@@ -486,6 +488,8 @@ p {
 .comparison-slider__item-text {
   font-family: 'Gilroy-Medium';
   width: 73%;
+  height: 120px;
+  overflow: auto;
 }
 
 .btn {
@@ -557,8 +561,8 @@ p {
 }
 
 .news-slider__item-text {
-  min-height: 220px;
-  margin-bottom: 100px;
+  height: 220px;
+  overflow: auto;
 }
 
 .news-slider__item-text a {
@@ -707,6 +711,8 @@ p {
 .info-block__video-text {
   width: 600px;
   margin-bottom: 25px;
+  height: 145px;
+  overflow: auto;
 }
 
 .btn.info-block__video-btn {
@@ -1055,6 +1061,8 @@ p {
   width: 485px;
   letter-spacing: 0.13px;
   margin-bottom: 40px;
+  height: 145px;
+  overflow: auto;
 }
 
 .contol-info__btn,
@@ -1091,6 +1099,8 @@ p {
   letter-spacing: 0.13px;
   margin-bottom: 40px;
   width: 535px;
+  overflow: auto;
+  height: 145px;
 }
 
 .authorship-slider {
@@ -1184,8 +1194,9 @@ p {
 
 .experience-slider__item-text {
   width: 470px;
-  min-height: 200px;
   margin-bottom: 59px;
+  overflow: auto;
+  height: 200px;
 }
 
 .experience-slider__item-btn {
@@ -1257,6 +1268,8 @@ p {
   line-height: 26px;
   width: 550px;
   margin: 130px 40px 110px 0;
+  overflow: auto;
+  height: 182px;
 }
 
 .layout-inner {
