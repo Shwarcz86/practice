@@ -713,8 +713,8 @@
   .contol-info__text {
     height: auto;
     overflow: hidden;
+    }
   }
-
 @media (max-width: 1112px) {
   .comparison-slider__item-info {
     top: 306px;
