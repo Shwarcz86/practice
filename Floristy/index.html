@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__menu-show">
+      <div class="header__menu-inner">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__logo-img" src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+      <ul class="header__menu-showlist">
+        <li class="header__menu-showitem">
+          <a class="header__menu-showlink" href="catalog-page1.html">
+            свадебная<br>флористика
+          </a>
+        </li>
+        <li class="header__menu-showitem">
+          <a class="header__menu-showlink" href="catalog-page2.html">
+            букеты на любые<br>мероприятия
+          </a>
+        </li>
+        <li class="header__menu-showitem">
+          <a class="header__menu-showlink" href="catalog-page3.html">
+            композиции
+          </a>
+        </li>
+        <li class="header__menu-showitem">
+          <a class="header__menu-showlink" href="catalog-page4.html">
+            оформление<br>мероприятий
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo header__logo--mod">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo-img" src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="header__menu">
+          <button class="header__menu-btn">
+            <span class="header__menu-line header__menu-line1"></span>
+            <span class="header__menu-line header__menu-line2"></span>
+          </button>
+          <span class="header__menu-text">Меню</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="fullpage-wrapper">
+
+    <section class="homepage" style="background-image: url(images/homepage-bg.jpg);">
+      <div class="container">
+        <h1 class="homepage__title">Флористика<br>с душой</h1>
+        <a class="homepage__works-link" href="#">Смотреть работы</a>
+        <div class="homepage__inner">
+          <div class="homepage__social">
+            <ul class="homepage__social-list">
+              <li class="homepage__social-item homepage__social-item--mod">
+                <a class="homepage__social-link" href="#">
+                  <img class="homepage__social-img" src="images/inst.svg" alt="">
+                </a>
+              </li>
+              <li class="homepage__social-item homepage__social-item--mod2">
+                <a class="homepage__social-link" href="#">
+                  <img class="homepage__social-img" src="images/fb.svg" alt="">               
+                </a>
+              </li>
+              <li class="homepage__social-item homepage__social-item--mod3">
+                <a class="homepage__social-link" href="#">
+                  <img class="homepage__social-img" src="images/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li class="homepage__social-item homepage__social-item--mod4">
+                <a class="homepage__social-link" href="#">
+                  <img class="homepage__social-img" src="images/vk.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="homepage__icon-link" href="#">
+            <img class="homepage__icon-img" src="images/icon.svg" alt="">
+          </a>
+          <a class="homepage__catalog-link" href="#catalog">смотреть каталог</a>
+        </div>
+        <a class="homepage__catalog-linkarrow" href="#catalog">
+          <img src="images/arrow-down-big.svg" alt="">
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="catalog__wrapper">
+          <h3 class="title catalog__title">Каталог услуг</h3>
+          <span>Каталог услуг</span>
+        </div>
+        <div class="catalog__inner">
+          <ul class="catalog__list">
+            <li class="catalog__list-item" style="background-image: url(images/item-1.jpg);">
+              <a class="catalog__list-link" href="catalog-page1.html">
+                <div class="catalog__list-wrapper">              
+                  <span class="catalog__list-number">01</span>
+                  <div class="catalog__list-box">
+                    <h4 class="catalog__list-title">
+                      букет невесты и свадебное оформление
+                    </h4>              
+                    <div class="catalog__list-btn">смотреть работы</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__list-item" style="background-image: url(images/item-2.jpg);">
+              <a class="catalog__list-link" href="catalog-page2.html">
+                <div class="catalog__list-wrapper">
+                  <span class="catalog__list-number">02</span>
+                  <div class="catalog__list-box">
+                    <h4 class="catalog__list-title">
+                      букеты на торжества
+                    </h4>
+                    <div class="catalog__list-btn">смотреть работы</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__list-item" style="background-image: url(images/item-3.jpg);">
+              <a class="catalog__list-link" href="catalog-page3.html">
+                <div class="catalog__list-wrapper">
+                  <span class="catalog__list-number">03</span>
+                  <div class="catalog__list-box">
+                    <h4 class="catalog__list-title">
+                      композиции
+                    </h4>
+                    <div class="catalog__list-btn">смотреть работы</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__list-item" style="background-image: url(images/item-4.jpg);">
+              <a class="catalog__list-link" href="catalog-page4.html">
+                <div class="catalog__list-wrapper">
+                  <span class="catalog__list-number">04</span>
+                  <div class="catalog__list-box">
+                    <h4 class="catalog__list-title">
+                      оформление мероприятий
+                    </h4>
+                    <div class="catalog__list-btn">смотреть работы</div>  
+                  </div>       
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Слайдер-->
+        <div class="catalog__inner-slider">
+          <ul class="catalog__list-slider">
+            <li class="catalog__list-item">
+              <div style="background-image: url(images/item-1.jpg);">
+                <a class="catalog__list-link" href="catalog-page1.html">
+                  <div class="catalog__list-wrapper">              
+                    <span class="catalog__list-number">01</span>
+                    <div class="catalog__list-box">
+                      <h4 class="catalog__list-title">
+                        букет невесты и свадебное оформление
+                      </h4>              
+                      <div class="catalog__list-btn">смотреть работы</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="catalog__list-item">
+              <div style="background-image: url(images/item-2.jpg);">
+                <a class="catalog__list-link" href="catalog-page2.html">
+                  <div class="catalog__list-wrapper">
+                    <span class="catalog__list-number">02</span>
+                    <div class="catalog__list-box">
+                      <h4 class="catalog__list-title">
+                        букеты на торжества
+                      </h4>
+                      <div class="catalog__list-btn">смотреть работы</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="catalog__list-item">
+              <div style="background-image: url(images/item-3.jpg);">
+                <a class="catalog__list-link" href="catalog-page3.html">
+                  <div class="catalog__list-wrapper">
+                    <span class="catalog__list-number">03</span>
+                    <div class="catalog__list-box">
+                      <h4 class="catalog__list-title">
+                        композиции
+                      </h4>
+                      <div class="catalog__list-btn">смотреть работы</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="catalog__list-item">
+              <div style="background-image: url(images/item-4.jpg);">
+                <a class="catalog__list-link" href="catalog-page4.html">
+                  <div class="catalog__list-wrapper">
+                    <span class="catalog__list-number">04</span>
+                    <div class="catalog__list-box">
+                      <h4 class="catalog__list-title">
+                        оформление мероприятий
+                      </h4>
+                      <div class="catalog__list-btn">смотреть работы</div>  
+                    </div>       
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="promotions">
+      <div class="container">
+        <div class="promotions__inner">
+          <div class="promotions__wrapper">
+            <h3 class="title promotions__title">
+              акционные предложения
+            </h3>
+            <p class="promotions__text">
+              При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в   размере 30%
+            </p>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="promotions__btn">
+              заказать оформление
+            </a>
+          </div>
+          <img class="promotions__img" src="images/table.jpg">
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal__inner">
+          <img class="modal__img" src="images/modal-img.jpg" alt="">
+          <div class="modal__wrapper">
+            <h3 class="modal__title"> 
+              Оставьте свой<br>номер и мы вам перезвоним!
+            </h3>
+            <form class="modal__form">
+              <input class="modal__input modal__inputname" type="text"  placeholder="Имя">
+              <input class="modal__input modal__inputtel" type="tel"  placeholder="Телефон" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" title="7(123)  456-78-99" required>
+              <button class="modal__btn" type="submit"> ПОЗВОНИТЕ МНЕ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="catalog-page1.html">
+            Cвадебная флористика
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="catalog-page2.html">
+            Букеты на любые мероприятия
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="catalog-page3.html">
+            Композиции
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="catalog-page4.html">
+            Оформление мероприятий
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__social-list">
+        <li class="footer__social-item footer__social-item--mod">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-img" src="images/inst.svg" alt="">
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--mod2">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-img" src="images/fb.svg" alt="">               
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--mod3">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-img" src="images/whatsapp.svg" alt="">
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--mod4">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-img" src="images/vk.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
