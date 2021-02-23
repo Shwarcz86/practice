@@ -311,6 +311,10 @@ p {
   color: #fff;
 }
 
+.project-slider__item-img {
+  width: 100%;
+}
+
 .comparison {
   margin-bottom: 50px;
 }
