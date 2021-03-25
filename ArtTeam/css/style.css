@@ -428,12 +428,12 @@ p {
 
 .comparison-slider__item-inner {
   display: flex;
-  max-width: 50%;
+  max-width: 100%;
   position: relative;
 }
 
 .comparison-slider__item-img {
-  width: 100%;
+  width: 50%;
 }
 
 .marker-photo {
@@ -451,11 +451,11 @@ p {
 }
 
 .marker-photo__left {
-  right: 0;
+  right: calc(50% + 5px);
 }
 
 .marker-photo__right {
-  right: calc(0% - 86px);
+  right: calc(50% - 80px);
 }
 
 .comparison-slider__item {
