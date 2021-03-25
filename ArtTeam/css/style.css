@@ -311,10 +311,6 @@ p {
   color: #fff;
 }
 
-.project-slider__item-img {
-  width: 100%;
-}
-
 .comparison {
   margin-bottom: 50px;
 }
@@ -432,6 +428,7 @@ p {
 
 .comparison-slider__item-inner {
   display: flex;
+  max-width: 50%;
   position: relative;
 }
 
@@ -454,11 +451,11 @@ p {
 }
 
 .marker-photo__left {
-  right: calc(50% + 5px);
+  right: 0;
 }
 
 .marker-photo__right {
-  right: calc(50% - 80px);
+  right: calc(0% - 86px);
 }
 
 .comparison-slider__item {
