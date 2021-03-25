@@ -1353,10 +1353,10 @@
     padding-top: 5px;
   }
   .marker-photo__left {
-    right: 10px;
+    right: calc(50%);
   }
   .marker-photo__right {
-    right: calc(0% - 66px);
+    right: calc(50% - 66px);
   }
   .comparison {
     margin-bottom: 25px;
