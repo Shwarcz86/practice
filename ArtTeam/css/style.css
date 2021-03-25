@@ -432,7 +432,6 @@ p {
 
 .comparison-slider__item-inner {
   display: flex;
-  max-width: 50%;
   position: relative;
 }
 
@@ -455,11 +454,11 @@ p {
 }
 
 .marker-photo__left {
-  right: 0;
+  right: 50%;
 }
 
 .marker-photo__right {
-  right: calc(0% - 86px);
+  right: calc(50% - 86px);
 }
 
 .comparison-slider__item {
