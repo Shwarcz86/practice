@@ -713,8 +713,9 @@
   .contol-info__text {
     height: auto;
     overflow: hidden;
-    }
   }
+}
+
 @media (max-width: 1112px) {
   .comparison-slider__item-info {
     top: 306px;
@@ -1351,11 +1352,11 @@
     height: 28px;
     padding-top: 5px;
   }
-    .marker-photo__left {
-    right: calc(50%);
+  .marker-photo__left {
+    right: 10px;
   }
   .marker-photo__right {
-    right: calc(50% - 66px);
+    right: calc(0% - 66px);
   }
   .comparison {
     margin-bottom: 25px;
