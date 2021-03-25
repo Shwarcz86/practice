@@ -454,11 +454,11 @@ p {
 }
 
 .marker-photo__left {
-  right: 50%;
+  right: calc(50% + 5px);
 }
 
 .marker-photo__right {
-  right: calc(50% - 86px);
+  right: calc(50% - 80px);
 }
 
 .comparison-slider__item {
