@@ -260,6 +260,10 @@ p {
   position: relative;
 }
 
+.project-slider__item-img {
+  width: 100%;
+}
+
 .project-slider__item-info {
   display: flex;
   justify-content: center;
