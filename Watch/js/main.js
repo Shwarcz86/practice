@@ -139,5 +139,4 @@ $(function(){
       $('.catalog__aside').slideToggle('slow'),
       $('.catalog__aside').toggleClass('catalog__aside--active')
     });
-
 });
