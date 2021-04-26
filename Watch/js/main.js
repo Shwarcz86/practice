@@ -24,6 +24,7 @@ $(function(){
     $('.menu__btn').toggleClass('menu__btn--active');
     $('.menu__list').toggleClass('menu__list-active');
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+    $('body').toggleClass('noscroll');
   });
 
   $(".js-range-slider").ionRangeSlider({
