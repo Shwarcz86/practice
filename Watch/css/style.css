@@ -214,9 +214,8 @@ body.noscroll {
   right: -7px;
 }
 
-
-
 .catalog__header-logo {
+  display: block;
   margin: 0;
 }
 
