@@ -1080,6 +1080,14 @@ body.noscroll {
   border-radius: 0;
 }
 
+.jq-selectbox {
+  z-index: 1;
+}
+
+.irs {
+  z-index: 1;
+}
+
 .jq-checkbox, .jq-radio {
   vertical-align: -4px;
   width: 13px;
