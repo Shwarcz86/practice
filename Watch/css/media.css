@@ -450,21 +450,21 @@
   .products__popular-more {
     margin-right: 0;
   }
-}
-
-@media (max-width: 620px) {
-  .header-item__img {
-    display: none;
-  }
-  .menu__list {
-    display: none;
-  }
   .menu-mobile__list.menu-mobile__list--active {
     overflow-y: scroll;
     height: 100%;
     z-index: 10;
     opacity: 1;
     visibility: visible;
+  }
+  .menu__list {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .header-item__img {
+    display: none;
   }
   .page-section__slider {
     max-width: 100%;
