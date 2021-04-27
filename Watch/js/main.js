@@ -31,7 +31,7 @@ $(function(){
   });
 
   $(window).resize(function() {
-    if ($(window).width() < 620 ) {
+    if ($(window).width() < 801 ) {
       $('.menu__btn').on('click', function() {
         $('body').toggleClass('noscroll');
       });
