@@ -372,7 +372,8 @@
 }
 
 @media (max-width: 800px) {
-  .menu__btn {
+  .menu__btn,  
+  .menu.menu--catalog {
     display: block;
   }
   .main__header-logo {
@@ -409,15 +410,6 @@
   }
   .page-social__gallery-item:last-child {
     width: 23%;
-  }
-  .catalog__menu-list {
-    justify-content: center;
-  }
-  .catalog__menu-list--item {
-    margin-right: 30px;
-  }
-  .catalog__menu-list--item:last-child {
-    margin-right: 0;
   }
   .mobile-overflow {
     width: 1000px; /*скролл для хлебных крошек*/
@@ -463,8 +455,23 @@
     opacity: 1;
     visibility: visible;
   }
-  .menu__list {
+  .menu__list,
+  .catalog__menu-list {
     display: none;
+  }
+  .main__header-top, 
+  .catalog__header-inner {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user-list.user-list__catalog {
+    margin-left: auto;
+  }
+  .catalog__header-logo {
+    margin-left: 25px;
+  }
+  .catalog__header-logo img {
+    padding-top: 5px;
   }
 }
 
@@ -496,9 +503,6 @@
   }
   .catalog__menu-list {
     display: none;
-  }
-  .menu.menu--catalog {
-    display: block;
   }
   .catalog__header-logo {
     padding-top: 5px;
