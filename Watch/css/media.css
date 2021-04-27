@@ -372,6 +372,12 @@
 }
 
 @media (max-width: 800px) {
+  .menu__btn {
+    display: block;
+  }
+  .main__header-logo {
+    margin-left: 25px;
+  }
   .header-item__img {
     margin-top: 100px;
   }
