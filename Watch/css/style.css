@@ -58,9 +58,9 @@ body.noscroll {
 }
 
 .menu__btn {
+  display: none;
   z-index: 10;
   position: relative;
-  display: block;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -107,7 +107,6 @@ body.noscroll {
   justify-content: space-between;
   margin-top: 2px;
   margin-left: 93px;
-  transform: translateY(-60px);
   width: 430px;
 }
 
@@ -215,9 +214,7 @@ body.noscroll {
   right: -7px;
 }
 
-.main__header-logo {
-  margin-left: 25px;
-}
+
 
 .catalog__header-logo {
   margin: 0;
