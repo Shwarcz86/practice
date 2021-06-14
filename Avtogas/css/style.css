@@ -103,6 +103,10 @@ body {
   max-width: 270px;
   border: 0;
   transition: all .3s;
+  background: -moz-linear-gradient( -90deg, rgb(240,75,71) 0%, rgb(235,26,35) 100%);
+  background: -webkit-linear-gradient( -90deg, rgb(240,75,71) 0%, rgb(235,26,35) 100%);
+  background: -ms-linear-gradient( -90deg, rgb(240,75,71) 0%, rgb(235,26,35) 100%);
+  box-shadow: 0 6px 0 rgb(195, 20, 27);
 }
 
 .no-scroll {
@@ -270,7 +274,9 @@ body {
   z-index: 10;
   height: 100%;
   text-align: center;
-  background: linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
+  background: -moz-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
+  background: -webkit-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
+  background: -ms-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
@@ -324,7 +330,9 @@ body {
   right: 0;
   bottom: 0;
   min-height: 100vh;
-  background: linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
+  background: -moz-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
+  background: -webkit-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
+  background: -ms-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
   z-index: -1;
 }
 .main-page__title {
@@ -380,15 +388,16 @@ body {
 }
 .form-page__btn {
   margin: 0px 35px 0px -7px;
-  background: linear-gradient( -90deg, rgb(240,75,71) 0%, rgb(235,26,35) 100%);
-  box-shadow: 0 6px 0 rgb(195, 20, 27);
 }
+
 .main-page__calculate-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: linear-gradient( -90deg, rgb(31,152,205) 0%, rgb(20,126,175) 100%);
+  background: -moz-linear-gradient( -90deg, rgb(31,152,205) 0%, rgb(20,126,175) 100%);
+  background: -webkit-linear-gradient( -90deg, rgb(31,152,205) 0%, rgb(20,126,175) 100%);
+  background: -ms-linear-gradient( -90deg, rgb(31,152,205) 0%, rgb(20,126,175) 100%);
   box-shadow: 0 6px 0 rgb(8, 100, 145);
   padding: 0 32px;
 }
@@ -518,8 +527,6 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 0 15px;
-  background: linear-gradient( -90deg, rgb(240,75,71) 0%, rgb(235,26,35) 100%);
-  box-shadow: 0 6px 0 rgb(195, 20, 27);
 }
 .main-page__objects-tab.tab_active {
   background-color: #1e95ca;
@@ -598,8 +605,6 @@ body {
 .advantages__form-btn {
   max-width: 340px;
   padding: 0 20px;
-  background: linear-gradient( -90deg, rgb(240,75,71) 0%, rgb(235,26,35) 100%);
-  box-shadow: 0 6px 0 rgb(195, 20, 27);
   margin: 0 0px 0px -10px;
 }
 .advantages__img {
@@ -609,6 +614,164 @@ body {
   bottom: 60px;
   right: 0;
 }
+/*//////////////////////////////////////BANNER/////////////////////////////////////////////*/
+.banner-page {
+  padding: 0px 0px 55px 0px;
+}
+.banner-page__inner {
+  position: relative;
+  background: url('../img/form-img1.png') 0 0 no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 553px;
+  overflow: hidden;
+}
+.banner-page__inner::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 430px;
+  background: url('../img/men.png') center no-repeat;
+  width: 353px;
+  height: 534px;
+  z-index: 2;
+}
+.banner-page__info {
+  max-width: 905px;
+  padding: 110px 0px 140px 45px;
+}
+.banner-page__info-text {
+  max-width: 620px;
+  margin: 0px 0px 55px 0px;
+}
+.banner-page__info-text p {
+  font-family: 'MullerMedium';
+  font-weight: 500;
+  color: #fff;
+  font-size: 40px;
+}
+.banner-page__info-text2,
+.banner-page__info-text3 {
+  font-family: 'MullerBlack';
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.banner-page__info-text1 {
+  line-height: 60px;
+}
+.banner-page__info-text2 {
+  padding: 9px 21px 0px;
+  background: url('../img/red-line.png') center no-repeat;
+  line-height: 55px;
+  margin: 0px 0px 0px -20px;
+}
+.banner-page__info-text3 {
+  font-size: 50px;
+  line-height: 60px;
+}
+.banner-page__info-title span:last-child {
+  font-size: 50px;
+  line-height: 60px;
+}
+.banner-page__info-list {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+}
+.banner-page__info-item span {
+  margin: 0px 0px 0px -12px;
+  color: #ef4442;
+}
+.banner-page__info-item {
+  font-family: 'MullerBold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-right: 10px;
+  padding: 0px 0px 0px 12px;
+}
+.banner-page__info-item:first-child {
+  max-width: 315px;
+}
+.banner-page__info-item:last-child {
+  max-width: 260px;
+  margin: 0px 0px 0px 0px;
+}
+.form-banner {
+  max-width: 425px;
+  margin: 45px 32px 45px 0px;
+  padding: 44px 62px 50px 62px;
+  background-color: #2a579c;
+  border-radius: 8px;
+}
+.form-banner__text {
+  margin: 0px 0px 23px 0px;
+}
+.form-banner__text p {
+  text-align: center;
+  color: #fff;
+}
+.form-banner__text1 {
+  font-family: 'MullerBold';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+.form-banner__text2 {
+  font-family: 'MullerRegular';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: lowercase;
+}
+.form-banner input {
+  margin: 0px 0px 16px 0px;
+  width: 100%;
+}
+.form-banner__input-name,
+.form-banner__input-phone {
+  display: block;
+  height: 50px;
+}
+.form-banner__input-btn {
+  max-width: 100%;
+  padding: 0;
+  margin: 0px 0px 50px 0px !important;
+}
+.form-banner__label {
+  color: #fff;
+  font-family: 'MullerRegular';
+  font-weight: 400;
+  font-size: 14px;
+}
+.form-banner__label span {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #b9c9df;
+  vertical-align: middle;
+  margin: 0px 5px 0px -32px;
+}
+.form-banner__input-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+input:checked + label span::before {
+  content:"";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 8px;
+  height: 5px;
+  background: url('../img/icons/checked.svg') 0 0 no-repeat;
+}
+
 /*//////////////////////////////////////ADAPTIVE/////////////////////////////////////////////*/
 @media (max-width: 1800px) {
   .main-page__img {
