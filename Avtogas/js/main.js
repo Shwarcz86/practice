@@ -14,6 +14,9 @@ $(document).ready(function() {
   $(function() {
     $("#formAdvTel").mask("+7 (999) 999-99-99");
   });
+  $(function() {
+    $("#formBanTel").mask("+7 (999) 999-99-99");
+  });
 
   //ТАБЫ
   $('.tab').on('click', function(e) { 
@@ -25,7 +28,5 @@ $(document).ready(function() {
     $(this).addClass('tab_active'); 
     $($(this).attr('href')).addClass('tabs-content_active'); 
   });
-
-
 
 });
