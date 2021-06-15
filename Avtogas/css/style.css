@@ -760,7 +760,10 @@ body {
 }
 .form-banner__input-checkbox {
   position: absolute;
-  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 input:checked + label span::before {
   content:"";
