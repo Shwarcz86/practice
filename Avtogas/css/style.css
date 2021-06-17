@@ -997,6 +997,14 @@ input:checked + label span::before {
   width: 16px;
   height: 16px;
 }
+.footer__social-img_vk,
+.footer__social-img_inst {
+  transition: all .3s;
+}
+.footer__social-item:hover .footer__social-img_vk,
+.footer__social-item:hover .footer__social-img_inst {
+  transform: scale(1.2);
+}
 .footer__street {
   margin: 0px 0px 25px 0px;
 }
