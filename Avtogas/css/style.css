@@ -1358,7 +1358,8 @@ input:checked + label span::before {
   }
   .footer__navigation-item,
   .footer__street,
-  .footer__services-link {
+  .footer__services-link,
+  .footer__services-item {
     margin: 0px 0px 15px 0px;
   }
   .footer__services-link:last-child {
