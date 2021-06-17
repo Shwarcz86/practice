@@ -29,6 +29,7 @@ $(document).ready(function() {
       slidesToScroll: 5,
       dots: true,
       speed: 1500,
+      infinite: false,
       prevArrow: '<button class="brand-page__slider-btn brand-page__slider-btnprev"><img src="img/arrow-prev.png" alt=""></button>',
       nextArrow: '<button class="brand-page__slider-btn brand-page__slider-btnnext"><img src="img/arrow-next.png" alt=""></button>',
       responsive: [
