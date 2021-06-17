@@ -887,6 +887,7 @@ input:checked + label span::before {
   width: 253px;
   height: 160px;
   border: 1px solid #daeef2;
+  cursor: pointer;
 }
 .brand-page__slider-btn {
   cursor: pointer;
@@ -902,6 +903,9 @@ input:checked + label span::before {
 }
 .brand-page__slider-btnnext {
   right: 0;
+}
+.brand-page__slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
 }
 .slick-dots {
   position: absolute;
@@ -946,6 +950,7 @@ input:checked + label span::before {
   color: #fff;
 }
 .footer__logo {
+  display: block;
   position: relative;
 }
 .footer__logo img {
@@ -955,7 +960,7 @@ input:checked + label span::before {
 .logo__footer-span {
   display: inline-block;
   position: absolute;
-  top: 35px;
+  top: 25px;
   left: 100px;
   width: 180px;
   font-family: 'MullerRegular';
@@ -963,9 +968,11 @@ input:checked + label span::before {
   font-size: 11px;
   color: #fff;
 }
-.footer__services-link {
-  display: block;
+.footer__services-item {
   margin: 0px 0px 25px 0px;
+}
+.footer__services-link {
+  position: relative;
 }
 .footer__column {
   margin: 0px 35px 0px 0px;
@@ -1045,6 +1052,29 @@ input:checked + label span::before {
   line-height: 16px;
   color: #fff;
 }
+.footer__navigation-link {
+  position: relative;
+}
+.footer__navigation-link::before,
+.footer__services-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: auto;
+  right: 0;
+  background-color: #fff;
+  height: 1px;
+  bottom: -5px;
+  transition: all .3s;
+}
+.footer__navigation-link:hover::before,
+.footer__services-link:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+
 /*//////////////////////////////////////ADAPTIVE/////////////////////////////////////////////*/
 @media (max-width: 1800px) {
   .main-page__img {
@@ -1176,6 +1206,17 @@ input:checked + label span::before {
   .page-features__item:nth-child(3), 
   .page-features__item:last-child {
     margin: 0px 30px 40px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .brand-page__slider-img img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .5s;
+  }
+  .brand-page__slider-img:hover img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
   }
 }
 @media (max-width: 1024px) {
