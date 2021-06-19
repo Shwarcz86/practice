@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Главная</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <title>О компании</title>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header header-page">
       <div class="container">
         <div class="header__inner">
           <div class="header__column">
@@ -43,7 +44,7 @@
             </button>
           </div>
         </div>
-        <nav class="header__menu">
+        <nav class="header__menu header__menu-page">
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a class="header__menu-link" href="#">О Компании</a>
@@ -66,123 +67,64 @@
     </header>
 
     <main class="page">
-      <section class="page__main main-page">
+      <div class="breadcrumbs">
         <div class="container">
-          <h1 class="main-page__title">Доставим <span>газ</span></h1>
-          <p class="main-page__title-text">в любую точку Крыма от <span>25 Р/л</span></p>
-          <p class="main-page__text">
-            Компания АВТОГАЗКОМПЛЕКТ-КРЫМ специализируется на поставках СУГ (сжиженного углеводородного газа). Вы можете купить пропан-бутан крупным, мелким оптом и в розницу для заправки газгольдеров разных объемов
-          </p>
-          <div class="main-page__box">
-            <form class="main-page__form form-page" action="#">
-              <input class="form-page__input input-form" type="tel" placeholder="+7 (___) ___-__-__">
-              <input class="btn form-page__btn" type="submit" value="Отправить заявку">
-            </form>
-            <a class="btn main-page__calculate-btn" href="#"><span>Рассчитать стоимость заправки</span></a>
-          </div>
-          <div class="main-page__features-wrapper">
-            <ul class="main-page__features-list">
-              <li class="main-page__features-item">
-                <div class="main-page__features-img">
-                  <img src="img/icons/tachometer.svg" alt="tachometer">
-                </div>
-                <p>                
-                  Заполним газгольдер по счетчику
-                  и выдадим чек на месте. 
-                </p>
-              </li>
-              <li class="main-page__features-item">
-                <div class="main-page__features-img">
-                  <img src="img/icons/oil-tank.svg" alt="oilTank">
-                </div>
-                <p>
-                  Доставка осуществляется в  зимний период
-                  за 1-2 дня, в летний - в течение дня.
-                </p>
-              </li>
-              <li class="main-page__features-item">
-                <div class="main-page__features-img">
-                  <img src="img/icons/filter.svg" alt="oilTank">
-                </div>
-                <p>
-                  Газ проходит фильтрацию перед доставкой.
-                  Вы получите газ без примесей серы, воды и масла
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="main-page__objects">
-            <h3 class="main-page__objects-title">Заправляем газгольдеры на объектах</h3>
-            <div class="main-page__objects-inner">
-              <div class="tabs-wrapper">
-                <div class="tabs main-page__objects-tabs">
-                  <a class="tab main-page__objects-tab tab_active" href="#obj-tab-1">Частные клиенты</a>
-                  <a class="tab main-page__objects-tab" href="#obj-tab-2">Дачные посёлки</a>
-                  <a class="tab main-page__objects-tab" href="#obj-tab-3">Комплексы АГЗС</a>
-                  <a class="tab main-page__objects-tab" href="#obj-tab-4">Промышленные организации</a>
-                </div>
-              </div>
-              <div class="tabs-container main-page__objects-container">
-                <div id="obj-tab-1" class="tabs-content objects-content tabs-content_active">
-                  <div class="objects-content__tab">
-                    <div class="objects-content__inner">
-                      <p class="objects-content__text">
-                        <strong>Газгольдеры для частного дома — </strong>это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы. В России используются пропан-бутановые смеси. Они отличаются высокой теплотворной способностью и в то же время низким пределом взрываемости — то есть потребуется большая концентрация горючего вещества, чтобы он воспламенился при контакте с кислородом. Но важно, чтобы газгольдер был установлен в соответствии с правилами размещения сосуда под давлением на частном участке, иначе вероятность взрыва баллонов и отравления газом будет намного выше.
-                      </p>
-                      <a class="btn objects-content__btn" href="#">Отправить заявку</a>
-                    </div>
-                    <div class="objects-content__img">
-                      <img src="img/tab-img1.jpg" alt="house-small">
-                    </div>
-                  </div>
-                </div>
-                <div id="obj-tab-2" class="tabs-content main-page__objects-content">
-                  <div class="objects-content__tab">
-                    <div class="objects-content__inner">
-                      <p class="objects-content__text">
-                        <strong>Газгольдеры для частного дома — </strong>это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы.
-                      </p>
-                      <a class="btn objects-content__btn" href="#">Отправить заявку</a>
-                    </div>
-                    <div class="objects-content__img">
-                      <img src="img/tab-img1.jpg" alt="house-small">
-                    </div>
-                  </div>
-                </div>
-                <div id="obj-tab-3" class="tabs-content main-page__objects-content">
-                  <div class="objects-content__tab">
-                    <div class="objects-content__inner">
-                      <p class="objects-content__text">
-                        <strong>Газгольдеры для частного дома — </strong>это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы. В России используются пропан-бутановые смеси. Они отличаются высокой теплотворной способностью и в то же время низким пределом взрываемости — то есть потребуется большая концентрация горючего вещества, чтобы он воспламенился при контакте с кислородом. Но важно, чтобы газгольдер был установлен в соответствии с правилами размещения сосуда под давлением на частном участке, иначе вероятность взрыва баллонов и отравления газом будет намного выше.
-                      </p>
-                      <a class="btn objects-content__btn" href="#">Отправить заявку</a>
-                    </div>
-                    <div class="objects-content__img">
-                      <img src="img/tab-img1.jpg" alt="house-small">
-                    </div>
-                  </div>
-                </div>
-                <div id="obj-tab-4" class="tabs-content main-page__objects-content">
-                  <div class="objects-content__tab">
-                    <div class="objects-content__inner">
-                      <p class="objects-content__text">
-                        <strong>Газгольдеры для частного дома — </strong>это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы.
-                      </p>
-                      <a class="btn objects-content__btn" href="#">Отправить заявку</a>
-                    </div>
-                    <div class="objects-content__img">
-                      <img src="img/tab-img1.jpg" alt="house-small">
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">О компании</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <article class="page__company-info info-company">
+        <div class="container">
+          <h1 class="info-company__title">О нашей компании</h1>
+          <div class="info-company__inner">
+            <div class="info-company__text-box">
+              <p class="info-company__text info-company__text1">
+                Значимость этих проблем <b>настолько очевидна</b>, что граница 
+                обучения кадров играет важную роль в формировании дальнейших 
+                направлений развития. Не следует, однако, забывать, что 
+                высокотехнологичная концепция общественного уклада предопределяет 
+                высокую востребованность поставленных обществом задач.
+              </p>
+              <ul class="info-company__text-list">
+                <li class="info-company__text-item">
+                  • подходят для <b>любых типов</b> окон (даже старых деревянных, 
+                  чего уж говорить о евроокнах);
+                </li>
+                <li class="info-company__text-item">
+                  • имеют малые габариты – ткань рольштор тонкая, 
+                  но прочная и не просвечивает, а само полотно перекрывает 
+                  только стеклопакет, не доставая даже до подоконника и не 
+                  занимая на нем место;
+                </li>
+                <li class="info-company__text-item">
+                  • не мешают освещению – как свернете штору, 
+                  так и останется она сверху, не перекрывая ни 
+                  миллиметра стекла;
+                </li>
+              </ul>
+              <p class="info-company__text">
+                В целом, конечно, внедрение <b>современных методик</b> позволяет выполнить 
+                важные задания по разработке стандартных подходов. Следует отметить, 
+                что современная методология разработки говорит о возможностях 
+                первоочередных требований. Следует отметить, что сложившаяся структура 
+                организации выявляет срочную потребность стандартных подходов. 
+                Предварительные выводы неутешительны: экономическая повестка 
+                сегодняшнего дня обеспечивает широкому.
+              </p>
+            </div>
+            <div class="info-company__img">
+              <img src="img/company-img.jpg" alt="avtogas-img" />
             </div>
           </div>
         </div>
-        <img class="main-page__img main-page__img_bg1" src="img/1.png" alt="car-big">
-        <img class="main-page__img main-page__img_bg2" src="img/2.png" alt="house-big">
-      </section>
-      <section class="advantages">
+      </article>
+      <section class="advantages advantages-about">
         <div class="container">
           <h3 class="advantages__title">Почему с нами выгодно работать?</h3>
           <p class="advantages__subtitle">Доставим бытовой газ, заполним газгольдер любого объема в Крыму и Севастополе </p>
@@ -256,147 +198,42 @@
               </p>
             </li>
           </ul>
-          <form class="advantages__form" action="#">
+          <form class="advantages__form advantages__form-hidden" action="#">
             <input class="advantages__form-input input-form" type="tel" placeholder="+7 (___) ___-__-__">
             <input class="btn advantages__form-btn" type="submit" value="Получить консультацию газовщика">
           </form>
-          <img class="advantages__img" src="img/3.png" alt="balloon" >
+          <img class="advantages__img" src="img/3.png" alt="balloon">
         </div>
       </section>
-      <div class="page__banner banner-page">
+      <div class="page__command">
         <div class="container">
-          <div class="banner-page__inner">
-            <div class="banner-page__info">
-              <div class="banner-page__info-text">
-                <p>
-                  <span class="banner-page__info-text1">Оставьте заявку и получите</span>
-                </p>
-                <p>
-                  <span class="banner-page__info-text2">техосмотр газгольдера</span>
-                </p>
-                <p>
-                  <span class="banner-page__info-text3">бесплатно</span>
-                </p>
-              </div>
-              <ul class="banner-page__info-list">
-                <li class="banner-page__info-item"><span>•</span>
-                  Осмотр газгольдера, проверка 
-                  состояния вентилей, обмыливание
-                </li>
-                <li class="banner-page__info-item"><span>•</span>
-                  Консультация специалиста, 
-                  устранение неполадок
-                </li>
-              </ul>
-            </div>
-            <form class="banner-page__form form-banner" action="#">
-              <div class="form-banner__text">
-                <p>
-                  <span class="form-banner__text1">
-                    Заполните форму
-                  </span>
-                </p>
-                <p>
-                  <span class="form-banner__text2">
-                    и наш специалист свяжется с вами<br>
-                    в течение 30 секунд
-                  </span>
-                </p>
-              </div>
-              <input class="form-banner__input-name input-form" type="text" placeholder="Имя">
-              <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__"">
-              <input class="btn form-banner__input-btn" type="submit" value="Получить техосмотр">
-              <input class="form-banner__input-checkbox" id="check" type="checkbox">
-              <label for="check" class="form-banner__label">
-                <span></span>
-                Согласие на обработку персональных данных
-              </label>
-            </form>
-          </div>
-        </div>
-      </div>
-      <section class="page-features">
-        <div class="container">
-          <h3 class="page-features__title">
-            <span>6 простых шагов</span> 
-            от звонка до заправленного газгольдера
+          <h3 class="page__command-title">
+            Наша команда
           </h3>
-          <ul class="page-features__list">
-            <li class="page-features__item">
-              <div class="page-features__item-img">
-                <img src="img/icons/user-interface.svg" alt="user-interface-icon" />
-              </div>
-              <span>01</span>
-              <p>
-                <span class="page-features__item-title">Оставьте заявку на сайте</span> 
-                или позвонитепо номеру +7 (978) 730-80-58
-                Наши менеджеры ответят на Ваши вопросы в течение дня
-              </p>
+          <p class="page__command-text">
+            В нашей команде трудятся около 50 человек, среди них административный и
+            управляющий персонал, инженеры, водители, менеджеры и другие
+          </p>
+          <ul class="page__command-box">
+            <li class="page__command-item">
+              <a class="page__command-link" data-fancybox="gallery" href="img/command-img1-big.png" >
+                <img class="page__command-img" src="img/command-img1-mini.jpg" alt="">
+              </a>
             </li>
-            <li class="page-features__item">
-              <div class="page-features__item-img">
-                <img src="img/icons/worker.svg" alt="worker-icon" />
-              </div>
-              <span>02</span>
-              <p>
-                <span class="page-features__item-title">Выезд специалиста на местность</span>
-                Мы проверим, проедет ли к Вашему участку спецтехника, 
-                правильно ли установлен газгольдер и т.п.
-              </p>
+            <li class="page__command-item">
+              <a class="page__command-link" data-fancybox="gallery" href="img/command-img2-big.png" >
+                <img class="page__command-img" src="img/command-img2-mini.jpg" alt="">
+              </a>
             </li>
-            <li class="page-features__item">
-              <div class="page-features__item-img">
-                <img src="img/icons/package.svg" alt="package-icon" />
-              </div>
-              <span>03</span>
-              <p>
-                <span class="page-features__item-title">Консультация специалиста на месте</span>
-                Ответим на вопросы точечно, дадим график поставок газа 
-                в Вашем районе, договоримся о важных для Вас деталях
-              </p>
-            </li>
-            <li class="page-features__item">
-              <div class="page-features__item-img">
-                <img src="img/icons/oil-truck.svg" alt="oil-truck-icon" />
-              </div>
-              <span>04</span>
-              <p>
-                <span class="page-features__item-title">Контакт с водителем газовоза</span>
-                Мы передадим Ваш номер непосредственно водителю, 
-                чтобы он доставил газ в удобное для Вас время
-              </p>
-            </li>
-            <li class="page-features__item">
-              <div class="page-features__item-img">
-                <img src="img/icons/pressure-gauge.svg" alt="pressure-gauge-icon" />
-              </div>
-              <span>05</span>
-              <p>
-                <span class="page-features__item-title">Заправка газгольдера</span>
-                Водитель проверит исправность газгольдера, 
-                при необходимости удалит неполадки, заправит его, 
-                а после снова проверит на герметичность
-              </p>
-            </li>
-            <li class="page-features__item">
-              <div class="page-features__item-img">
-                <img src="img/icons/partnership-handshake.svg" alt="partnership-icon" />
-              </div>
-              <span>06</span>
-              <p>
-                <span class="page-features__item-title">Расчет</span>
-                После заполнения газгольдера водитель снимет показания счетчика, 
-                выдаст чек и пожелает Вам хорошего дня
-              </p>
+            <li class="page__command-item">
+              <a class="page__command-link" data-fancybox="gallery" href="img/command-img3-big.png" >
+                <img class="page__command-img" src="img/command-img3-mini.jpg" alt="">
+              </a>
             </li>
           </ul>
-          <form class="page-features__form" action="#">
-              <input class="page-features__input input-form" type="tel" placeholder="+7 (___) ___-__-__">
-              <input class="btn page-features__input-btn" type="submit" value="Отправить заявку">
-          </form>
         </div>
-      </section>
-      <div class="page__brand brand-page">
+      </div>
+      <div class="page__brand brand-page brand-page_about">
         <div class="container">
           <h4 class="brand-page__title">
             Многие годы мы <span>заправляем газгольдеры</span> для крупных и мелких 
@@ -483,6 +320,7 @@
       </div>
       <button class="top-btn"></button>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -582,6 +420,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
