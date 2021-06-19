@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('.header__btn').toggleClass('header__btn_active');
     $('.header__menu').toggleClass('header__menu_active');
     $('body').toggleClass('no-scroll');
+    $('.top-btn').toggleClass('top-btn_disabled');
   });
 
   //ТЕЛЕФОН МАСКА
@@ -20,8 +21,28 @@ $(document).ready(function() {
     $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content_active');
 
     $(this).addClass('tab_active'); 
-    $($(this).attr('href')).addClass('tabs-content_active'); 
+    $($(this).attr('href')).addClass('tabs-content_active');
+
+    if (window.matchMedia('(max-width: 580px)').matches) { // аналог media-queries
+      $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
+    }
   });
+
+  //Кнопка вверх
+  var button = $('.top-btn');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 600) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+  });	 
+  button.on('click', function(){
+  $('body, html').animate({
+  scrollTop: 0
+  }, 800);
+  return false;
+  });		 
 
   //Слайдер
     $('.brand-page__slider').slick({
