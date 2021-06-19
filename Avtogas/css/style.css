@@ -63,6 +63,7 @@ body {
 body {
   overflow-x: hidden;
   font-family: 'MullerLight';
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #1b212b;
@@ -115,7 +116,25 @@ body {
 .no-scroll {
   overflow: hidden;
 }
-
+.top-btn {
+  display: none;	
+  filter: alpha(opacity=50);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;			
+  transition: all .3s;
+  background: url('../img/icons/top.svg') 0 0 no-repeat;
+  background-color: transparent;
+  border: 1px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 0;
+}
+.top-btn.top-btn_disabled {
+  display: none !important;
+}
 /*///////////////////////////////////FONTS///////////////////////////////////////*/
 @font-face {
   font-family: 'MullerLight';
@@ -159,7 +178,15 @@ body {
 }
 /*///////////////////////////////////HEADER//////////////////////////////////////*/
 .header {
-  padding: 20px 0;
+  padding: 25px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #d3f1ff;
+  align-items: center;
+}
+.header.header-page {
+  background-color: #E0F6FF;
 }
 .header__inner {
   display: flex;
@@ -274,7 +301,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 20;
   height: 100%;
   text-align: center;
   background: -moz-linear-gradient( 90deg, rgb(247,247,249) 0%, rgb(208,241,255) 100%);
@@ -283,6 +310,10 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+}
+.header__menu.header__menu-page {
+  top: 92px;
+  background: #E0F6FF;
 }
 .header__menu-list {
   width: 100%;
@@ -323,7 +354,7 @@ body {
 /*/////////////////////////////////MAIN-PAGE/////////////////////////////////////*/
 .main-page {
   position: relative;
-  padding: 45px 0px 85px 0px;
+  padding: 143px 0px 85px 0px;
 }
 .main-page::before {
   content: "";
@@ -455,14 +486,14 @@ body {
 .main-page__img_bg1 {
   width: 485px;
   height: 544px;
-  top: 220px;
+  top: 318px;
   left: -10px;
 }
 .main-page__img_bg2 {
   width: 1031px;
   height: 708px;
   right: 0;
-  top: 10px;
+  top: 108px;
 }
 .main-page__objects-title {
   font-family: 'MullerMedium';
@@ -888,6 +919,10 @@ input:checked + label span::before {
   height: 160px;
   border: 1px solid #daeef2;
   cursor: pointer;
+  padding: 10px 0;
+}
+.brand-page__slider-img img {
+  object-fit: contain;
 }
 .brand-page__slider-btn {
   cursor: pointer;
@@ -943,9 +978,6 @@ input:checked + label span::before {
   line-height: 21px;
   color: #fff;
 }
-.footer__column:nth-child(2) {
-
-}
 .footer__top a {
   color: #fff;
 }
@@ -979,9 +1011,6 @@ input:checked + label span::before {
 }
 .footer__column:last-child {
   margin: 0px 0px 0px 0px;
-}
-.footer__navigation-list {
-
 }
 .footer__navigation-item {
   margin: 0px 0px 25px 0px;
@@ -1081,8 +1110,183 @@ input:checked + label span::before {
   right: auto;
   left: 0;
 }
-
-
+/*//////////////////////////////////////BREADCRUMBS/////////////////////////////////////////////*/
+.breadcrumbs {
+  padding: 10px 0;
+  border-bottom: 1px solid #E9EBEC;
+}
+.breadcrumbs__item {
+  position: relative;
+  margin: 0px 35px 0px 0px;
+}
+.breadcrumbs__item::before {
+  position: absolute;
+  content: "/";
+  right: -20px;
+  color: #ABB3B7;
+}
+.breadcrumbs__item:last-child::before {
+  content: "";
+}
+.breadcrumbs__link {
+  font-family: 'MullerRegular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ABB3B7;
+}
+.breadcrumbs__list {
+  display: flex;
+  overflow-x: auto;
+  margin: 93px 0px 0px 0px;
+}
+/*//////////////////////////////////////SERVICES/////////////////////////////////////////////*/
+  .services-page {
+    padding: 93px 0 60px;
+  }
+  .services-page__title {
+    font-family: 'MullerMedium';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0px 0px 28px 0px;
+  }
+  .services-page__catalog {
+    display: flex;
+  }
+  .services-page__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0px 50px 0px 0px;
+  }
+  .services-page__item:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .services-page__item-title {
+    font-family: 'MullerBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+  }
+  .services-page__item-img {
+    overflow: hidden;
+    margin: 0px 0px 25px 0px;
+    height: 274px;
+    border-radius: 10px;
+  }
+  .services-page__item-img img {
+    width: 348px;
+    min-height: 274px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .3s;
+  }
+  .services-page__item-btn:hover + .services-page__item-img img {
+    transform: scale(1.05);
+  }
+  .services-page__item-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    padding: 0 10px;
+    margin: 0 auto;
+    order: 1;
+  }
+  /*//////////////////////////////////////INFORMATION/////////////////////////////////////////////*/
+  .page__information {
+    padding: 48px 0 56px;
+  }
+  .page__information-title {
+    font-family: 'MullerBold';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 50px;
+    margin: 0px 0px 10px 0px;
+  }
+  .page__information-text {
+    max-width: 900px;
+    font-family: 'MullerRegular';
+    font-weight: 400;
+    font-size: 16px;
+  }
+/*//////////////////////////////////////INFO-COMPANY/////////////////////////////////////////////*/
+  .page__company-info {
+    padding: 50px 0 55px;
+  }
+  .info-company__title {
+    font-family: 'MullerMedium';
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0px 0px 25px 0px;
+  }
+  .info-company__text-box {
+    max-width: 785px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px 30px 0px 0px;
+  }
+  .info-company__img {
+    flex: 0 0 auto;
+  }
+  .info-company__img img {
+    border-radius: 10px;
+    width: 550px;
+    height: 372px;
+    object-fit: contain;
+  }
+  .info-company__inner {
+    display: flex;
+  }
+  .info-company__text1,
+  .info-company__text-list,
+  .info-company__text-item {
+    margin: 0px 0px 10px 0px;
+  }
+  .info-company__text-item:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .advantages.advantages-about {
+    padding: 0px 0px 50px 0px;
+  }
+  .advantages__form.advantages__form-hidden {
+    visibility: hidden;
+  }
+/*//////////////////////////////////////PAGE-COMMAND/////////////////////////////////////////////*/
+  .page__command {
+    padding: 0px 0px 60px 0px;
+  }
+  .page__command-title,
+  .page__command-text {
+    font-family: 'MullerMedium';
+    font-weight: 500;
+  }
+  .page__command-title {
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0px 0px 5px 0px;
+  }
+  .page__command-text {
+    font-size: 15px;
+    line-height: 23px;
+    max-width: 560px;
+    margin: 0px 0px 36px 0px;
+  }
+  .page__command-box {
+    display: flex;
+  }
+  .page__command-item {
+    margin: 0px 30px 0px 0px;
+  }
+  .page__command-img {
+    border-radius: 10px;
+  }
+  .brand-page.brand-page_about {
+    background-color: #F6F9FC;
+  }
 /*//////////////////////////////////////ADAPTIVE/////////////////////////////////////////////*/
 @media (max-width: 1800px) {
   .main-page__img {
@@ -1110,7 +1314,7 @@ input:checked + label span::before {
     height: 544px;
   }
   .main-page__img_bg2 {
-    top: 65px;
+    top: 163px;
     width: 662px;
     height: 708px;
   }
@@ -1161,7 +1365,7 @@ input:checked + label span::before {
 }
 @media (max-width: 1200px) {
   .main-page__img_bg2 {
-    top: 112px;
+    top: 210px;
     width: 512px;
     height: 708px;
   }
@@ -1228,12 +1432,6 @@ input:checked + label span::before {
   }
 }
 @media (max-width: 1024px) {
-  .header {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
   .main-page {
     position: relative;
     padding: 125px 0px 65px 0px;
@@ -1373,6 +1571,15 @@ input:checked + label span::before {
   .footer__services-link:last-child {
     margin: 0px 0px 0px 0px;
   }
+  .breadcrumbs {
+    margin: 94px 0px 0px 0px;
+  }
+  .advantages__form.advantages__form-hidden {
+    display: none;
+  }
+  .top-btn {
+    bottom: 80px;
+  }
 }
 @media (max-width: 800px) {
   .header__phone,
@@ -1387,7 +1594,12 @@ input:checked + label span::before {
     line-height: 52px;
     text-align: center;
   }
-  .main-page__title-text {
+  .main-page__title-text,
+  .main-page__objects-title,
+  .advantages__title,
+  .page-features__title,
+  .brand-page__title,
+  .services-page__title {
     font-size: 26px;
   }
   .objects-content__tab {
@@ -1399,9 +1611,6 @@ input:checked + label span::before {
   }
   .objects-content__img img {
     width: 100%;
-  }
-  .main-page__objects-title {
-    font-size: 26px;
   }
   .advantages__list {
     grid-template-columns: repeat(1, 1fr);
@@ -1421,7 +1630,6 @@ input:checked + label span::before {
     padding: 20px 0 20px;
   }
   .advantages__title {
-    font-size: 26px;
     line-height: 30px;
   }
   .advantages__subtitle {
@@ -1430,11 +1638,21 @@ input:checked + label span::before {
   .advantages__list-title {
     margin: 0px 0px 10px 0px;
   }
-  .page-features__title {
-    font-size: 26px;
+  .services-page {
+    padding: 30px 0 40px;
   }
-  .brand-page__title {
-    font-size: 26px;
+  .services-page__item-title {
+    font-size: 20px;
+  }
+  .services-page__title {
+    margin: 0px 0px 20px 0px;
+  }
+  .page__information {
+    padding: 20px 0 40px;
+  }
+  .page__information-title {
+    font-size: 24px;
+    f
   }
 }
 @media (max-width: 700px) {
@@ -1476,6 +1694,9 @@ input:checked + label span::before {
   }
   .footer__bottom {
     border-top: 1px solid #435775;
+  }
+  .services-page__item {
+    margin: 0px 25px 0px 0px;
   }
 }
 @media (max-width: 580px) {
@@ -1553,6 +1774,16 @@ input:checked + label span::before {
     max-width: 100%;
     margin: 0px 0px 0px 0px;
   }
+  .services-page__catalog {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services-page__item {
+    margin: 0px 0px 30px 0px;
+  }
+  .page__information-title {
+    line-height: 35px;
+  }
 }
 @media (max-width: 430px) {
   .main-page__title {
@@ -1561,14 +1792,12 @@ input:checked + label span::before {
   }
   .main-page__title-text,
   .main-page__objects-title,
-  .advantages__title {
+  .advantages__title,
+  .banner-page__info-text p {
     font-size: 22px;
   }
   .advantages__form-btn {
     white-space: normal;
-  }
-  .banner-page__info-text p {
-    font-size: 22px;
   }
   .banner-page__info-text3 {
     font-size: 32px;
