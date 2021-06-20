@@ -37,7 +37,7 @@ $(document).ready(function() {
       button.fadeOut();
     }
   });	 
-  button.on('click', function(){
+  button.on('click', function() {
   $('body, html').animate({
   scrollTop: 0
   }, 800);
@@ -87,5 +87,75 @@ $(document).ready(function() {
           }
         },
       ]
-    });  
+    });
+
+    $('.reviews-page__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      dots: true,
+      speed: 1500,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      prevArrow: '<button class="reviews-page__slider-btn reviews-page__slider-btnprev"><img src="img/arrow-prev.png" alt=""></button>',
+      nextArrow: '<button class="reviews-page__slider-btn reviews-page__slider-btnnext"><img src="img/arrow-next.png" alt=""></button>',
+      responsive: [
+        {
+          breakpoint: 1801,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 1301,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 1251,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            adaptiveHeight: true,
+          }
+        },
+        {
+          breakpoint: 431,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            adaptiveHeight: true,
+            centerMode: false,
+          }
+        },
+        /*
+        {
+          breakpoint: 701,
+            settings: "unslick",
+        },
+        */
+      ]
+    });
+    
 });
+
+
