@@ -151,12 +151,6 @@ $(document).ready(function() {
             speed: 500,
           }
         },
-        /*
-        {
-          breakpoint: 701,
-            settings: "unslick",
-        },
-        */
       ]
     });
     
