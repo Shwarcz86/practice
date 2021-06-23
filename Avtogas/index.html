@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <title>Главная</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
           <div class="header__column">
             <div class="header__phone-box">
               <a class="header__phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
-              <a class="header__call-me" href="#" rel="nofollow">Заказать звонок</a>
+              <a class="header__call-me" data-fancybox="" data-src="#modal-form" href="#" rel="nofollow">Заказать звонок</a>
               <a class="header__phone-icon" href="tel:+79787308058" rel="nofollow">
                 <img src="img/icons/phone.svg" alt="phone">
               </a>
@@ -46,16 +47,16 @@
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a class="header__menu-link" href="about.html">О Компании</a>
+              <a class="header__menu-link" href="#">О Компании</a>
             </li>
             <li class="header__menu-item">
               <a class="header__menu-link" href="#">Доставка и оплата</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="documentation.html">Документация</a>
+              <a class="header__menu-link" href="#">Документация</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="articles.html">Статьи</a>
+              <a class="header__menu-link" href="#">Статьи</a>
             </li>
             <li class="header__menu-item">
               <a class="header__menu-link" href="#">Контакты</a>
@@ -64,10 +65,7 @@
               <a class="header__menu-link" href="#">Доставка газа для АЗС</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="refueling.html">Заправка газгольдеров</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="services.html">Услуги по транспортировке</a>
+              <a class="header__menu-link" href="#">Заправка газгольдеров</a>
             </li>
           </ul>
         </nav>
@@ -315,8 +313,8 @@
               <input class="form-banner__input-name input-form" type="text" placeholder="Имя">
               <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__"">
               <input class="btn form-banner__input-btn" type="submit" value="Получить техосмотр">
-              <input class="form-banner__input-checkbox" id="check" type="checkbox">
-              <label for="check" class="form-banner__label">
+              <label class="form-banner__label">
+                <input class="form-banner__input-checkbox" type="checkbox">
                 <span></span>
                 Согласие на обработку персональных данных
               </label>
@@ -586,11 +584,37 @@
         </div>
       </div>
       <span class="footer__line"></span>
+        <div class="modal-form__box" id="modal-form">
+          <form class="modal-form__body form-banner" action="#">
+            <div class="form-banner__text">
+              <p>
+                <span class="form-banner__text1">
+                  Заполните форму
+                </span>
+              </p>
+              <p>
+                <span class="form-banner__text2">
+                  и наш специалист свяжется с вами<br>
+                  в течение 30 секунд
+                </span>
+              </p>
+            </div>
+            <input class="form-banner__input-name input-form" type="text" placeholder="Имя">
+            <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__"">
+            <input class="btn form-banner__input-btn" type="submit" value="Заказать звонок">
+            <label class="form-banner__label">
+              <input class="form-banner__input-checkbox" type="checkbox">
+              <span></span>
+              Согласие на обработку персональных данных
+            </label>
+          </form>
+        </div>
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
