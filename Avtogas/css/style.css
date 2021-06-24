@@ -174,7 +174,7 @@ body {
   overflow-y: hidden;
 }
 #map {
-  height: 586px;
+  height: 600px;
   width: 100%;
   background-color: #ccc;
 }
@@ -1999,7 +1999,7 @@ body {
 }
 .contacts-page__info {
   flex: 0 0 350px;
-  padding: 50px;
+  padding: 49px 50px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -2019,7 +2019,7 @@ body {
 }
 .contacts-page__form.form-banner {
   margin: 0px 0px 0px -15px;
-  flex: 0 0 auto;
+  flex: 0 0 425px;
 }
 .contacts-page__info-phone,
 .contacts-page__info-mail,
@@ -2706,6 +2706,19 @@ body {
   .articles-page ul,
   .articles-page ol {
     columns: 1;
+  }
+  .contacts-page__inner {
+    display: block;
+    right: 0;
+  }
+  .contacts-page__form.form-banner {
+    margin: 0px 0px 0px 0px;
+    flex: 1 1 auto;
+  }
+  #map {
+    height: 1050px;
+    width: 100%;
+    background-color: #ccc;
   }
 }
 @media (max-width: 700px) {

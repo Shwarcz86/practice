@@ -127,7 +127,7 @@
                     </p>
                   </div>
                   <input class="form-banner__input-name input-form" type="text" placeholder="Имя">
-                  <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__"">
+                  <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__">
                   <input class="btn form-banner__input-btn" type="submit" value="Заказать звонок">
                   <label class="form-banner__label">
                     <input class="form-banner__input-checkbox" type="checkbox">
@@ -245,8 +245,70 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+<script>
+  (function($)
+  { 
+    if (window.matchMedia('(max-width: 767px) and (min-width: 575.5px)').matches)
+    {
+      xCenter = [44.949488, 34.092892]; // РЕАЛЬНЫЕ КООРДИНАТЫ ЦЕНТРА ?
+    }
+    else
+    {
+      
+      xCenter = [44.949488, 34.094892]; // СМЕЩЕНИЕ ЦЕНТРА ?
+    }
+
+    createMap('map', [44.949488, 34.094892]); // СМЕЩЕНИЕ ЦЕНТРА ?
+
+    function createMap(xID, coords)
+    {
+      if ($("#" + xID + "").length > 0)
+      {
+        var myMap;
+        // Дождёмся загрузки API и готовности DOM.
+        ymaps.ready(init);
+
+        function init()
+        {
+          myMap = new ymaps.Map(xID,
+          {
+            center: xCenter,
+            zoom: 18
+          },
+          {
+            searchControlProvider: 'yandex#search'
+          });
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+            myPlacemark = new ymaps.Placemark(coords,
+            {
+              hintContent: 'ул. Героев Аджимушкая, 5/15 кв 2',
+              balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br> ул. Героев Аджимушкая, 5/15 кв 2</p>'
+            },
+            {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: 'img/icons/map-marker.svg',
+              // Размеры метки.
+              hideIconOnBalloonOpen: false,
+              iconImageSize: [23, 32],
+              balloonOffset: [ 4, -53 ],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-7, -45]
+            });
+          myMap.geoObjects.add(myPlacemark);
+          myMap.behaviors.disable('scrollZoom');
+        }
+      }
+    }
+  })(jQuery);
+</script>
+  <!--<script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script>
     $(document).ready(function() {
     ymaps.ready(init);
 
@@ -277,5 +339,6 @@
       }
     });
   </script>
+  -->
 </body>
 </html>
