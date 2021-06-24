@@ -295,99 +295,66 @@
   <script src="js/main.js"></script>
   <script src="js/common.js?ver=1.4"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
-<script>
-  (function($)
-  { 
-    if (window.matchMedia('(max-width: 767px) and (min-width: 575.5px)').matches)
-    {
-      xCenter = [44.949488, 34.092892]; // РЕАЛЬНЫЕ КООРДИНАТЫ ЦЕНТРА ?
-    }
-    else
-    {
-      
-      xCenter = [44.949488, 34.092892]; // СМЕЩЕНИЕ ЦЕНТРА ?
-    }
-
-    createMap('map', [44.949488, 34.094892]); // СМЕЩЕНИЕ ЦЕНТРА ?
-
-    function createMap(xID, coords)
-    {
-      if ($("#" + xID + "").length > 0)
+  <script>
+    (function($)
+    { 
+      if (window.matchMedia('(max-width: 800px)').matches)
       {
-        var myMap;
-        // Дождёмся загрузки API и готовности DOM.
-        ymaps.ready(init);
-
-        function init()
+        xCenter = [44.949488, 34.094892]; // Центр до 800px (мобильные), совпадает с маркером
+      }
+      else if (window.matchMedia('(max-width: 1300px)').matches) {
+        xCenter = [44.949744, 34.092863]; // Центр до 1300px
+      } else {      
+        xCenter = [44.949547, 34.091851]; // Центр на десктопе
+      }
+  
+      createMap('map', [44.949488, 34.094892]); // Координаты маркера
+  
+      function createMap(xID, coords)
+      {
+        if ($("#" + xID + "").length > 0)
         {
-          myMap = new ymaps.Map(xID,
+          var myMap;
+          // Дождёмся загрузки API и готовности DOM.
+          ymaps.ready(init);
+  
+          function init()
           {
-            center: xCenter,
-            zoom: 18
-          },
-          {
-            searchControlProvider: 'yandex#search'
-          });
-          // Создаём макет содержимого.
-          MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
-            myPlacemark = new ymaps.Placemark(coords,
+            myMap = new ymaps.Map(xID,
             {
-              hintContent: 'ул. Героев Аджимушкая, 5/15 кв 2',
-              balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br> ул. Героев Аджимушкая, 5/15 кв 2</p>'
+              center: xCenter,
+              zoom: 18
             },
             {
-              // Опции.
-              // Необходимо указать данный тип макета.
-              iconLayout: 'default#image',
-              // Своё изображение иконки метки.
-              iconImageHref: 'img/icons/map-marker.svg',
-              // Размеры метки.
-              hideIconOnBalloonOpen: false,
-              iconImageSize: [23, 32],
-              balloonOffset: [ 4, -53 ],
-              // Смещение левого верхнего угла иконки относительно
-              // её "ножки" (точки привязки).
-              iconImageOffset: [-7, -45]
+              searchControlProvider: 'yandex#search'
             });
-          myMap.geoObjects.add(myPlacemark);
-          myMap.behaviors.disable('scrollZoom');
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+              myPlacemark = new ymaps.Placemark(coords,
+              {
+                hintContent: 'ул. Героев Аджимушкая, 5/15 кв 2',
+                balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br> ул. Героев Аджимушкая, 5/15 кв 2</p>'
+              },
+              {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/icons/map-marker.svg',
+                // Размеры метки.
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [23, 32],
+                balloonOffset: [ 4, -53 ],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-7, -45]
+              });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+          }
         }
       }
-    }
-  })(jQuery);
-</script>
-  <!--<script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    $(document).ready(function() {
-    ymaps.ready(init);
-
-      function init() {
-        var myMap = new ymaps.Map('map', {
-        center: [44.949688, 34.092892],
-        zoom: 18
-        }, {
-        searchControlProvider: 'yandex#search'
-        }),
-
-        myPlacemark = new ymaps.Placemark([44.949488, 34.094892], {
-          balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br> ул. Героев Аджимушкая, 5/15 кв 2</p>'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/icons/map-marker.svg',
-            hideIconOnBalloonOpen: false,
-            iconImageSize: [23, 32],
-            balloonOffset: [ 4, -53 ]
-        });
-        myMap.controls.remove('searchControl');
-        myMap.behaviors.disable('scrollZoom');
-
-        myMap.geoObjects.add(myPlacemark);
-      }
-    });
+    })(jQuery);
   </script>
-  -->
 </body>
 </html>
