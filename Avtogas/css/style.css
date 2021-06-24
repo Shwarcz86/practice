@@ -62,7 +62,7 @@ body {
 
 body {
   overflow-x: hidden;
-  font-family: 'MullerLight';
+  font-family: 'MullerRegular';
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -176,7 +176,6 @@ body {
 #map {
   height: 600px;
   width: 100%;
-
 }
 .text-map {
   font-family: 'MullerRegular';
@@ -2108,34 +2107,100 @@ body {
 }
 .delivery-page__table table {
   width: 830px;
+
+  border-collapse: collapse;
 }
 .delivery-page__table tr > th {
   width: 86px;
   height: 52px;
   background: #F6F9FC;
 }
-.delivery-page__table 
+.delivery-page__table tr, 
+.delivery-page__table th,
+.delivery-page__table td {
+  font-family: 'MullerMedium';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #E0F6FF;
+  padding: 15px;
+  text-align: left;
+  vertical-align: top;
+}
+.delivery-page__table td {
+  width: 185px;
+}
 .delivery-page__info {
 }
 .delivery-page__info-title {
+  font-family: 'MullerMedium';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0px 0px 10px 0px;
 }
 .delivery-page__info-list {
+  margin: 0px 0px 20px 0px;
 }
 .delivery-page__info-item {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 0px 10px 0px;
+  position: relative;
 }
-.delivery-page__info-item_cash {
+.delivery-page__info-item span {
+  color: #EF4442;
 }
-.delivery-page__info-item_card {
+.delivery-page__info-item span.rub {
+  font-family: 'MullerBold';
+  font-weight: 700;
+  color: #1b212b;
 }
+.delivery-page__info-item_cash,
+.delivery-page__info-item_card,
 .delivery-page__info-item_bank {
+  padding: 0px 0px 10px 40px;
+}
+.delivery-page__info-item_cash::before,
+.delivery-page__info-item_card::before,
+.delivery-page__info-item_bank::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+.delivery-page__info-item_cash::before {
+  background: #E0F6FF url('../img/icons/cash.svg') center no-repeat;
+}
+.delivery-page__info-item_card::before {
+  background: #E0F6FF url('../img/icons/card.svg') center no-repeat;
+}
+.delivery-page__info-item_bank::before {
+  background: #E0F6FF url('../img/icons/bank.svg') center no-repeat;
 }
 .delivery-page__form {
+  margin: 0px 0px 0px 168px;
+  max-width: 525px;
+  text-align: center;
+}
+.delivery-page__form-title {
+  font-family: 'MullerBold';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0px 0px 20px 0px;
 }
 .delivery-page__input {
-}
-.input-form {
+  height: 66px;
+  margin: 0px 0px 0px 0px;
 }
 .delivery-page__input-btn {
+  margin: 0px 0px 0px -20px;
+  padding: 0 30px;
+  width: 265px;
 }
 /*//////////////////////////////////////ADAPTIVE/////////////////////////////////////////////*/
 @media (max-width: 1850px) {
@@ -2382,6 +2447,29 @@ body {
   }
   .news-page__list {
     justify-content: space-around;
+  }
+  .delivery-page__inner {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .delivery-page__table {
+    margin: 0px 20px 30px 0px;
+  }
+  .delivery-page__info {
+    display: flex;
+  }
+  .delivery-page__info-box {
+    margin: 0px 20px 0px 0px;
+  }
+  .delivery-page__info-box_2 {
+    order: -1;
+  }
+  .delivery-page__form {
+    margin: 0px 0px 0px 0px;
+  }
+  .delivery-page__table {
+    margin: 0px 0px 30px 0px;
+    overflow-x: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -2646,7 +2734,8 @@ body {
   .installation-page__title,
   .page__documentation-title,
   .news-page__title,
-  .articles-page h1 {
+  .articles-page h1,
+  .delivery-page__title {
     font-size: 26px;
   }
   .objects-content__tab {
@@ -2769,10 +2858,12 @@ body {
     max-width: 100%;
     margin: 0px 0px 18px 0px;
   }
-  .articles-page h1 {
+  .articles-page h1,
+  .delivery-page__title {
     line-height: 36px;
   }
-  .articles-page {
+  .articles-page,
+  .delivery-page {
     padding: 40px 0 50px;
   }
   .services-page__item {
@@ -2995,6 +3086,18 @@ body {
   }
   .installation-page__item-box {
     padding: 20px 15px;
+  }
+  .delivery-page__info {
+    display: block;
+  }
+  .delivery-page__input,
+  .delivery-page__input-btn {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  .delivery-page__input {
+    margin: 0px 0px 15px 0px;
   }
 }
 @media (max-width: 430px) {
