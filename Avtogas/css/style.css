@@ -1893,22 +1893,6 @@ body {
   border: 0;
   padding: 13px 10px 10px 10px;
 }
-.articles-page ul li span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  flex: 0 0 auto;
-  background: #E0F6FF;
-  color: #2389FC;
-  border-radius: 50%;
-  margin: 0px 15px 0px 0px;
-}
-.articles-page ul li span img {
-  width: 14px;
-  height: 10px;
-}
 .sidebar-articles {
   padding: 30px;
   max-width: 435px;
@@ -1989,6 +1973,20 @@ body {
 }
 .sidebar-articles__news-more:hover {
   border: transparent;
+}
+.articles-page ul li {
+  position: relative;
+  padding: 0px 0px 0px 40px;
+}
+
+.articles-page ul li::before {
+  content: "";
+  position: absolute;
+  background: #E0F6FF url('../img/icons/mark.svg') center no-repeat;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: 0;
 }
 /*//////////////////////////////////////CONTACTS/////////////////////////////////////////////*/
 .contacts-page__inner {
