@@ -2792,6 +2792,9 @@ body {
   .header__menu-item_parent .header-submenu__list a {
     border-bottom: 1px solid #2a579c;
   }
+  .header__menu-item_parent .header-submenu__list li:last-child a {
+    border-bottom: 1px solid transparent;
+  }
   .header__menu-item:hover {
     background-color: transparent;
   }
