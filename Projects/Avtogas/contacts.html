@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <title>Контакты</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__column">
+            <a class="logo" href="#">
+              <img src="img/icons/logo.svg" alt="logo"/>
+              <span>Заправка газгольдеров в Крыму</span>
+            </a>
+            <a class="logo-mobile" href="#">
+              <img src="img/icons/logo1.svg" alt="logo-mobile"/>
+            </a>
+            <div class="header__box">
+              <p class="header__address">
+                г. Симферополь,<br>
+                ул. г. Аджимушкая, 5/15 кв 2
+              </p>
+            </div>
+          </div>
+          <div class="header__column">
+            <div class="header__phone-box">
+              <a class="header__phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
+              <a class="header__call-me" data-fancybox="" data-src="#modal-form" href="#" rel="nofollow">Заказать звонок</a>
+              <a class="header__phone-icon" href="tel:+79787308058" rel="nofollow">
+                <img src="img/icons/phone.svg" alt="phone">
+              </a>
+            </div>
+            <button class="header__btn" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">О Компании</a>
+              </li>
+              <li class="header__menu-item header__menu-item_parent">
+                <a class="header__menu-link" href="#">Услуги</a>
+                <div class="header__menu-submenu header-submenu">
+                  <div class="header-submenu__item">
+                    <ul class="header-submenu__list">
+                      <li><a href="#">Доставка газа для АЗС</a></li>
+                      <li><a href="#">Заправка газгольдеров</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Документация</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Статьи</a>
+              </li>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">Контакты</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page__contacts contacts-page">
+        <div class="container">
+          <div class="contacts-page__inner contacts-page__inner_mobile">
+            <div class="contacts-page__info">
+              <div class="contacts-page__info-main">
+                <h5 class="contacts-page__info-title">Основные контакты</h5>
+                <a class="contacts-page__info-phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
+                <a class="contacts-page__info-phone" href="tel:+79788293425" rel="nofollow">+7 (978) 829-34-25</a>
+                <a class="contacts-page__info-mail" href="mailto:valesa@td-tes.com" rel="nofollow">valesa@td-tes.com</a>
+              </div>
+              <div class="contacts-page__info-address">
+                <h5 class="contacts-page__info-title">Наш адрес</h5>
+                <p class="contacts-page__info-text">
+                  г. Симферополь, ул. Героев<br>
+                  Аджимушкая, 5/15 кв 2
+                </p>
+              </div>
+              <div class="contacts-page__info-worktime">
+                <h5 class="contacts-page__info-title">Основные контакты</h5>
+                <p class="contacts-page__info-text">
+                  Пн-Пт: с 9:00 до 18:00<br>
+                  Сб-Вс: выходной
+                </p>
+              </div>
+            </div>
+            <form class="contacts-page__form form-banner" action="#">
+              <div class="form-banner__text">
+                <p>
+                  <span class="form-banner__text1">
+                    Заполните форму
+                  </span>
+                </p>
+                <p>
+                  <span class="form-banner__text2">
+                    и наш специалист свяжется с вами<br>
+                    в течение 30 секунд
+                  </span>
+                </p>
+              </div>
+              <input class="form-banner__input-name input-form" type="text" placeholder="Имя">
+              <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__">
+              <input class="btn form-banner__input-btn" type="submit" value="Заказать звонок">
+              <label class="form-banner__label">
+                <input class="form-banner__input-checkbox" type="checkbox">
+                <span></span>
+                Согласие на обработку персональных данных
+              </label>
+            </form>
+          </div>
+        </div>
+        <div class="contacts-page__map" id="map">
+          <div class="container">
+            <div class="contacts-page__box">
+              <div class="contacts-page__inner">
+                <div class="contacts-page__info">
+                  <div class="contacts-page__info-main">
+                    <h5 class="contacts-page__info-title">Основные контакты</h5>
+                    <a class="contacts-page__info-phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
+                    <a class="contacts-page__info-phone" href="tel:+79788293425" rel="nofollow">+7 (978) 829-34-25</a>
+                    <a class="contacts-page__info-mail" href="mailto:valesa@td-tes.com" rel="nofollow">valesa@td-tes.com</a>
+                  </div>
+                  <div class="contacts-page__info-address">
+                    <h5 class="contacts-page__info-title">Наш адрес</h5>
+                    <p class="contacts-page__info-text">
+                      г. Симферополь, ул. Героев<br>
+                      Аджимушкая, 5/15 кв 2
+                    </p>
+                  </div>
+                  <div class="contacts-page__info-worktime">
+                    <h5 class="contacts-page__info-title">Основные контакты</h5>
+                    <p class="contacts-page__info-text">
+                      Пн-Пт: с 9:00 до 18:00<br>
+                      Сб-Вс: выходной
+                    </p>
+                  </div>
+                </div>
+                <form class="contacts-page__form form-banner" action="#">
+                  <div class="form-banner__text">
+                    <p>
+                      <span class="form-banner__text1">
+                        Заполните форму
+                      </span>
+                    </p>
+                    <p>
+                      <span class="form-banner__text2">
+                        и наш специалист свяжется с вами<br>
+                        в течение 30 секунд
+                      </span>
+                    </p>
+                  </div>
+                  <input class="form-banner__input-name input-form" type="text" placeholder="Имя">
+                  <input class="form-banner__input-phone input-form" type="tel" placeholder="+7 (___) ___-__-__">
+                  <input class="btn form-banner__input-btn" type="submit" value="Заказать звонок">
+                  <label class="form-banner__label">
+                    <input class="form-banner__input-checkbox" type="checkbox">
+                    <span></span>
+                    Согласие на обработку персональных данных
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="top-btn"></button>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__column">
+            <a class="footer__logo" href="#">
+              <img src="img/icons/logo-footer.svg" alt="logo"/>
+              <span class="logo__footer-span">Заправка газгольдеров в Крыму</span>
+            </a>
+          </div>
+          <div class="footer__column">
+            <nav class="footer__navigation">
+              <ul class="footer__navigation-list">
+                <li class="footer__navigation-item">
+                  <a class="footer__navigation-link" href="#" rel="nofollow">
+                    О Компании
+                  </a>
+                </li>
+                <li class="footer__navigation-item">
+                  <a class="footer__navigation-link" href="#" rel="nofollow">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="footer__navigation-item">
+                  <a class="footer__navigation-link" href="#" rel="nofollow">
+                    Документация
+                  </a>
+                </li>
+                <li class="footer__navigation-item">
+                  <a class="footer__navigation-link" href="#" rel="nofollow">
+                    Статьи
+                  </a>
+                </li>
+                <li class="footer__navigation-item">
+                  <a class="footer__navigation-link" href="#" rel="nofollow">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <ul class="footer__services-list">
+              <li class="footer__services-item">
+                <a class="footer__services-link" href="#" rel="nofollow">
+                  Доставка газа для АЗС
+                </a>
+              </li>
+              <li class="footer__services-item">
+                <a class="footer__services-link" href="#" rel="nofollow">
+                  Заправка газгольдеров
+                </a>
+              </li>
+              <li class="footer__services-item">
+                <a class="footer__services-link" href="#" rel="nofollow">
+                  Услуги по транспортировке сжиженного газа
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__adress">
+              <p class="footer__city">г. Симферополь,</p>
+              <p class="footer__street">ул. г. Аджимушкая, 5/15 кв 2</p>
+              <a class="footer__phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
+            </div>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-img footer__social-img_vk" src="img/icons/vk.svg" alt="vk" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-img footer__social-img_inst" src="img/icons/insta.svg" alt="instagram" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-inner">
+            <a class="footer__bottom-confidentiality" href="#" rel="nofollow">
+              Политика конфиденциальности
+            </a>
+            <p class="footer__bottom-copyright">
+              г. Симферополь © Copyright  2021 г.
+            </p> 
+            <a class="footer__bottom-development" href="#" rel="nofollow">Сделано в
+              <img src="img/icons/sheer.svg" alt="logo-sheer" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="footer__line"></span>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+  <script>
+    (function($)
+    { 
+      if (window.matchMedia('(max-width: 800px)').matches)
+      {
+        xCenter = [44.949488, 34.094892]; // Центр до 800px (мобильные), совпадает с маркером
+      }
+      else if (window.matchMedia('(max-width: 1300px)').matches) {
+        xCenter = [44.949744, 34.092863]; // Центр до 1300px
+      } else {      
+        xCenter = [44.949547, 34.091851]; // Центр на десктопе
+      }
+  
+      createMap('map', [44.949488, 34.094892]); // Координаты маркера
+  
+      function createMap(xID, coords)
+      {
+        if ($("#" + xID + "").length > 0)
+        {
+          var myMap;
+          // Дождёмся загрузки API и готовности DOM.
+          ymaps.ready(init);
+  
+          function init()
+          {
+            myMap = new ymaps.Map(xID,
+            {
+              center: xCenter,
+              zoom: 18
+            },
+            {
+              searchControlProvider: 'yandex#search'
+            });
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+              myPlacemark = new ymaps.Placemark(coords,
+              {
+                hintContent: 'ул. Героев Аджимушкая, 5/15 кв 2',
+                balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br> ул. Героев Аджимушкая, 5/15 кв 2</p>'
+              },
+              {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/icons/map-marker.svg',
+                // Размеры метки.
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [23, 32],
+                balloonOffset: [ 4, -53 ],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-7, -45]
+              });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+          }
+        }
+      }
+    })(jQuery);
+  </script>
+</body>
+</html>
