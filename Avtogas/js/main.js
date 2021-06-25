@@ -8,6 +8,14 @@ $(document).ready(function() {
     $('.top-btn').toggleClass('top-btn_disabled');
   });
 
+  if (window.matchMedia('(max-width: 940px)').matches) {
+    //Выпадания списка в меню
+    $('.header__menu-link').on('click', function() {
+      $(this).next().slideToggle('slow');
+      $(this).toggleClass('active');
+    });
+  }
+
   //ТЕЛЕФОН МАСКА
   $(function() {
     $("[type=tel]").mask("+7 (999) 999-99-99");

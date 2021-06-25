@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header header-page">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <div class="header__column">
@@ -32,7 +32,7 @@
           <div class="header__column">
             <div class="header__phone-box">
               <a class="header__phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
-              <a class="header__call-me" href="#" rel="nofollow">Заказать звонок</a>
+              <a class="header__call-me" data-fancybox="" data-src="#modal-form" href="#" rel="nofollow">Заказать звонок</a>
               <a class="header__phone-icon" href="tel:+79787308058" rel="nofollow">
                 <img src="img/icons/phone.svg" alt="phone">
               </a>
@@ -43,32 +43,35 @@
               <span></span>
             </button>
           </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">О Компании</a>
+              </li>
+              <li class="header__menu-item header__menu-item_parent">
+                <a class="header__menu-link" href="#">Услуги</a>
+                <div class="header__menu-submenu header-submenu">
+                  <div class="header-submenu__item">
+                    <ul class="header-submenu__list">
+                      <li><a href="#">Доставка газа для АЗС</a></li>
+                      <li><a href="#">Заправка газгольдеров</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Документация</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Статьи</a>
+              </li>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__menu header__menu-page">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">О Компании</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Документация</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Статьи</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Контакты</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Доставка газа для АЗС</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Заправка газгольдеров</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
