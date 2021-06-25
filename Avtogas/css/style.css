@@ -2786,6 +2786,9 @@ body {
     border: 0;
     background-color: #fff;
   }
+  .header__menu-item:first-child {
+    border-top: 2px solid #fff;
+  }
   .header__menu-item_parent .header-submenu__list a {
     border-bottom: 1px solid #2a579c;
   }
