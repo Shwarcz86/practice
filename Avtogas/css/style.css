@@ -2913,6 +2913,7 @@ body {
   }
   .info-company__text-box {
     order: 1;
+    margin: 0px 0px 0px 0px;
   }
   .page__company-info {
     padding: 40px 0 45px;
