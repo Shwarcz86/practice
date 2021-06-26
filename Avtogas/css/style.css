@@ -404,6 +404,9 @@ body {
   width: 11px;
   height: 15px;
 }
+.header__menu-item.header__menu-item_parent:hover > a::before {
+  background: url('../img/icons/arrow-left-whte.svg') 0 0 no-repeat;
+}
 .header__menu-item_parent:hover .header-submenu__item {
   transform: translateX(0);
   visibility: visible;
@@ -2769,6 +2772,9 @@ body {
   .header__menu-item.header__menu-item_parent> a.active::before {
     transform: translateY(-50%) rotate(90deg);
   }
+  .header__menu-item.header__menu-item_parent:hover > a::before {
+    background: url('../img/icons/pag-arrow-left.svg') 0 0 no-repeat;
+  }
   .header__menu-link::before {
     transition: all .3s;
   }
@@ -2786,14 +2792,18 @@ body {
     border: 0;
     background-color: #fff;
   }
-  .header__menu-item:first-child {
-    border-top: 2px solid #fff;
+  .header-submenu__item {
+    border: 0;
+    background-color: #fff;
   }
   .header__menu-item_parent .header-submenu__list a {
     border-bottom: 1px solid #2a579c;
   }
   .header__menu-item_parent .header-submenu__list li:last-child a {
     border-bottom: 1px solid transparent;
+  }
+  .header__menu-item:first-child {
+    border-top: 2px solid #fff;
   }
   .header__menu-item:hover {
     background-color: transparent;
