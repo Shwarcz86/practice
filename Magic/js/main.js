@@ -7,6 +7,18 @@ $(document).ready(function() {
     $('.bottom-header').removeClass('_active');
   });
 
+  $('.top-header__open-btn').on('click', function() {
+    $('.top-header').addClass('_active');
+  });
+  $('.top-header__close-btn').on('click', function() {
+    $('.top-header').removeClass('_active');
+  });
+
+    //ТЕЛЕФОН МАСКА
+    $(function() {
+      $("[type=tel]").mask("+7 (999) 999-99-99");
+    });
+
   //Выпадания списка в меню
   $('.menu-item-has-children > a').on('click', function() {
     if (window.matchMedia('(max-width: 1200px)').matches) {
@@ -14,6 +26,26 @@ $(document).ready(function() {
       $(this).toggleClass('active');
     }
   });
+
+  
+    //Кнопка вверх
+    var button = $('.top-btn');	
+    $(window).scroll (function () {
+      if ($(this).scrollTop () > 600) {
+        button.fadeIn();
+      } else {
+        button.fadeOut();
+      }
+    });	 
+    button.on('click', function() {
+    $('body, html').animate({
+    scrollTop: 0
+    }, 800);
+    return false;
+    });	
+
+  //FancyBox
+  $('.fancybox').fancybox();
 
   //Слайдер
   $('.brand-page__slider').slick({
@@ -29,9 +61,36 @@ $(document).ready(function() {
       {
         breakpoint: 1421,
         settings: {
+          variableWidth: false,
           slidesToShow: 4,
           slidesToScroll: 4,
-          dots: true,
+        }
+      },
+      {
+        breakpoint: 1146,
+        settings: {
+          speed: 500,
+          variableWidth: false,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 875,
+        settings: {
+          speed: 500,
+          variableWidth: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 616,
+        settings: {
+          speed: 300,
+          variableWidth: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       },
     ]
