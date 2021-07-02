@@ -27,22 +27,26 @@ $(document).ready(function() {
     }
   });
 
+  //Выпадания списка в каталоге
+  $('.catalog-page__sidebar-category').on('click', function() {
+    $(this).next().slideToggle('slow');
+  });
   
-    //Кнопка вверх
-    var button = $('.top-btn');	
-    $(window).scroll (function () {
-      if ($(this).scrollTop () > 600) {
-        button.fadeIn();
-      } else {
-        button.fadeOut();
-      }
-    });	 
-    button.on('click', function() {
+  //Кнопка вверх
+  var button = $('.top-btn');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 600) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+  });	 
+  button.on('click', function() {
     $('body, html').animate({
-    scrollTop: 0
+      scrollTop: 0
     }, 800);
     return false;
-    });	
+  });	
 
   //FancyBox
   $('.fancybox').fancybox();
