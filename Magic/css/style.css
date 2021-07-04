@@ -2130,6 +2130,7 @@ body {
   }
   .top-header._active {
     transform: translateX(0px);
+    z-index: 5;
   }
   .top-header__close-btn::after,
   .top-header__close-btn::before {
