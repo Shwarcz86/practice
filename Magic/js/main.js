@@ -67,7 +67,7 @@ $(document).ready(function() {
   //FancyBox
   $('.fancybox').fancybox();
 
-  //Слайдер
+  //Слайдер - главная
   $('.brand-page__slider').slick({
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -116,23 +116,73 @@ $(document).ready(function() {
     ]
   });
 
-});
+  //Слайдер - карточка товара
+  $('.big-slider').slick ({
+    asNavFor: '.small-slider',
+    slidesToShow: 1,
+    sliderToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    //adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 561,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  })
+  $('.small-slider').slick ({
+    asNavFor: '.big-slider',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    focusOnSelect: true,
+    centerMode: true,
+    variableWidth: true,
+    prevArrow: '<button class="small-slider-btn small-slider-btnprev"><img src="img/icons/arrows-slider-left.svg" alt=""></button>',
+    nextArrow: '<button class="small-slider-btn small-slider-btnnext"><img src="img/icons/arrows-slider-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 446,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          //centerMode: false,
+          //variableWidth: false,
+        }
+      },
+    ]
+  })
 
+  //Переключение цветов
+  $('.information-card__color-list li').click(function() {
+    $('.information-card__color-list li').removeClass('_active');
+    $(this).addClass('_active');
+  });
+  //Переключение объема
+  $('.information-card__size-list li').click(function() {
+    $('.information-card__size-list li').removeClass('_active');
+    $(this).addClass('_active');
+  });
 
-/*
-    //ТАБЫ
+  //ТАБЫ
   $('.tab').on('click', function(e) { 
     e.preventDefault();
-
+  
     $($(this).siblings()).removeClass('tab_active'); 
     $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content_active');
-
+  
     $(this).addClass('tab_active'); 
     $($(this).attr('href')).addClass('tabs-content_active');
-
-    if (window.matchMedia('(max-width: 580px)').matches) { // аналог media-queries
+  
+    if (window.matchMedia('(max-width: 580px)').matches) {
       $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
     }
   });
 
-*/
+});
