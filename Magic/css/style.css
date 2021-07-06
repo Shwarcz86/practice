@@ -2134,7 +2134,8 @@ body._no-scroll:before {
   width: 10px;
   height: 10px;
   background: url('../img/icons/arrow-partners.svg') 0 0 no-repeat;
-  top: 7px;
+  transform: translateY(-50%);
+  top: 50%;
   right: -22px;
   transition: all .3s;
 }
