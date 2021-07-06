@@ -2,16 +2,20 @@ $(document).ready(function() {
 
   $('.bottom-header__open-btn').on('click', function() {
     $('.bottom-header').addClass('_active');
+    $('body').addClass('_no-scroll');
   });
   $('.bottom-header__close-btn').on('click', function() {
     $('.bottom-header').removeClass('_active');
+    $('body').removeClass('_no-scroll');
   });
 
   $('.top-header__open-btn').on('click', function() {
     $('.top-header').addClass('_active');
+    $('body').addClass('_no-scroll');
   });
   $('.top-header__close-btn').on('click', function() {
     $('.top-header').removeClass('_active');
+    $('body').removeClass('_no-scroll');
   });
 
   //Выезжающее меню
