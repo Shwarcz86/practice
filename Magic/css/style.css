@@ -2029,7 +2029,7 @@ body._no-scroll:before {
   flex: 0 1 782px;
   margin: 0px 30px 0px 0px;
 }
-.page__about article h1 {
+.page__about h1 {
   font-family: 'CeraProBold';
   font-weight: 700;
   font-size: 40px;
@@ -2313,7 +2313,7 @@ body._no-scroll:before {
   .information-card__title,
   .news-page__title,
   .articles-page article h1,
-  .page__about article h1,
+  .page__about h1,
   .page__partners h1 {
     font-size: 34px;
     margin: 0px 0px 20px 0px;
@@ -2321,7 +2321,7 @@ body._no-scroll:before {
   .articles-page article h1 {
     line-height: 42px;
   }
-  .page__about article h1 {
+  .page__about h1 {
     margin: 0px 0px 10px 0px;
     line-height: 40px;
   }
@@ -2733,7 +2733,7 @@ body._no-scroll:before {
   .information-card__title,
   .news-page__title,
   .articles-page article h1,
-  .page__about article h1,
+  .page__about h1,
   .page__partners h1 {
     font-size: 26px;
     line-height: 34px;
