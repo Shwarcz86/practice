@@ -4,492 +4,318 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/libs/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <title>О компании</title>
+  <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
+  <title>О нас</title>
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__column">
-            <a class="logo" href="#">
-              <img src="img/icons/logo.svg" alt="logo"/>
-              <span>Заправка газгольдеров в Крыму</span>
-            </a>
-            <a class="logo-mobile" href="#">
-              <img src="img/icons/logo1.svg" alt="logo-mobile"/>
-            </a>
-            <div class="header__box">
-              <p class="header__address">
-                г. Симферополь,<br>
-                ул. г. Аджимушкая, 5/15 кв 2
-              </p>
+      <div class="header__top top-header">
+        <span class="top-header__close-btn"></span>
+        <div class="container">
+          <div class="top-header__inner">
+            <nav class="top-header__menu">
+              <ul class="top-header__menu-list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="top-header__menu-info">
+              <span>г. Симферополь, Пр. Победы, 315</span>
+              <span>ПН-ПТ: с 8:00 до 18:00</span>
             </div>
           </div>
-          <div class="header__column">
-            <div class="header__phone-box">
-              <a class="header__phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
-              <a class="header__call-me" data-fancybox="" data-src="#modal-form" href="#" rel="nofollow">Заказать звонок</a>
-              <a class="header__phone-icon" href="tel:+79787308058" rel="nofollow">
-                <img src="img/icons/phone.svg" alt="phone">
-              </a>
-            </div>
-            <button class="header__btn" type="button">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-          <nav class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">О Компании</a>
-              </li>
-              <li class="header__menu-item header__menu-item_parent">
-                <a class="header__menu-link" href="#">Услуги</a>
-                <div class="header__menu-submenu header-submenu">
-                  <div class="header-submenu__item">
-                    <ul class="header-submenu__list">
-                      <li><a href="#">Доставка газа для АЗС</a></li>
-                      <li><a href="#">Заправка газгольдеров</a></li>
-                    </ul>
+        </div>
+      </div>
+      <div class="top-header__open-btn _inner">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo__mobile">
+        <a class="logo" href="#">
+          <img src="img/icons/logo-header.svg" alt="" />
+        </a>
+      </div>
+      <div class="header__middle middle-header">
+        <div class="container">
+          <div class="middle-header__inner">
+            <div class="middle-header__column">
+              <div class="middle-header__box">
+                <a class="logo" href="#">
+                  <img src="img/icons/logo-header.svg" alt="" />
+                </a>
+                <div class="middle-header__social">
+                  <h6 class="middle-header__social-title">Задайте вопрос напрямую в:</h6>
+                  <div class="middle-header__social-items">
+                    <a class="middle-header__social-link _viber" href="viber://chat?number=79782191234" rel="nofollow" target="_blank">
+                      Viber
+                    </a>
+                    <a class="middle-header__social-link _whatsapp" href="https://api.whatsapp.com/send?phone=79782191234" rel="nofollow" target="_blank">
+                      Whats App
+                    </a>
                   </div>
                 </div>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Доставка и оплата</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Документация</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Статьи</a>
-              </li>
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </div>
+            <div class="middle-header__column">
+              <div class="middle-header__box">
+                <div class="middle-header__cart">
+                  <button class="middle-header__cart-btn">
+                    <span class="middle-header__cart-img">
+                      <img src="img/icons/shopping-cart.svg" alt="cart"/>
+                    </span>
+                    <span class="middle-header__cart-items">10</span>
+                  </button>
+                  <span class="middle-header__cart-price"><span class="rub">15 000</span></span>
+                </div>
+                <div class="middle-header__phone-box">
+                  <a class="middle-header__phone" href="tel:+79782191234" rel="nofollow">+7 (978) 219 12 34</a>
+                  <a class="middle-header__call-me fancybox" href="#modal-form" rel="nofollow">Заказать звонок</a>
+                  <a class="middle-header__phone-icon" href="tel:+79782191234" rel="nofollow">
+                    <img src="img/icons/phone.svg" alt="phone">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header__open-btn _inner">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__bottom bottom-header">
+        <span class="bottom-header__close-btn"></span>
+        <div class="container">
+          <ul class="bottom-header__menu">
+            <li class="menu-item-has-children">
+              <a href="#">Интерьерные краски</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Грунты</a>
+                </li>
+                <li>
+                  <a href="#">Для потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для стен и потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для кухни и ванной</a>
+                </li>
+                <li>
+                  <a href="#">Для обоев</a>
+                </li>
+                <li>
+                  <a href="#">Структурные краски</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Фасадные краски</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Грунты</a>
+                </li>
+                <li>
+                  <a href="#">Для потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для стен и потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для кухни и ванной</a>
+                </li>
+                <li>
+                  <a href="#">Для обоев</a>
+                </li>
+                <li>
+                  <a href="#">Структурные краски</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Декоративная штукатурка</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Грунты</a>
+                  </li>
+                  <li>
+                    <a href="#">Для потолков</a>
+                  </li>
+                  <li>
+                    <a href="#">Для стен и потолков</a>
+                  </li>
+                  <li>
+                    <a href="#">Для кухни и ванной</a>
+                  </li>
+                  <li>
+                    <a href="#">Для обоев</a>
+                  </li>
+                  <li>
+                    <a href="#">Структурные краски</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Дерево-защита</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Грунты</a>
+                </li>
+                <li>
+                  <a href="#">Для потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для стен и потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для кухни и ванной</a>
+                </li>
+                <li>
+                  <a href="#">Для обоев</a>
+                </li>
+                <li>
+                  <a href="#">Структурные краски</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Краски по металлу</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Грунты</a>
+                </li>
+                <li>
+                  <a href="#">Для потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для стен и потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для кухни и ванной</a>
+                </li>
+                <li>
+                  <a href="#">Для обоев</a>
+                </li>
+                <li>
+                  <a href="#">Структурные краски</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Эмали</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Грунты</a>
+                </li>
+                <li>
+                  <a href="#">Для потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для стен и потолков</a>
+                </li>
+                <li>
+                  <a href="#">Для кухни и ванной</a>
+                </li>
+                <li>
+                  <a href="#">Для обоев</a>
+                </li>
+                <li>
+                  <a href="#">Структурные краски</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-
     <main class="page">
       <div class="breadcrumbs">
         <div class="container">
           <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Главная</a>
+            <li>
+              <a href="#">Главная</a>
             </li>
-            <li class="breadcrumbs__item">
-              <span class="breadcrumbs__link">О компании</span>
+            <li>
+              <span>О нас</span>
             </li>
           </ul>
         </div>
       </div>
-      <article class="page__company-info info-company">
+      <section class="page__about">
         <div class="container">
-          <h1 class="info-company__title">О нашей компании</h1>
-          <div class="info-company__inner">
-            <div class="info-company__text-box">
-              <p class="info-company__text info-company__text1">
-                Значимость этих проблем <b>настолько очевидна</b>, что граница 
-                обучения кадров играет важную роль в формировании дальнейших 
-                направлений развития. Не следует, однако, забывать, что 
-                высокотехнологичная концепция общественного уклада предопределяет 
-                высокую востребованность поставленных обществом задач.
+          <h1>О компании</h1>
+          <div class="page__about-inner">
+            <article>
+              <p>
+                Даже если вы далеки от точных наук, задумав лакокрасочные работы, придется быть расчетливым и скрупулезным. <b>Неверно рассчитав</b> нужное количество материала, вы столкнетесь с рядом проблем. Придется идти в магазин и докупать краску – того же цвета и производителя. Будет неприятно, если нужного материала в магазине не окажется. Возможно, даже придется перекрашивать поверхность в другой цвет, а это дополнительные затраты. Если перестрахуетесь и купите материала больше, чем нужно, тоже нехорошо – зря превысите бюджет.
               </p>
-              <ul class="info-company__text-list">
-                <li class="info-company__text-item">
-                  • подходят для <b>любых типов</b> окон (даже старых деревянных, 
-                  чего уж говорить о евроокнах);
-                </li>
-                <li class="info-company__text-item">
-                  • имеют малые габариты – ткань рольштор тонкая, 
-                  но прочная и не просвечивает, а само полотно перекрывает 
-                  только стеклопакет, не доставая даже до подоконника и не 
-                  занимая на нем место;
-                </li>
-                <li class="info-company__text-item">
-                  • не мешают освещению – как свернете штору, 
-                  так и останется она сверху, не перекрывая ни 
-                  миллиметра стекла;
-                </li>
-              </ul>
-              <p class="info-company__text">
-                В целом, конечно, внедрение <b>современных методик</b> позволяет выполнить 
-                важные задания по разработке стандартных подходов. Следует отметить, 
-                что современная методология разработки говорит о возможностях 
-                первоочередных требований. Следует отметить, что сложившаяся структура 
-                организации выявляет срочную потребность стандартных подходов. 
-                Предварительные выводы неутешительны: экономическая повестка 
-                сегодняшнего дня обеспечивает широкому.
+              <p>
+               <b>Даже если вы далеки</b> от точных наук, задумав лакокрасочные работы, придется быть расчетливым и скрупулезным. Неверно рассчитав нужное количество материала, вы столкнетесь с рядом проблем. Придется идти в магазин и докупать краску – того же цвета и производителя.
               </p>
-            </div>
-            <div class="info-company__img">
-              <img src="img/company-img.jpg" alt="avtogas-img" />
+              <p>
+                Даже если вы далеки от точных наук, задумав лакокрасочные работы, придется быть расчетливым и скрупулезным. Неверно рассчитав нужное количество материала, вы столкнетесь с рядом проблем. Придется идти в магазин и докупать краску – того же цвета и производителя. Будет неприятно, если нужного материала в магазине не окажется. Возможно, даже придется перекрашивать поверхность в другой цвет, а это дополнительные затраты. Если перестрахуетесь и купите материала больше, чем нужно, тоже нехорошо – зря превысите бюджет.
+              </p>
+            </article>
+            <div class="page__about-img">
+              <img src="img/about-img.jpg" alt="" />
             </div>
           </div>
-        </div>
-      </article>
-      <section class="advantages advantages-about">
-        <div class="container">
-          <h3 class="advantages__title">Почему с нами выгодно работать?</h3>
-          <p class="advantages__subtitle">Доставим бытовой газ, заполним газгольдер любого объема в Крыму и Севастополе </p>
-          <ul class="advantages__list">
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>01</span>
-                Работаем на крымском рынке 15 лет
-              </h5> 
-              <p class="advantages__list-text">
-                За это время накопили богатый опыт, расширили команду, приобрели лучшее оборудование и спецтехнику, лицензии, чтобы Вы могли получать очищенный газ в срок в самых труднодоступных уголках Крыма в любое время года.
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>02</span>
-                Своя газонаполнительная станция в Бахчисарае
-              </h5> 
-              <p class="advantages__list-text">
-                Благодаря газонаполнительной станции у нас всегда есть газ в запасе, который проходит проверку качества и Вам не придется ждать поставки очищенного пропан-бутана с материковой части России
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>03</span>
-                Свой спецтранспорт по доставке сжиженных газов
-              </h5> 
-              <p class="advantages__list-text">
-                В нашем автопарке 5 газовозов разного объема, оборудованные рукавами до 50 м и позволяющие доставить газ в удаленную и труднодоступную местность без заезда на участок и порчи его внешнего вида
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>04</span>
-                Фильтрация газа перед доставкой
-              </h5> 
-              <p class="advantages__list-text">
-                Газ, который приходит от производителя бывает
-                с примесями серы, воды, масла и др., поэтому мы фильтруем газ на газонаполнительной станции, чтобы Вы получили очищенный газ и Ваши котлы не ломались
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>05</span>
-                Доставка газа по расписанию или в день заказа
-              </h5> 
-              <p class="advantages__list-text">
-                Мы наладили доставку практически по всей территории Крыма, поэтому вы можете получить газ доставку газа по расписанию или в день заказа. Обычно в зимний период доставка занимает 1-2 дня, в летний - в течение дня
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>06</span>
-                Мы работаем честно и заботимся о Вас
-              </h5> 
-              <p class="advantages__list-text">
-                Работаем открыто и честно, заливаем литр в литр по счетчику, который установлен на газовозах стоят счетчики выданного газа, при заправке водители выбивают чеки, а менеджеры и другие работники всегда могут проконсультировать
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>07</span>
-                Покупаем непосредственно с товарно-сырьевой биржей СПБМТСБ и Газпромом
-              </h5> 
-              <p class="advantages__list-text">
-                Это общероссийская биржа, где приобретают и продают все нефтепродукты, в т.ч. Газпром. Газ поступает на газонаполнительную станциюв Бахчисарае с заводов Газпрома «Сургут» и «Каргала», а оттуда разливается по газовозам.
-              </p>
-            </li>
-            <li class="advantages__list-item">
-              <h5 class="advantages__list-title"><span>08</span>
-                Мы работаем соблюдая все нормативы и требования
-              </h5> 
-              <p class="advantages__list-text">
-                Весь товар приходит с паспортами качества
-                от производителя. С другими документами
-                Вы можете ознакомиться на странице  
-                <a href="#" rel="nofollow">«Документация»</a> 
-              </p>
-            </li>
-          </ul>
-          <form class="advantages__form advantages__form-hidden" action="#">
-            <input class="advantages__form-input input-form" type="tel" placeholder="+7 (___) ___-__-__">
-            <input class="btn advantages__form-btn" type="submit" value="Получить консультацию газовщика">
-          </form>
-          <img class="advantages__img" src="img/3.png" alt="balloon">
         </div>
       </section>
-      <div class="page__command">
-        <div class="container">
-          <h3 class="page__command-title">
-            Наша команда
-          </h3>
-          <p class="page__command-text">
-            В нашей команде трудятся около 50 человек, среди них административный и
-            управляющий персонал, инженеры, водители, менеджеры и другие
-          </p>
-          <ul class="page__command-box">
-            <li class="page__command-item">
-              <a class="page__command-link" data-fancybox="gallery" href="img/command-img1-big.png" >
-                <img class="page__command-img" src="img/command-img1-mini.jpg" alt="">
-              </a>
-            </li>
-            <li class="page__command-item">
-              <a class="page__command-link" data-fancybox="gallery" href="img/command-img2-big.png" >
-                <img class="page__command-img" src="img/command-img2-mini.jpg" alt="">
-              </a>
-            </li>
-            <li class="page__command-item">
-              <a class="page__command-link" data-fancybox="gallery" href="img/command-img3-big.png" >
-                <img class="page__command-img" src="img/command-img3-mini.jpg" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="page__brand brand-page brand-page_about">
-        <div class="container">
-          <h4 class="brand-page__title">
-            Многие годы мы <span>заправляем газгольдеры</span> для крупных и мелких 
-            сетей АЗС, предприятий и частных домов по Крыму и Севастополю
-          </h4>
-          <div class="brand-page__slider">
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/01.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/02.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/03.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/04.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/01.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/01.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/02.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/03.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/04.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/01.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/01.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/02.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/03.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/04.png" alt="" />
-              </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/01.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page__reviews reviews-page">
-        <div class="container">
-          <h3 class="reviews-page__title"> Отзывы наших клиентов</h3>
-        </div>
-        <div class="container-fluid">
-          <div class="reviews-page__slider">
-            <div class="reviews-page__slider-item">
-              <div class="reviews-page__slider-inner">
-                <div class="reviews-page__slider-box">
-                  <div class="reviews-page__slider-img">
-                    <img src="img/slider-avatar-1.png" alt="" />
-                  </div>
-                  <span class="reviews-page__slider-date">14.08.2021</span>
-                </div>
-                <div class="reviews-page__slider-comment">
-                  <span class="reviews-page__slider-name">
-                    Владимир Владимирович
-                  </span>
-                  <p class="reviews-page__slider-text">
-                    С другой стороны, сложившаяся структура организации предопределяет большую высокую востребованность экспериментов, поражающих по своей масштабности и при этом  грандиозности. Представители современных социальных резервов.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-page__slider-item">
-              <div class="reviews-page__slider-inner">
-                <div class="reviews-page__slider-box">
-                  <div class="reviews-page__slider-img">
-                    <img src="img/slider-avatar-2.png" alt="" />
-                  </div>
-                  <span class="reviews-page__slider-date">16.09.2021</span>
-                </div>
-                <div class="reviews-page__slider-comment">
-                  <span class="reviews-page__slider-name">
-                    Александр Иващенко
-                  </span>
-                  <p class="reviews-page__slider-text">
-                    С другой стороны, сложившаяся структура организации предопределяет большую высокую востребованность экспериментов, поражающих по своей масштабности и при этом  грандиозности. Представители современных социальных резервов.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-page__slider-item">
-              <div class="reviews-page__slider-inner">
-                <div class="reviews-page__slider-box">
-                  <div class="reviews-page__slider-img">
-                    <img src="img/slider-avatar-1.png" alt="" />
-                  </div>
-                  <span class="reviews-page__slider-date">14.08.2021</span>
-                </div>
-                <div class="reviews-page__slider-comment">
-                  <span class="reviews-page__slider-name">
-                    Владимир Владимирович
-                  </span>
-                  <p class="reviews-page__slider-text">
-                    С другой стороны, сложившаяся структура организации предопределяет большую высокую востребованность экспериментов, поражающих по своей масштабности и при этом  грандиозности. Представители современных социальных резервов.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-page__slider-item">
-              <div class="reviews-page__slider-inner">
-                <div class="reviews-page__slider-box">
-                  <div class="reviews-page__slider-img">
-                    <img src="img/slider-avatar-2.png" alt="" />
-                  </div>
-                  <span class="reviews-page__slider-date">16.09.2021</span>
-                </div>
-                <div class="reviews-page__slider-comment">
-                  <span class="reviews-page__slider-name">
-                    Александр Иващенко
-                  </span>
-                  <p class="reviews-page__slider-text">
-                    С другой стороны, сложившаяся структура организации предопределяет большую высокую востребованность экспериментов, поражающих по своей масштабности и при этом  грандиозности. Представители современных социальных резервов.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <button class="top-btn"></button>
     </main>
-
     <footer class="footer">
-      <div class="container">
-        <div class="footer__top">
-          <div class="footer__column">
-            <a class="footer__logo" href="#">
-              <img src="img/icons/logo-footer.svg" alt="logo"/>
-              <span class="logo__footer-span">Заправка газгольдеров в Крыму</span>
-            </a>
-          </div>
-          <div class="footer__column">
-            <nav class="footer__navigation">
-              <ul class="footer__navigation-list">
-                <li class="footer__navigation-item">
-                  <a class="footer__navigation-link" href="#" rel="nofollow">
-                    О Компании
-                  </a>
-                </li>
-                <li class="footer__navigation-item">
-                  <a class="footer__navigation-link" href="#" rel="nofollow">
-                    Доставка и оплата
-                  </a>
-                </li>
-                <li class="footer__navigation-item">
-                  <a class="footer__navigation-link" href="#" rel="nofollow">
-                    Документация
-                  </a>
-                </li>
-                <li class="footer__navigation-item">
-                  <a class="footer__navigation-link" href="#" rel="nofollow">
-                    Статьи
-                  </a>
-                </li>
-                <li class="footer__navigation-item">
-                  <a class="footer__navigation-link" href="#" rel="nofollow">
-                    Контакты
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer__column">
-            <ul class="footer__services-list">
-              <li class="footer__services-item">
-                <a class="footer__services-link" href="#" rel="nofollow">
-                  Доставка газа для АЗС
-                </a>
-              </li>
-              <li class="footer__services-item">
-                <a class="footer__services-link" href="#" rel="nofollow">
-                  Заправка газгольдеров
-                </a>
-              </li>
-              <li class="footer__services-item">
-                <a class="footer__services-link" href="#" rel="nofollow">
-                  Услуги по транспортировке сжиженного газа
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__adress">
-              <p class="footer__city">г. Симферополь,</p>
-              <p class="footer__street">ул. г. Аджимушкая, 5/15 кв 2</p>
-              <a class="footer__phone" href="tel:+79787308058" rel="nofollow">+7 (978) 730-80-58</a>
+      <div class="footer__top top-footer">
+        <div class="container">
+          <div class="top-footer__inner">
+            <div class="top-footer__column">
+              <a href="#" class="logo">
+                <img src="img/icons/logo-footer.svg" alt="" />
+              </a>
+              <span class="top-footer__address">
+                г. Симферополь, Пр. Победы, 315
+              </span>
+              <div class="top-footer__social">
+                <a class="top-footer__phone" href="tel:+79782191234" rel="nofollow">+7 (978) 219 12 34</a>
+                <a class="top-footer__social-link _viber-footer" href="viber://chat?number=79782191234" rel="nofollow" target="_blank"></a>
+                <a class="top-footer__social-link _whatsapp-footer" href="https://api.whatsapp.com/send?phone=79782191234" rel="nofollow" target="_blank"></a>
+              </div>
             </div>
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <img class="footer__social-img footer__social-img_vk" src="img/icons/vk.svg" alt="vk" />
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <img class="footer__social-img footer__social-img_inst" src="img/icons/insta.svg" alt="instagram" />
-                </a>
-              </li>
-            </ul>
+            <div class="top-footer__column">
+              <nav class="top-footer__navigation">
+                <ul class="top-footer__navigation-list">
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="top-footer__column">
+              <div class="top-footer__worktime">
+                Режим работы:<br>
+                ПH-ПT: с 9:00 до 18:00<br>
+                Воскресенье: Выходной
+              </div>
+              <div class="top-footer__email">
+                <span>E-mail:</span>
+                <a class="contacts-page__info-mail" href="mailto:kolorstudiya@yandex.ru" rel="nofollow">kolorstudiya@yandex.ru</a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="footer__bottom">
           <div class="footer__bottom-inner">
             <a class="footer__bottom-confidentiality" href="#" rel="nofollow">
@@ -498,19 +324,50 @@
             <p class="footer__bottom-copyright">
               г. Симферополь © Copyright  2021 г.
             </p> 
-            <a class="footer__bottom-development" href="#" rel="nofollow">Сделано в
+            <a class="footer__bottom-development" href="#" rel="nofollow" target="_blank">Сделано в
               <img src="img/icons/sheer.svg" alt="logo-sheer" />
             </a>
           </div>
         </div>
       </div>
-      <span class="footer__line"></span>
+
+      <div class="modal-block" id="modal-form">
+        <div class="modal-wrap">
+          <div class="block-form">
+            <div class="block-form__title">
+              Оставь заявку и мы вам перезвоним
+            </div>
+            <div class="block-form__subtitle">
+              Заполните форму и мы свяжемся 
+              с Вами в течение рабочего дня
+            </div>
+            <form>
+              <div class="item-input">
+                <input type="text" placeholder="Ваше имя" required="required">
+              </div>
+              <div class="item-input">
+                <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+              </div>
+              <button class="btn btn-main" type="submit">Заказать звонок</button>
+              <div class="checkbox-wrap">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" required="required" checked="checked" />
+                    <span>Согласие на обработку персональных данных</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/libs/jquery/jquery-1.11.1.min.js"></script>
+  <script src="js/libs/slick/slick.min.js"></script>
+  <script src="js/libs/maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="js/libs/fancybox/jquery.fancybox.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
 </body>
-</html>
