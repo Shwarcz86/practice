@@ -1713,16 +1713,16 @@ body._no-scroll:before {
   margin: 0px 0px 0px 25px;
 }
 .block-palette__link {
-  font-family: 'CeraProBlack';
-  font-weight: 900;
+  font-family: 'CeraProMedium';
+  font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: #343E52;
   margin: 0px 35px 0px 0px;
 }
 .block-palette__link.tab_active {
-  font-family: 'CeraProMedium';
-  font-weight: 500;
+  font-family: 'CeraProBlack';
+  font-weight: 900;
 }
 .palette-content__box {
   padding: 25px;
