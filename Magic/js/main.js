@@ -183,10 +183,11 @@ $(document).ready(function() {
   
     $(this).addClass('tab_active'); 
     $($(this).attr('href')).addClass('tabs-content_active');
-  
+    /*
     if (window.matchMedia('(max-width: 580px)').matches) {
       $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
     }
+    */
   });
 
 });
