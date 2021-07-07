@@ -1705,6 +1705,8 @@ body._no-scroll:before {
 }
 .block-palette__img img {
   border-radius: 8px;
+  object-fit: contain;
+  width: 100%;
 }
 .block-palette__box {
   flex: 1 1 580px;
