@@ -1661,7 +1661,7 @@ font-family: 'Oswald', sans-serif;
     margin: 0px 30px 15px 0px;
   }
   .top-btn {
-    bottom: 40px;
+    bottom: 30px;
   }
 }
 @media (max-width: 650px) {
@@ -1858,6 +1858,9 @@ font-family: 'Oswald', sans-serif;
     width: 120px;
     margin: 0 auto;
   }
+  .top-btn {
+    bottom: 60px;
+  }
 }
 @media (max-width: 460px) {
   .services-page__title {
@@ -1902,6 +1905,9 @@ font-family: 'Oswald', sans-serif;
   .footer__bottom-development img {
     margin: 0px 0px 0px 10px;
   }
+  .top-btn {
+    bottom: 20px;
+  }
 }
 @media (max-width: 390px) {
   .banner-content {
@@ -1931,8 +1937,5 @@ font-family: 'Oswald', sans-serif;
   }
   .brand-page__title {
     margin: 0px 0px 15px 0px;
-  }
-  .top-btn {
-    bottom: 20px;
   }
 }
