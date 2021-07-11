@@ -1562,6 +1562,9 @@ font-family: 'Oswald', sans-serif;
   .features-page__list li:nth-child(3n) {
     margin: 0px 0px 0px 0px;
   }
+  .features-page__list {
+    justify-content: center;
+  }
 }
 @media (max-width: 700px) {
   .content-banner__middle {
@@ -1697,6 +1700,7 @@ font-family: 'Oswald', sans-serif;
   }
   .advantages-page__list {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .advantages-page__list li {
     width: calc((100% - 20px) / 2);
