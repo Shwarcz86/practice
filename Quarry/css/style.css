@@ -1896,6 +1896,9 @@ font-family: 'Oswald', sans-serif;
   .page__about article h3 {
     padding: 0 0 20px;
   }
+  .gallery-page::before {
+    display: none;
+  }
 }
 @media (max-width: 1150px) {
   .banner-content {
@@ -2650,5 +2653,10 @@ font-family: 'Oswald', sans-serif;
   .variability-page__container {
     padding: 0;
     background-color: #fafafa;
+  }
+  .small-slider {
+    margin: auto 10px auto 0px;
+    text-align: center;
+    flex: 0 0 80px;
   }
 }
