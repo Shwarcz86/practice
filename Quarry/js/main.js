@@ -174,8 +174,6 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            //centerMode: false,
-            //variableWidth: false,
           }
         },
         {
@@ -183,8 +181,6 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            //centerMode: false,
-            //variableWidth: false,
           }
         },
         {
@@ -192,8 +188,13 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            //centerMode: false,
-            //variableWidth: false,
+          }
+        },
+        {
+          breakpoint: 521,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
           }
         },
       ]
