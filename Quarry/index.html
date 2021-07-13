@@ -1,513 +1,492 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="js/libs/slick/slick.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
-  <title>Главная</title>
-</head>
-<body class="home">
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__top top-header">
-        <div class="container">
-          <div class="top-header__inner">
-            <span class="top-header__worktime">
-              <img src="img/icons/time.svg" alt="" />
-              Режим работы: пн-сб 08:00 - 17:00
-            </span>
-            <span class="top-header__address">
-              <img src="img/icons/mark.svg" alt="" />
-              Старый Крым, ул. Можевеловая, 13а
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom bottom-header">
-        <div class="container">
-          <div class="bottom-header__inner">
-            <a class="logo _header" href="#">
-              <img src="img/icons/logo-header.svg" alt="logo" />
-              <span>Добыча, продажа и доставка щебня, песка, отсева</span>
-            </a>
-            <nav class="bottom-header__menu">
-              <ul class="bottom-header__menu-list">
-                <li><a href="#">Щебень</a></li>
-                <li><a href="#">Песок</a></li>
-                <li><a href="#">Отсев</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
-            <div class="bottom-header__contacts">
-              <a class="bottom-header__phone-img" href="tel:+79780426725" rel="nofollow">
-                <img src="img/icons/phone-header.svg" alt="" />
-              </a>
-              <div class="bottom-header__contacts-box">
-                <a class="bottom-header__phone" href="tel:+79780426725" rel="nofollow">+7(978) 042-67-25</a>
-                <a class="bottom-header__mail" href="mailto:st_karier@bk.ru">st_karier@bk.ru</a>
-              </div>
-            </div>
-            <div class="bottom-header__menu-btn">
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="page">
-      <div class="page__banner banner-page">
-        <div class="container-fluid">
-          <div class="banner-page__slider">
-            <div class="banner-page__slider-item">
-              <div class="banner-page__box">
-                <img src="img/bg-slide1.jpg" alt="slide1"/>
-                <div class="container">
-                  <div class="banner-page__content banner-content">
-                    <div class="content-banner__top">
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor _text1">
-                        <span>купить с доставкой</span>
-                      </span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                    </div>
-                    <div class="content-banner__middle">
-                      <a class="content-banner__price-download" href="#" rel="nofollow" target="_blank">
-                        <svg width="34" height="37" viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M17 36.3159L0 20.4277H9.71429V0H24.2857V20.4277H34L17 36.3159Z" fill="#FFCB00"/>
-                          </svg>         
-                        Прайс
-                      </a>
-                      <span class="content-banner__text-title">Песок</span>
-                      <div class="content-banner__text-box">
-                        <span class="content-banner__text1">300
-                          <span class="content-banner__text2">цена от</span>
-                          <span class="content-banner__text3">за тонну</span>
-                        </span>
-                      </div>
-                      <a class="content-banner__phone-btn" href="tel:+79780426725" rel="nofollow">
-                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.68259 1.55356C7.80486 -0.830155 10.5014 -0.409499 11.7787 2.39487C14.3333 7.44275 16.1782 9.96668 14.3333 11.9297C10.9271 14.1732 8.51447 15.295 9.79177 17.6787C12.3464 23.7081 17.3136 28.8962 23.2743 31.981C25.5451 33.3832 26.8224 30.9995 29.3769 27.9147C31.5058 26.232 33.9184 28.0549 38.8857 30.9995C41.5822 32.5419 41.7241 35.0658 39.1695 38.0104C24.2678 54.5562 -13.0576 15.1548 4.68259 1.55356Z" fill="black"/>
-                          </svg>                        
-                        Позвонить
-                      </a>
-                    </div>
-                    <div class="content-banner__bottom">
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor _text2">
-                        <span>дробленый</span>
-                      </span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="banner-page__slider-item">
-              <div class="banner-page__box">
-                <img src="img/bg-slide2.jpg" alt="slide1"/>
-                <div class="container">
-                  <div class="banner-page__content banner-content">
-                    <div class="content-banner__top">
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor _text1">
-                        <span>купить с доставкой</span>
-                      </span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                    </div>
-                    <div class="content-banner__middle">
-                      <a class="content-banner__price-download" href="#" rel="nofollow" target="_blank">
-                        <svg width="34" height="37" viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M17 36.3159L0 20.4277H9.71429V0H24.2857V20.4277H34L17 36.3159Z" fill="#FFCB00"/>
-                          </svg>         
-                        Прайс
-                      </a>
-                      <span class="content-banner__text-title">Щебень</span>
-                      <div class="content-banner__text-box">
-                        <span class="content-banner__text1">400
-                          <span class="content-banner__text2">цена от</span>
-                          <span class="content-banner__text3">за тонну</span>
-                        </span>
-                      </div>
-                      <a class="content-banner__phone-btn" href="tel:+79780426725" rel="nofollow">
-                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.68259 1.55356C7.80486 -0.830155 10.5014 -0.409499 11.7787 2.39487C14.3333 7.44275 16.1782 9.96668 14.3333 11.9297C10.9271 14.1732 8.51447 15.295 9.79177 17.6787C12.3464 23.7081 17.3136 28.8962 23.2743 31.981C25.5451 33.3832 26.8224 30.9995 29.3769 27.9147C31.5058 26.232 33.9184 28.0549 38.8857 30.9995C41.5822 32.5419 41.7241 35.0658 39.1695 38.0104C24.2678 54.5562 -13.0576 15.1548 4.68259 1.55356Z" fill="black"/>
-                          </svg>                        
-                        Позвонить
-                      </a>
-                    </div>
-                    <div class="content-banner__bottom">
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor _text1">
-                        <span>различные фракции</span>
-                      </span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                      <span class="banner-content__decor"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-      <section class="page__products products-page">
-        <div class="products-page__inner">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="js/libs/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
+    <title>Главная</title>
+  </head>
+  <body class="home">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top top-header">
           <div class="container">
-            <h2 class="title products-page__title"><span>Наша</span> продукция</h2>
-            <div class="products-page__items products">
-              <div class="item products__item">
-                <span class="products__item-line"></span>
-                <div class="products__item-box">
-                  <a class="products__item-img" href="#">
-                    <img src="img/products/product-1.jpg" alt="product-1" />
-                  </a>
-                  <div class="products__item-info">
-                    <div class="products__item-column">
-                      <a class="products__item-title" href="#">Щебень
-                        <span class="products__item-subtile">
-                          Различные фракции от 5-70 мм
-                        </span>
-                      </a>
-                    </div>
-                    <div class="products__item-column">
-                      <span class="products__item-price">Цена за т от: 
-                        <span class="rub">700</span> 
-                      </span>
-                    </div>
-                  </div>
-                  <div class="products__item-buttons">
-                    <a class="products__item-more" href="#">Подробнее</a>
-                    <a class="btn products__item-order fancybox" href="#">Заказать</a>
-                  </div>
+            <div class="top-header__inner">
+              <span class="top-header__worktime">
+                <img src="img/icons/time.svg" alt="" />
+                Режим работы: пн-сб 08:00 - 17:00
+              </span>
+              <span class="top-header__address">
+                <img src="img/icons/mark.svg" alt="" />
+                Старый Крым, ул. Можевеловая, 13а
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom bottom-header">
+          <div class="container">
+            <div class="bottom-header__inner">
+              <a class="logo _header" href="#">
+                <img src="img/icons/logo-header.svg" alt="logo" />
+                <span>Добыча, продажа и доставка щебня, песка, отсева</span>
+              </a>
+              <nav class="bottom-header__menu">
+                <ul class="bottom-header__menu-list">
+                  <li><a href="#">Щебень</a></li>
+                  <li><a href="#">Песок</a></li>
+                  <li><a href="#">Отсев</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="bottom-header__contacts">
+                <a class="bottom-header__phone-img" href="tel:+79780426725" rel="nofollow">
+                  <img src="img/icons/phone-header.svg" alt="" />
+                </a>
+                <div class="bottom-header__contacts-box">
+                  <a class="bottom-header__phone" href="tel:+79780426725" rel="nofollow">+7(978) 042-67-25</a>
+                  <a class="bottom-header__mail" href="mailto:st_karier@bk.ru">st_karier@bk.ru</a>
                 </div>
               </div>
-              <div class="item products__item">
-                <span class="products__item-line"></span>
-                <div class="products__item-box">
-                  <a class="products__item-img" href="#">
-                    <img src="img/products/product-2.jpg" alt="product-2" />
-                  </a>
-                  <div class="products__item-info">
-                    <div class="products__item-column">
-                      <a class="products__item-title" href="#">Песок
-                        <span class="products__item-subtile">
-                          Дробленый
-                        </span>
-                      </a>
-                    </div>
-                    <div class="products__item-column">
-                      <span class="products__item-price">Цена за т от: 
-                        <span class="rub">300</span> 
-                      </span>
-                    </div>
-                  </div>
-                  <div class="products__item-buttons">
-                    <a class="products__item-more" href="#">Подробнее</a>
-                    <a class="btn products__item-order fancybox" href="#">Заказать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item products__item">
-                <span class="products__item-line"></span>
-                <div class="products__item-box">
-                  <a class="products__item-img" href="#">
-                    <img src="img/products/product-3.jpg" alt="product-3" />
-                  </a>
-                  <div class="products__item-info">
-                    <div class="products__item-column">
-                      <a class="products__item-title" href="#">Отсев
-                        <span class="products__item-subtile">
-                          Различные фракции от 0-5 мм
-                        </span>
-                      </a>
-                    </div>
-                    <div class="products__item-column">
-                      <span class="products__item-price">Цена за т от: 
-                        <span class="rub">470</span> 
-                      </span>
-                    </div>
-                  </div>
-                  <div class="products__item-buttons">
-                    <a class="products__item-more" href="#">Подробнее</a>
-                    <a class="btn products__item-order fancybox" href="#">Заказать</a>
-                  </div>
-                </div>
+              <div class="bottom-header__menu-btn">
+                <span></span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="page__advantages advantages-page">
-        <div class="container">
-          <h2 class="title advantages-page__title"><span>С нами</span> просто работать
-          </h2>
-          <ul class="advantages-page__list">
-            <li>
-              Гарантии
-              <div class="advantages-page__item">
-                <span class="advantages-page__number">100</span>
-                <span class="advantages-page__number-percent">%</span>
+      </header>
+      <main class="page">
+        <div class="page__banner banner-page">
+          <div class="container-fluid">
+            <div class="banner-page__slider">
+              <div class="banner-page__slider-item">
+                <div class="banner-page__box">
+                  <img src="img/bg-slide1.jpg" alt="slide1"/>
+                  <div class="container">
+                    <div class="banner-page__content banner-content">
+                      <div class="content-banner__top">
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor _text1">
+                          <span>купить с доставкой</span>
+                        </span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                      </div>
+                      <div class="content-banner__middle">
+                        <a class="content-banner__price-download" href="#" rel="nofollow" target="_blank" download>
+                          <svg width="34" height="37" viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 36.3159L0 20.4277H9.71429V0H24.2857V20.4277H34L17 36.3159Z" fill="#FFCB00"/>
+                            </svg>         
+                          Прайс
+                        </a>
+                        <span class="content-banner__text-title">Песок</span>
+                        <div class="content-banner__text-box">
+                          <span class="content-banner__text1">300
+                            <span class="content-banner__text2">цена от</span>
+                            <span class="content-banner__text3">за тонну</span>
+                          </span>
+                        </div>
+                        <a class="content-banner__phone-btn" href="tel:+79780426725" rel="nofollow">
+                          <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.68259 1.55356C7.80486 -0.830155 10.5014 -0.409499 11.7787 2.39487C14.3333 7.44275 16.1782 9.96668 14.3333 11.9297C10.9271 14.1732 8.51447 15.295 9.79177 17.6787C12.3464 23.7081 17.3136 28.8962 23.2743 31.981C25.5451 33.3832 26.8224 30.9995 29.3769 27.9147C31.5058 26.232 33.9184 28.0549 38.8857 30.9995C41.5822 32.5419 41.7241 35.0658 39.1695 38.0104C24.2678 54.5562 -13.0576 15.1548 4.68259 1.55356Z" fill="black"/>
+                            </svg>                        
+                          Позвонить
+                        </a>
+                      </div>
+                      <div class="content-banner__bottom">
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor _text2">
+                          <span>дробленый</span>
+                        </span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <span class="advantages-page__text">сертифицированная продукция</span>
-            </li>
-            <li>
-              Собственный автопарк
-              <span class="advantages-page__number">30</span>
-              <span class="advantages-page__text">техники различной грузоподъемности</span>
-            </li>
-            <li>
-              Профессионализм
-              <span class="advantages-page__more">более</span>
-              <span class="advantages-page__number">
-                55
-              </span>
-              <span class="advantages-page__text">лет продаем
-                песок и щебень</span>
-            </li>
-          </ul>
-          <div class="advantages-page__features features-page">
-            <ul class="features-page__list">
+              <div class="banner-page__slider-item">
+                <div class="banner-page__box">
+                  <img src="img/bg-slide2.jpg" alt="slide1"/>
+                  <div class="container">
+                    <div class="banner-page__content banner-content">
+                      <div class="content-banner__top">
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor _text1">
+                          <span>купить с доставкой</span>
+                        </span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                      </div>
+                      <div class="content-banner__middle">
+                        <a class="content-banner__price-download" href="#" rel="nofollow" target="_blank" download>
+                          <svg width="34" height="37" viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 36.3159L0 20.4277H9.71429V0H24.2857V20.4277H34L17 36.3159Z" fill="#FFCB00"/>
+                            </svg>         
+                          Прайс
+                        </a>
+                        <span class="content-banner__text-title">Щебень</span>
+                        <div class="content-banner__text-box">
+                          <span class="content-banner__text1">400
+                            <span class="content-banner__text2">цена от</span>
+                            <span class="content-banner__text3">за тонну</span>
+                          </span>
+                        </div>
+                        <a class="content-banner__phone-btn" href="tel:+79780426725" rel="nofollow">
+                          <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.68259 1.55356C7.80486 -0.830155 10.5014 -0.409499 11.7787 2.39487C14.3333 7.44275 16.1782 9.96668 14.3333 11.9297C10.9271 14.1732 8.51447 15.295 9.79177 17.6787C12.3464 23.7081 17.3136 28.8962 23.2743 31.981C25.5451 33.3832 26.8224 30.9995 29.3769 27.9147C31.5058 26.232 33.9184 28.0549 38.8857 30.9995C41.5822 32.5419 41.7241 35.0658 39.1695 38.0104C24.2678 54.5562 -13.0576 15.1548 4.68259 1.55356Z" fill="black"/>
+                            </svg>                        
+                          Позвонить
+                        </a>
+                      </div>
+                      <div class="content-banner__bottom">
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor _text1">
+                          <span>различные фракции</span>
+                        </span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                        <span class="banner-content__decor"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <section class="page__products products-page">
+          <div class="products-page__inner">
+            <div class="container">
+              <h2 class="title products-page__title"><span>Наша</span> продукция</h2>
+              <div class="products-page__items products">
+                <div class="item products__item">
+                  <article>
+                    <span class="products__item-line"></span>
+                    <div class="products__item-box">
+                      <a class="products__item-img" href="#">
+                        <img src="img/products/product-1.jpg" alt="product-1" />
+                      </a>
+                      <div class="products__item-info">
+                        <div class="products__item-column">
+                          <a class="products__item-title" href="#">Щебень
+                            <span class="products__item-subtile">
+                              Различные фракции от 5-70 мм
+                            </span>
+                          </a>
+                        </div>
+                        <div class="products__item-column">
+                          <span class="products__item-price">Цена за т от: 
+                            <span class="rub">700</span> 
+                          </span>
+                        </div>
+                      </div>
+                      <div class="products__item-buttons">
+                        <a class="products__item-more" href="#">Подробнее</a>
+                        <a class="btn products__item-order fancybox" href="#">Заказать</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="item products__item">
+                  <article>
+                    <span class="products__item-line"></span>
+                    <div class="products__item-box">
+                      <a class="products__item-img" href="#">
+                        <img src="img/products/product-2.jpg" alt="product-2" />
+                      </a>
+                      <div class="products__item-info">
+                        <div class="products__item-column">
+                          <a class="products__item-title" href="#">Песок
+                            <span class="products__item-subtile">
+                              Дробленый
+                            </span>
+                          </a>
+                        </div>
+                        <div class="products__item-column">
+                          <span class="products__item-price">Цена за т от: 
+                            <span class="rub">300</span> 
+                          </span>
+                        </div>
+                      </div>
+                      <div class="products__item-buttons">
+                        <a class="products__item-more" href="#">Подробнее</a>
+                        <a class="btn products__item-order fancybox" href="#">Заказать</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="item products__item">
+                  <article>
+                    <span class="products__item-line"></span>
+                    <div class="products__item-box">
+                      <a class="products__item-img" href="#">
+                        <img src="img/products/product-3.jpg" alt="product-3" />
+                      </a>
+                      <div class="products__item-info">
+                        <div class="products__item-column">
+                          <a class="products__item-title" href="#">Отсев
+                            <span class="products__item-subtile">
+                              Различные фракции от 0-5 мм
+                            </span>
+                          </a>
+                        </div>
+                        <div class="products__item-column">
+                          <span class="products__item-price">Цена за т от: 
+                            <span class="rub">470</span> 
+                          </span>
+                        </div>
+                      </div>
+                      <div class="products__item-buttons">
+                        <a class="products__item-more" href="#">Подробнее</a>
+                        <a class="btn products__item-order fancybox" href="#">Заказать</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__advantages advantages-page">
+          <div class="container">
+            <h2 class="title advantages-page__title"><span>С нами</span> просто работать
+            </h2>
+            <ul class="advantages-page__list">
               <li>
-                <img src="img/icons/price.svg" alt="price" />
-                <span class="features-page__title">Выгодные цены</span>
-                <span class="features-page__text">Получаете продукцию
-                  с карьера без посредников</span>
+                Гарантии
+                <div class="advantages-page__item">
+                  <span class="advantages-page__number">100</span>
+                  <span class="advantages-page__number-percent">%</span>
+                </div>
+                <span class="advantages-page__text">сертифицированная продукция</span>
               </li>
               <li>
-                <img src="img/icons/independence.svg" alt="independence" />
-                <span class="features-page__title">Независимость</span>
-                <span class="features-page__text">Наличие собственного оборудования</span>
+                Собственный автопарк
+                <span class="advantages-page__number">30</span>
+                <span class="advantages-page__text">техники различной грузоподъемности</span>
               </li>
               <li>
-                <img src="img/icons/delivery.svg" alt="delivery" />
-                <span class="features-page__title">Доставка</span>
-                <span class="features-page__text">по Крыму на собственном спецтранспорте вовремя</span>
-              </li>
-              <li>
-                <img src="img/icons/reliability.svg" alt="reliability" />
-                <span class="features-page__title">Надежность</span>
-                <span class="features-page__text">Работаем по договору</span>
-              </li>
-              <li>
-                <img src="img/icons/promptness.svg" alt="promptness" />
-                <span class="features-page__title">Оперативность</span>
-                <span class="features-page__text">Быстрый прием
-                  и обработка заказов</span>
+                Профессионализм
+                <span class="advantages-page__more">более</span>
+                <span class="advantages-page__number">
+                  55
+                </span>
+                <span class="advantages-page__text">лет продаем
+                  песок и щебень</span>
               </li>
             </ul>
+            <div class="advantages-page__features features-page">
+              <ul class="features-page__list">
+                <li>
+                  <img src="img/icons/price.svg" alt="price" />
+                  <span class="features-page__title">Выгодные цены</span>
+                  <span class="features-page__text">Получаете продукцию
+                    с карьера без посредников</span>
+                </li>
+                <li>
+                  <img src="img/icons/independence.svg" alt="independence" />
+                  <span class="features-page__title">Независимость</span>
+                  <span class="features-page__text">Наличие собственного оборудования</span>
+                </li>
+                <li>
+                  <img src="img/icons/delivery.svg" alt="delivery" />
+                  <span class="features-page__title">Доставка</span>
+                  <span class="features-page__text">по Крыму на собственном спецтранспорте вовремя</span>
+                </li>
+                <li>
+                  <img src="img/icons/reliability.svg" alt="reliability" />
+                  <span class="features-page__title">Надежность</span>
+                  <span class="features-page__text">Работаем по договору</span>
+                </li>
+                <li>
+                  <img src="img/icons/promptness.svg" alt="promptness" />
+                  <span class="features-page__title">Оперативность</span>
+                  <span class="features-page__text">Быстрый прием
+                    и обработка заказов</span>
+                </li>
+              </ul>
+            </div>
+            <a class="btn-big advantages-page__btn fancybox" href="#modal-form2">заказать доставку</a>
           </div>
-          <a class="btn-big advantages-page__btn" href="#">заказать доставку</a>
-        </div>
-      </section>
-      <div class="page__brand brand-page">
-        <div class="container">
-          <h2 class="title brand-page__title">
-            <span>Наши</span> клиенты и партнеры
-          </h2>
-          <div class="brand-page__slider">
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/1.jpg" alt="">
+        </section>
+        <div class="page__brand brand-page">
+          <div class="container">
+            <h2 class="title brand-page__title">
+              <span>Наши</span> клиенты и партнеры
+            </h2>
+            <div class="brand-page__slider">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/1.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/2.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/2.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/3.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/3.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/4.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/4.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/5.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/5.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/1.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/1.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/2.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/2.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/3.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/3.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/4.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/4.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="brand-page__slider-item">
-              <div class="brand-page__slider-img">
-                <img src="img/brand/5.jpg" alt="">
+              <div class="brand-page__slider-item">
+                <div class="brand-page__slider-img">
+                  <img src="img/brand/5.jpg" alt="">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <section class="page__services services-page">
-        <div class="container">
-          <h2 class="title services-page__title">
-            <span>Нужен</span> щебень, песок или отсев?
-          </h2>
-          <div class="services-page__inner">
-            <div class="services-page__column">
-              <div class="services-page__column-box">
-                <span class="services-page__number">1</span>
-                <div class="services-page__form form-page">
-                  <span class="form-page__line"></span>
-                  <div class="modal-block">
-                    <div class="modal-wrap">
-                      <div class="block-form">
-                        <div class="block-form__title">
-                          Оставьте заявку
-                        </div>
-                        <div class="block-form__subtitle">
-                          или позвоните по номеру
-                        </div>
-                        <a class="phone block-form__phone" href="tel:+79780426725" rel="nofollow">
-                          <img src="img/icons/phone-small.svg" alt="" />
-                          +7(978) 042-67-25
-                        </a>
-                        <form>
-                          <div class="item-input">
-                            <input type="text" placeholder="Как вас зовут?" required="required">
+        <section class="page__services services-page">
+          <div class="container">
+            <h2 class="title services-page__title">
+              <span>Нужен</span> щебень, песок или отсев?
+            </h2>
+            <div class="services-page__inner">
+              <div class="services-page__column">
+                <div class="services-page__column-box">
+                  <span class="services-page__number">1</span>
+                  <div class="services-page__form form-page">
+                    <span class="form-page__line"></span>
+                    <div class="modal-block">
+                      <div class="modal-wrap">
+                        <div class="block-form">
+                          <div class="block-form__title">
+                            Оставьте заявку
                           </div>
-                          <div class="item-input">
-                            <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                          <div class="block-form__subtitle">
+                            или позвоните по номеру
                           </div>
-                          <div class="checkbox-wrap">
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" required="required" checked="checked" />
-                                <span>Согласие на обработку персональных данных</span>
-                              </label>
+                          <a class="phone block-form__phone" href="tel:+79780426725" rel="nofollow">
+                            <img src="img/icons/phone-small.svg" alt="" />
+                            +7(978) 042-67-25
+                          </a>
+                          <form>
+                            <div class="item-input">
+                              <input type="text" placeholder="Как вас зовут?" required="required">
                             </div>
-                          </div>
-                          <button class="btn-big btn-main" type="submit">Заказать доставку</button>
-                        </form>
+                            <div class="item-input">
+                              <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                            </div>
+                            <div class="checkbox-wrap">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" required="required" checked="checked" />
+                                  <span>Согласие на обработку персональных данных</span>
+                                </label>
+                              </div>
+                            </div>
+                            <button class="btn-big btn-main" type="submit">Заказать доставку</button>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="services-page__column">
-              <div class="services-page__column-box">
-                <span class="services-page__number">2</span>
-                <div class="services-page__item">
-                  <span class="services-page__item-title">
-                    <img src="img/icons/services-phone.svg" alt="" />
-                    Позвоним
-                  </span>
-                  <div class="services-page__item-text">
-                    Наш специалист свяжется с вами для уточнения деталей (цель, вес / объем, адрес) и первичной консультации
+              <div class="services-page__column">
+                <div class="services-page__column-box">
+                  <span class="services-page__number">2</span>
+                  <div class="services-page__item">
+                    <span class="services-page__item-title">
+                      <img src="img/icons/services-phone.svg" alt="" />
+                      Позвоним
+                    </span>
+                    <div class="services-page__item-text">
+                      Наш специалист свяжется с вами для уточнения деталей (цель, вес / объем, адрес) и первичной консультации
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="services-page__column-box">
-                <span class="services-page__number">3</span>
-                <div class="services-page__item">
-                  <span class="services-page__item-title">
-                    <img src="img/icons/delivery.svg" alt="" />
-                    Доставим
-                  </span>
-                  <div class="services-page__item-text">
-                    Мы загрузим точный объем материала, который вы заказали и отправим собственным грузовым транспортом на Ваш строительный объект 
+                <div class="services-page__column-box">
+                  <span class="services-page__number">3</span>
+                  <div class="services-page__item">
+                    <span class="services-page__item-title">
+                      <img src="img/icons/delivery.svg" alt="" />
+                      Доставим
+                    </span>
+                    <div class="services-page__item-text">
+                      Мы загрузим точный объем материала, который вы заказали и отправим собственным грузовым транспортом на Ваш строительный объект 
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="services-page__bg-img _bg-img1">
-          <img src="img/services-bg1.png" alt="" />
-        </div>
-        <div class="services-page__bg-img _bg-img2">
-          <img src="img/services-bg2.png" alt="" />
-        </div>
-        <span class="services-page__bg"></span>
-      </section>
-      <div class="contacts-page _mobile">
-        <div class="container">
-          <div class="contacts-page__inner">
-            <div class="contacts-page__box">
-              <span class="contacts-page__line"></span>
-              <div class="contacts-page__info">
-                <div class="contacts-page__info-main">
-                  <h5 class="contacts-page__info-title">Наши контакты</h5>
-                  <span class="contacts-page__info-address">
-                    <img src="img/icons/mark.svg" alt="" />
-                    Старый Крым, ул. Можевеловая, 13а
-                  </span>
-                  <a class="phone contacts-page__phone" href="tel:+79780426725" rel="nofollow">
-                    <img src="img/icons/phone-small.svg" alt="" />
-                    +7(978) 042-67-25
-                  </a>
-                  <a class="contacts-page__info-mail" href="mailto:st_karier@bk.ru" rel="nofollow">
-                    st_karier@bk.ru
-                  </a>
-                  <a class="btn-big contacts-page__call-me fancybox" href="#modal-form" rel="nofollow">Связаться с нами</a>
-                </div>
-              </div>
-            </div>
+          <div class="services-page__bg-img _bg-img1">
+            <img src="img/services-bg1.png" alt="" />
           </div>
-        </div>
-      </div>
-      <div class="page__contacts contacts-page">
-        <div class="contacts-page__map" id="map">
+          <div class="services-page__bg-img _bg-img2">
+            <img src="img/services-bg2.png" alt="" />
+          </div>
+          <span class="services-page__bg"></span>
+        </section>
+        <div class="contacts-page _mobile">
           <div class="container">
-            <div class="contacts-page__inner _mobile">
+            <div class="contacts-page__inner">
               <div class="contacts-page__box">
                 <span class="contacts-page__line"></span>
                 <div class="contacts-page__info">
@@ -531,176 +510,238 @@
             </div>
           </div>
         </div>
-      </div>
-      <button class="top-btn"></button>
-    </main>
-    
-    <footer class="footer">
-      <div class="footer__top top-footer">
-        <div class="container">
-          <div class="top-footer__inner">
-            <div class="top-footer__column">
-              <a class="logo _footer" href="#">
-                <img src="img/icons/logo-footer-2.svg" alt="logo" />
-                <span>Добыча, продажа и доставка щебня, песка, отсева</span>
+        <div class="page__contacts contacts-page">
+          <div class="contacts-page__map" id="map">
+            <div class="container">
+              <div class="contacts-page__inner _mobile">
+                <div class="contacts-page__box">
+                  <span class="contacts-page__line"></span>
+                  <div class="contacts-page__info">
+                    <div class="contacts-page__info-main">
+                      <h5 class="contacts-page__info-title">Наши контакты</h5>
+                      <span class="contacts-page__info-address">
+                        <img src="img/icons/mark.svg" alt="" />
+                        Старый Крым, ул. Можевеловая, 13а
+                      </span>
+                      <a class="phone contacts-page__phone" href="tel:+79780426725" rel="nofollow">
+                        <img src="img/icons/phone-small.svg" alt="" />
+                        +7(978) 042-67-25
+                      </a>
+                      <a class="contacts-page__info-mail" href="mailto:st_karier@bk.ru" rel="nofollow">
+                        st_karier@bk.ru
+                      </a>
+                      <a class="btn-big contacts-page__call-me fancybox" href="#modal-form" rel="nofollow">Связаться с нами</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="top-btn"></button>
+      </main>
+      
+      <footer class="footer">
+        <div class="footer__top top-footer">
+          <div class="container">
+            <div class="top-footer__inner">
+              <div class="top-footer__column">
+                <a class="logo _footer" href="#">
+                  <img src="img/icons/logo-footer-2.svg" alt="logo" />
+                  <span>Добыча, продажа и доставка щебня, песка, отсева</span>
+                </a>
+              </div>
+              <div class="top-footer__column">
+                  <ul class="top-footer__list">
+                    <li><a href="#">Щебень</a></li>
+                    <li><a href="#">Песок</a></li>
+                    <li><a href="#">Отcев</a></li>
+                  </ul>
+                  <ul class="top-footer__list">
+                    <li><a href="#">О Нас</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>             
+              </div>
+              <div class="top-footer__column">
+                <a class="top-footer__price-download" href="#" rel="nofollow" target="_blank" download>
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 21.9072L0 12.5612H5.71429V0.544922H14.2857V12.5612H20L10 21.9072Z" fill="#FFCB00"/>
+                    </svg>                  
+                  Скачать прайс
+                </a>
+                <span class="top-footer__price-text">Размер: PDF 5.2 Мб</span>
+                <span class="top-footer__price-text">
+                  Обновлен: <time datetime=”2021-06-28”> 28 июня 2021 г.</time>
+                </span>
+              </div>
+              <div class="top-footer__column">
+                <span class="top-footer__address">
+                  <img src="img/icons/mark.svg" alt="" />
+                  Старый Крым, ул. Можевеловая, 13а
+                </span>
+                <a class="phone top-footer__phone" href="tel:+79780426725" rel="nofollow">
+                  <img src="img/icons/phone-small.svg" alt="" />
+                  +7(978) 042-67-25
+                </a>
+                <a class="top-footer__mail" href="mailto:st_karier@bk.ru" rel="nofollow">
+                  st_karier@bk.ru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <a class="footer__bottom-confidentiality" href="#" rel="nofollow" target="_blank">
+                Политика конфиденциальности
+              </a>
+              <p class="footer__bottom-copyright">
+                Simferopol © Copyright 2021
+              </p> 
+              <a class="footer__bottom-development" href="#" rel="nofollow" target="_blank">Сделано в
+                <img src="img/icons/sheer.svg" alt="logo-sheer" />
               </a>
             </div>
-            <div class="top-footer__column">
-                <ul class="top-footer__list">
-                  <li><a href="#">Щебень</a></li>
-                  <li><a href="#">Песок</a></li>
-                  <li><a href="#">Отcев</a></li>
-                </ul>
-                <ul class="top-footer__list">
-                  <li><a href="#">О Нас</a></li>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>             
+          </div>
+        </div>
+
+        <div class="modal-block visually-hidden" id="modal-form">
+          <div class="modal-wrap">
+            <div class="block-form">
+              <div class="block-form__title">
+                Оставьте заявку
+              </div>
+              <form>
+                <div class="item-input">
+                  <input type="text" placeholder="Как вас зовут?" required="required">
+                </div>
+                <div class="item-input">
+                  <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                </div>
+                <div class="checkbox-wrap">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required="required" checked="checked" />
+                      <span>Согласие на обработку персональных данных</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="btn-big btn-main" type="submit">Заказать звонок</button>
+              </form>
             </div>
-            <div class="top-footer__column">
-              <a class="top-footer__price-download" href="#" rel="nofollow" target="_blank">
-                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 21.9072L0 12.5612H5.71429V0.544922H14.2857V12.5612H20L10 21.9072Z" fill="#FFCB00"/>
-                  </svg>                  
-                Скачать прайс
-              </a>
-              <span class="top-footer__price-text">Размер: PDF 5.2 Мб</span>
-              <span class="top-footer__price-text">
-                Обновлен: <time datetime=”2021-06-28”> 28 июня 2021 г.</time>
-              </span>
-            </div>
-            <div class="top-footer__column">
-              <span class="top-footer__address">
-                <img src="img/icons/mark.svg" alt="" />
-                Старый Крым, ул. Можевеловая, 13а
-              </span>
-              <a class="phone top-footer__phone" href="tel:+79780426725" rel="nofollow">
+          </div>
+        </div>
+
+        <div class="modal-block visually-hidden" id="modal-form2">
+          <div class="modal-wrap">
+            <div class="block-form">
+              <div class="block-form__title">
+                Оставьте заявку
+              </div>
+              <div class="block-form__subtitle">
+                или позвоните по номеру
+              </div>
+              <a class="phone block-form__phone" href="tel:+79780426725" rel="nofollow">
                 <img src="img/icons/phone-small.svg" alt="" />
                 +7(978) 042-67-25
               </a>
-              <a class="top-footer__mail" href="mailto:st_karier@bk.ru" rel="nofollow">
-                st_karier@bk.ru
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="footer__bottom-inner">
-            <a class="footer__bottom-confidentiality" href="#" rel="nofollow" target="_blank">
-              Политика конфиденциальности
-            </a>
-            <p class="footer__bottom-copyright">
-              Simferopol © Copyright 2021
-            </p> 
-            <a class="footer__bottom-development" href="#" rel="nofollow" target="_blank">Сделано в
-              <img src="img/icons/sheer.svg" alt="logo-sheer" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal-block visually-hidden" id="modal-form">
-        <div class="modal-wrap">
-          <div class="block-form">
-            <div class="block-form__title">
-              Оставьте заявку
-            </div>
-            <form>
-              <div class="item-input">
-                <input type="text" placeholder="Как вас зовут?" required="required">
-              </div>
-              <div class="item-input">
-                <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
-              </div>
-              <div class="checkbox-wrap">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" required="required" checked="checked" />
-                    <span>Согласие на обработку персональных данных</span>
-                  </label>
+              <form>
+                <div class="item-input">
+                  <input type="text" placeholder="Как вас зовут?" required="required">
                 </div>
-              </div>
-              <button class="btn-big btn-main" type="submit">Заказать звонок</button>
-            </form>
+                <div class="item-input">
+                  <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                </div>
+                <div class="checkbox-wrap">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required="required" checked="checked" />
+                      <span>Согласие на обработку персональных данных</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="btn-big btn-main" type="submit">Заказать доставку</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <script src="js/libs/jquery/jquery-1.11.1.min.js"></script>
-  <script src="js/libs/slick/slick.min.js"></script>
-  <script src="js/libs/maskedinput/jquery.maskedinput.min.js"></script>
-  <script src="js/libs/fancybox/jquery.fancybox.js"></script>
-  <script src="js/libs/counter/counter.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/common.js?ver=1.4"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
-  <script>
-    (function($)
-    { 
-      if (window.matchMedia('(max-width: 580px)').matches)
-      {
-        xCenter = [45.043056, 35.095166]; // Центр до 00px (мобильные), совпадает с маркером
-      }
-      else if (window.matchMedia('(max-width: 1000px)').matches) {
-        xCenter = [45.043056, 35.099166]; // Центр до 1300px
-      } else {      
-        xCenter = [45.043056, 35.095166]; // Центр на десктопе
-      }
-      createMap('map', [45.043056, 35.095166]); // Координаты маркера
-
-      function createMap(xID, coords)
-      {
-        if ($("#" + xID + "").length > 0)
+    <script src="js/libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/fancybox/jquery.fancybox.js"></script>
+    <script src="js/libs/counter/counter.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js?ver=1.4"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+    <script>
+      (function($)
+      { 
+        if (window.matchMedia('(max-width: 580px)').matches)
         {
-          var myMap;
-          // Дождёмся загрузки API и готовности DOM.
-          ymaps.ready(init);
-  
-          function init()
+          xCenter = [45.043056, 35.095166]; // Центр до 00px (мобильные), совпадает с маркером
+        }
+        else if (window.matchMedia('(max-width: 1000px)').matches) {
+          xCenter = [45.043056, 35.099166]; // Центр до 1300px
+        } else {      
+          xCenter = [45.043056, 35.095166]; // Центр на десктопе
+        }
+        createMap('map', [45.043056, 35.095166]); // Координаты маркера
+
+        function createMap(xID, coords)
+        {
+          if ($("#" + xID + "").length > 0)
           {
-            myMap = new ymaps.Map(xID,
+            var myMap;
+            // Дождёмся загрузки API и готовности DOM.
+            ymaps.ready(init);
+    
+            function init()
             {
-              center: xCenter,
-              zoom: 16
-            },
-            {
-              searchControlProvider: 'yandex#search'
-            });
-            // Создаём макет содержимого.
-            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
-              myPlacemark = new ymaps.Placemark(coords,
+              myMap = new ymaps.Map(xID,
               {
-                hintContent: 'Старый Крым, ул. Можевеловая, 13а',
-                balloonContent: '<p class="text-map"><span>Старый Крым,</span><br>ул. Можевеловая, 13а</p>'
+                center: xCenter,
+                zoom: 16
               },
               {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки.
-                iconImageHref: 'img/icons/map-marker.svg',
-                // Размеры метки.
-                hideIconOnBalloonOpen: false,
-                iconImageSize: [23, 32],
-                balloonOffset: [ -23, -53 ],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-35, -45]
+                searchControlProvider: 'yandex#search'
               });
-            myMap.geoObjects.add(myPlacemark);
-            myMap.behaviors.disable('scrollZoom');
-            myMap.controls.remove('searchControl'); // удаляем поиск
-            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
-            myMap.controls.remove('typeSelector'); // удаляем тип
-            myMap.controls.remove('rulerControl'); // удаляем контрол правил
-            myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+              // Создаём макет содержимого.
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+                myPlacemark = new ymaps.Placemark(coords,
+                {
+                  hintContent: 'Старый Крым, ул. Можевеловая, 13а',
+                  balloonContent: '<p class="text-map"><span>Старый Крым,</span><br>ул. Можевеловая, 13а</p>'
+                },
+                {
+                  // Опции.
+                  // Необходимо указать данный тип макета.
+                  iconLayout: 'default#image',
+                  // Своё изображение иконки метки.
+                  iconImageHref: 'img/icons/map-marker.svg',
+                  // Размеры метки.
+                  hideIconOnBalloonOpen: false,
+                  iconImageSize: [23, 32],
+                  balloonOffset: [ -23, -53 ],
+                  // Смещение левого верхнего угла иконки относительно
+                  // её "ножки" (точки привязки).
+                  iconImageOffset: [-35, -45]
+                });
+              myMap.geoObjects.add(myPlacemark);
+              myMap.behaviors.disable('scrollZoom');
+              myMap.controls.remove('searchControl'); // удаляем поиск
+              myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+              myMap.controls.remove('typeSelector'); // удаляем тип
+              myMap.controls.remove('rulerControl'); // удаляем контрол правил
+              myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+            }
           }
         }
-      }
-    })(jQuery);
-  </script>
-</body>
+      })(jQuery);
+    </script>
+  </body>
+</html>

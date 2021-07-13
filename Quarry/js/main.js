@@ -131,8 +131,70 @@ $(document).ready(function() {
       scrollTop: 0
     }, 800);
     return false;
-  });	
+  });
 
+    //Слайдер - галерея
+    $('.big-slider').slick ({
+      asNavFor: '.small-slider',
+      slidesToShow: 1,
+      sliderToScroll: 1,
+      fade: true,
+      arrows: false,
+      dots: false,
+      //adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 561,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    })
+
+    $('.small-slider').slick ({
+      asNavFor: '.big-slider',
+      vertical: true,
+      verticalSwiping: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      //centerMode: true,
+      arrows: true,
+      dots: false,
+      focusOnSelect: true,
+      prevArrow: '<button class="small-slider-btn small-slider-btnprev"><img src="img/icons/arrow-top.svg" alt=""></button>',
+      nextArrow: '<button class="small-slider-btn small-slider-btnnext"><img src="img/icons/arrow-bottom.svg" alt=""></button>',
+      responsive: [
+        {
+          breakpoint: 1171,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            //centerMode: false,
+            //variableWidth: false,
+          }
+        },
+        {
+          breakpoint: 951,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            //centerMode: false,
+            //variableWidth: false,
+          }
+        },
+        {
+          breakpoint: 701,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            //centerMode: false,
+            //variableWidth: false,
+          }
+        },
+      ]
+    })
 
 });
 
