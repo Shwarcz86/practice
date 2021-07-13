@@ -133,6 +133,9 @@ $(document).ready(function() {
     return false;
   });
 
+
+
+  $(window).load(function() {
     //Слайдер - галерея
     $('.big-slider').slick ({
       asNavFor: '.small-slider',
@@ -151,7 +154,7 @@ $(document).ready(function() {
           }
         },
       ]
-    })
+    });
 
     $('.small-slider').slick ({
       asNavFor: '.big-slider',
@@ -194,7 +197,13 @@ $(document).ready(function() {
           }
         },
       ]
-    })
+    });
+    
+  });
+
+
+
+
 
 });
 
@@ -339,7 +348,7 @@ $(document).ready(function() {
         }
       },
     ]
-  })
+  });
   $('.small-slider').slick ({
     asNavFor: '.big-slider',
     slidesToShow: 3,
@@ -362,7 +371,7 @@ $(document).ready(function() {
         }
       },
     ]
-  })
+  });
 
   //Переключение цветов
   $('.information-card__color-list li').click(function() {
