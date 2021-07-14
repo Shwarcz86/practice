@@ -272,6 +272,17 @@ body._no-scroll:before {
 #modal-form2 .btn-big.btn-main {
   font-size: 23px;
 }
+/*///////////////////////////////////DEMO-DELETE//////////////////////////////////*/
+.page .content {
+  padding: 150px 0 100px;
+}
+.page .content li {
+  padding: 10px 0;
+}
+.page .content li a {
+  font-size: 24px;
+  color: #2a579c;
+}
 /*///////////////////////////////////FONTS///////////////////////////////////////*/
 /*Light 300*/
 /*Regular, Normal 400*/
@@ -1577,7 +1588,7 @@ font-family: 'Oswald', sans-serif;
 /*/////////////////////////////////////gallery/////////////////////////////////////*/
 .gallery-page {
   position: relative;
-  padding: 50px 0 130px;
+  padding: 50px 0 110px;
   background-color: #fafafa;
 }
 .gallery-page::before {
@@ -1598,6 +1609,7 @@ font-family: 'Oswald', sans-serif;
 .gallery-page__sliders {
   display: flex;
   justify-content: center;
+  margin: 0px 0px 20px 0px;
 }
 .small-slider {
   margin: auto 30px auto 0px;
@@ -1693,9 +1705,15 @@ font-family: 'Oswald', sans-serif;
 .other-page__price-download:hover {
   color: #FAFAFA;
 }
+.banner-page__content-box {
+  position: relative;
+  min-height: 200px;
+}
 .banner-content._about {
-  position: static;
-  transform: translateY(0) translateX(0);
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
 }
 .advantages-page__features.features-page._about {
   margin: 0px 0px 60px 0px;
@@ -1721,24 +1739,52 @@ font-family: 'Oswald', sans-serif;
   height: 65px;
   letter-spacing: 2px;
 }
+.content-banner__phone-btn._about:hover {
+  background-color: #FFCB00;
+}
 .content-banner__phone-btn._about svg {
   margin: 0px 15px 0px 0px;
 }
 .content-banner__middle._about {
   padding: 30px 0 25px;
 }
-.content-banner__top._about .banner-content__decor._last,
-.content-banner__bottom._about .banner-content__decor._last {
-
-}
 .content-banner__top._about .banner-content__decor:nth-child(n+2),
 .content-banner__bottom._about .banner-content__decor:nth-child(n+2) {
   transform: skew(-35deg) translateX(25px);
 }
+.small-slider .slick-arrow.slick-disabled {
+  opacity: 0.15;
+}
+.banner-content__decor._text1._about::before, 
+.banner-content__decor._text2._about::before {
+  transform: skew(-35deg) translateX(25px);
+}
+.banner-content__decor._text1._about,
+.banner-content__decor._text2._about {
+  margin: 0px 0px 0px -25px;
+}
+.banner-content__decor._text1._about span,
+.banner-content__decor._text2._about span {
+  padding: 0px 0px 0px 65px;
+}
+.banner-content__decor._text1._about {
+  flex: 0 0 492px;
+}
+.banner-content__decor._text2._about {
+  flex: 0 0 570px;
+}
+.page__advantages._about {
+  position: relative;
+  padding: 205px 0 130px;
+}
 /*/////////////////////////////////////Adaptive/////////////////////////////////////*/
 @media (max-width: 1400px) {
-  .banner-content {
+  .banner-content,
+  .banner-content._about {
     transform: translateY(-50%) translateX(-50%) scale(.8);
+  }
+  .advantages-page__features.features-page._about {
+    margin: 0px 0px 30px 0px;
   }
   .brand-page__slider-btnprev {
     left: -10px;
@@ -1772,6 +1818,12 @@ font-family: 'Oswald', sans-serif;
   .products__item._catalog:nth-child(3n) {
     margin: 0px 0px 20px 0px;
   }
+  .small-slider-btnprev {
+    top: -20px;
+  }
+  .small-slider-btnnext {
+    bottom: -20px;
+  }
 }
 @media (max-width: 1200px) {
   .products-page__inner,
@@ -1780,12 +1832,15 @@ font-family: 'Oswald', sans-serif;
   .page__services,
   .footer__top,
   .products-page__inner._catalog,
-  .page__advantages._catalog {
+  .page__advantages._catalog,
+  .page__advantages._about {
     padding: 50px 0 50px;
   }
-  .page__other,
-  .page__about {
+  .page__other {
     padding: 50px 0 30px;
+  }
+  .page__about {
+    padding: 50px 0 0;
   }
   .products-page__inner._catalog {
     padding: 50px 0 20px;
@@ -1899,10 +1954,20 @@ font-family: 'Oswald', sans-serif;
   .gallery-page::before {
     display: none;
   }
+  .gallery-page {
+    padding: 20px 0px 0px;
+  }
+  .gallery-page__title {
+    margin: 0px 0px 50px 0px;
+  }
 }
 @media (max-width: 1150px) {
-  .banner-content {
+  .banner-content,
+  .banner-content._about {
     transform: translateY(-50%) translateX(-50%) scale(.7);
+  }
+  .advantages-page__features.features-page._about {
+    margin: 0px 0px 15px 0px;
   }
 }
 @media (max-width: 1090px) {
@@ -2065,7 +2130,8 @@ font-family: 'Oswald', sans-serif;
   }
 }
 @media (max-width: 1000px) {
-  .banner-content {
+  .banner-content,
+  .banner-content._about {
     transform: translateY(-50%) translateX(-50%) scale(.6);
   }
   .products__item {
@@ -2152,7 +2218,8 @@ font-family: 'Oswald', sans-serif;
   }
 }
 @media (max-width: 850px) {
-  .banner-content {
+  .banner-content,
+  .banner-content._about {
     transform: translateY(-50%) translateX(-50%) scale(.5);
   }
   .features-page__list li {
@@ -2216,11 +2283,18 @@ font-family: 'Oswald', sans-serif;
   }
 }
 @media (max-width: 700px) {
-  .content-banner__middle {
+  .content-banner__middle,
+  .content-banner__middle._about {
     display: block;
+  }
+  .advantages-page__features.features-page._about {
+    margin: 0px 0px 70px 0px;
   }
   .banner-content {
     transform: translateY(-50%) translateX(-28%) scale(.7);
+  }
+  .banner-content._about {
+    transform: translateY(-50%) translateX(-30%) scale(.7);
   }
   .banner-content__decor {
     display: none;
@@ -2392,7 +2466,8 @@ font-family: 'Oswald', sans-serif;
   .page__advantages._catalog {
     padding: 40px 0 40px;
   }
-  .page__brand {
+  .page__brand,
+  .page__other {
     padding: 40px 0 30px;
   }
   .products-page__title {
@@ -2477,6 +2552,10 @@ font-family: 'Oswald', sans-serif;
   .contacts-page__info-mail {
     margin: 0px auto 40px auto;
   }
+  .other-page__title {
+    margin: 0px 0px 30px 0px;
+  }
+
 }
 @media (max-width: 560px) {
   .products__item._catalog {
@@ -2491,6 +2570,12 @@ font-family: 'Oswald', sans-serif;
   }
   .products__item._catalog:nth-child(2n) {
     margin: 0px 0px 15px 0px;
+  }
+  .banner-content._about {
+    transform: translateY(-50%) translateX(-35%) scale(.6);
+  }
+  .page__advantages._about {
+    padding: 50px 0 30px;
   }
 }
 @media (max-width: 500px) {
@@ -2616,13 +2701,28 @@ font-family: 'Oswald', sans-serif;
   .other-page__item-img {
     height: auto;
   }
+  .banner-content._about {
+    transform: translateY(-50%) translateX(-37%) scale(.5);
+  }
+  .advantages-page__features.features-page._about {
+    margin: 0px 0px 40px 0px;
+  }
+  .page__advantages._about {
+    padding: 50px 0 20px;
+  }
 }
 @media (max-width: 390px) {
   .banner-content {
     transform: translateY(-50%) translateX(-36%) scale(.5);
   }
+  .banner-content._about {
+    transform: translateY(-50%) translateX(-38.5%) scale(.44);
+  }
   .title {
     line-height: 50px;
+  }
+  .other-page__title {
+
   }
   .advantages-page__list li,
   .features-page__list li {
@@ -2658,5 +2758,8 @@ font-family: 'Oswald', sans-serif;
     margin: auto 10px auto 0px;
     text-align: center;
     flex: 0 0 80px;
+  }
+  .page__advantages._about {
+    padding: 50px 0 10px;
   }
 }
