@@ -189,6 +189,9 @@ body._no-scroll:before {
   height: 536px;
   width: 100%;
 }
+.contacts-page__map.map-contacts #map {
+  height: 630px;
+}
 .text-map {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -1777,7 +1780,31 @@ font-family: 'Oswald', sans-serif;
   position: relative;
   padding: 205px 0 130px;
 }
+/*/////////////////////////////////////Contacts/////////////////////////////////////*/
+.contacts-page__box._contacts {
+  left: 0;
+  top: 50px;
+}
+.contacts-page__info-mail._contacts {
+  margin: 0px 0px 20px 26px;
+}
+.contacts-page__worktime img {
+  margin: 0px 10px 0px 0px;
+}
+.contacts-page__worktime  {
+  display: flex;
+  color: #4E5657;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0px 0px 60px 0px;
+}
 /*/////////////////////////////////////Adaptive/////////////////////////////////////*/
+@media (max-width: 1460px) {
+  .contacts-page__box._contacts {
+    left: 35px;
+    top: 50px;
+  }
+}
 @media (max-width: 1400px) {
   .banner-content,
   .banner-content._about {
@@ -2128,6 +2155,9 @@ font-family: 'Oswald', sans-serif;
   .page__about {
     padding: 142px 0 30px;
   }
+  .page__contacts._contacts {
+    padding: 92px 0px 0px 0px;
+  }
 }
 @media (max-width: 1000px) {
   .banner-content,
@@ -2371,6 +2401,9 @@ font-family: 'Oswald', sans-serif;
     text-align: center;
     flex: 0 0 100px;
   }
+  .contacts-page__box._contacts {
+    top: 28px;
+  }
 }
 @media (max-width: 650px) {
   .products__item-box {
@@ -2555,7 +2588,26 @@ font-family: 'Oswald', sans-serif;
   .other-page__title {
     margin: 0px 0px 30px 0px;
   }
-
+  .contacts-page__map.map-contacts #map {
+    height: 536px;
+  }
+  .contacts-page._mobile .contacts-page__box._contacts {
+    position: relative;
+    left: 0;
+  }
+  .contacts-page._mobile._contacts {
+    padding: 120px 0px 0px 0px;
+  }
+  .page__contacts._contacts {
+    padding: 30px 0px 0px 0px;
+  }
+  .contacts-page__worktime {
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+  }
+  .contacts-page__info-mail._contacts {
+    margin: 0px auto 20px auto;
+  }
 }
 @media (max-width: 560px) {
   .products__item._catalog {
@@ -2709,6 +2761,12 @@ font-family: 'Oswald', sans-serif;
   }
   .page__advantages._about {
     padding: 50px 0 20px;
+  }
+  .contacts-page__worktime {
+    justify-content: flex-start;
+  }
+  .contacts-page__info-mail._contacts {
+    margin: 0px 0 20px 26px;
   }
 }
 @media (max-width: 390px) {
