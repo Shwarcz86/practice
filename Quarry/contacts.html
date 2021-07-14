@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="js/libs/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
-    <title>Главная</title>
+    <title>Контакты</title>
   </head>
   <body>
     <div class="wrapper">
@@ -43,7 +43,7 @@
                   <li><a href="#">Отсев</a></li>
                   <li><a href="#">О нас</a></li>
                   <li><a href="#">Новости</a></li>
-                  <li><a href="#">Контакты</a></li>
+                  <li><a class="_active" href="#">Контакты</a></li>
                 </ul>
               </nav>
               <div class="bottom-header__contacts">
@@ -63,9 +63,68 @@
         </div>
       </header>
       <main class="page">
-        
-
-        
+        <div class="contacts-page _mobile _contacts">
+          <div class="container">
+            <div class="contacts-page__inner">
+              <div class="contacts-page__box _contacts">
+                <span class="contacts-page__line"></span>
+                <div class="contacts-page__info">
+                  <div class="contacts-page__info-main">
+                    <h5 class="contacts-page__info-title">Наши контакты</h5>
+                    <span class="contacts-page__info-address">
+                      <img src="img/icons/mark.svg" alt="" />
+                      Старый Крым, ул. Можевеловая, 13а
+                    </span>
+                    <a class="phone contacts-page__phone" href="tel:+79780426725" rel="nofollow">
+                      <img src="img/icons/phone-small.svg" alt="" />
+                      +7(978) 042-67-25
+                    </a>
+                    <a class="contacts-page__info-mail _contacts" href="mailto:st_karier@bk.ru" rel="nofollow">
+                      st_karier@bk.ru
+                    </a>
+                    <span class="contacts-page__worktime">
+                      <img src="img/icons/time.svg" alt="" />
+                      Режим работы: пн-сб 08:00 - 17:00
+                    </span>
+                    <a class="btn-big contacts-page__call-me fancybox" href="#modal-form" rel="nofollow">Связаться с нами</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__contacts contacts-page _contacts">
+          <div class="contacts-page__map map-contacts" id="map">
+            <div class="container">
+              <div class="contacts-page__inner _mobile">
+                <div class="contacts-page__box _contacts">
+                  <span class="contacts-page__line"></span>
+                  <div class="contacts-page__info">
+                    <div class="contacts-page__info-main">
+                      <h5 class="contacts-page__info-title">Наши контакты</h5>
+                      <span class="contacts-page__info-address">
+                        <img src="img/icons/mark.svg" alt="" />
+                        Старый Крым, ул. Можевеловая, 13а
+                      </span>
+                      <a class="phone contacts-page__phone" href="tel:+79780426725" rel="nofollow">
+                        <img src="img/icons/phone-small.svg" alt="" />
+                        +7(978) 042-67-25
+                      </a>
+                      <a class="contacts-page__info-mail _contacts" href="mailto:st_karier@bk.ru" rel="nofollow">
+                        st_karier@bk.ru
+                      </a>
+                      <span class="contacts-page__worktime">
+                        <img src="img/icons/time.svg" alt="" />
+                        Режим работы: пн-сб 08:00 - 17:00
+                      </span>
+                      <a class="btn-big contacts-page__call-me fancybox" href="#modal-form" rel="nofollow">Связаться с нами</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <button class="top-btn"></button>
       </main>
       
@@ -206,6 +265,70 @@
     <script src="js/main.js"></script>
     <script src="js/common.js?ver=1.4"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+    <script>
+      (function($)
+      { 
+        if (window.matchMedia('(max-width: 580px)').matches)
+        {
+          xCenter = [45.043056, 35.095166]; // Центр до 00px (мобильные), совпадает с маркером
+        }
+        else if (window.matchMedia('(max-width: 1200px)').matches) {
+          xCenter = [45.043056, 35.090166]; // Центр до 1300px
+        } else {      
+          xCenter = [45.043056, 35.095166]; // Центр на десктопе
+        }
+        createMap('map', [45.043056, 35.095166]); // Координаты маркера
 
+        function createMap(xID, coords)
+        {
+          if ($("#" + xID + "").length > 0)
+          {
+            var myMap;
+            // Дождёмся загрузки API и готовности DOM.
+            ymaps.ready(init);
+    
+            function init()
+            {
+              myMap = new ymaps.Map(xID,
+              {
+                center: xCenter,
+                zoom: 16
+              },
+              {
+                searchControlProvider: 'yandex#search'
+              });
+              // Создаём макет содержимого.
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+                myPlacemark = new ymaps.Placemark(coords,
+                {
+                  hintContent: 'Старый Крым, ул. Можевеловая, 13а',
+                  balloonContent: '<p class="text-map"><span>Старый Крым,</span><br>ул. Можевеловая, 13а</p>'
+                },
+                {
+                  // Опции.
+                  // Необходимо указать данный тип макета.
+                  iconLayout: 'default#image',
+                  // Своё изображение иконки метки.
+                  iconImageHref: 'img/icons/map-marker.svg',
+                  // Размеры метки.
+                  hideIconOnBalloonOpen: false,
+                  iconImageSize: [23, 32],
+                  balloonOffset: [ -23, -53 ],
+                  // Смещение левого верхнего угла иконки относительно
+                  // её "ножки" (точки привязки).
+                  iconImageOffset: [-35, -45]
+                });
+              myMap.geoObjects.add(myPlacemark);
+              myMap.behaviors.disable('scrollZoom');
+              myMap.controls.remove('searchControl'); // удаляем поиск
+              myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+              myMap.controls.remove('typeSelector'); // удаляем тип
+              myMap.controls.remove('rulerControl'); // удаляем контрол правил
+              myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+            }
+          }
+        }
+      })(jQuery);
+    </script>
   </body>
 </html>
