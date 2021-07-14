@@ -2505,11 +2505,13 @@ font-family: 'Oswald', sans-serif;
   .advantages-page__features.features-page._about {
     margin: 0px 0px 70px 0px;
   }
-  .banner-content {
-    transform: translateY(-50%) translateX(-28%) scale(.7);
+  .banner-content,
+  .banner-content._about {
+    width: 600px;
+    transform: translateY(-50%) translateX(-50%) scale(.7);
   }
   .banner-content._about {
-    transform: translateY(-50%) translateX(-30%) scale(.7);
+    width: 650px;
   }
   .banner-content__decor {
     display: none;
@@ -2825,7 +2827,7 @@ font-family: 'Oswald', sans-serif;
     margin: 0px 0px 15px 0px;
   }
   .banner-content._about {
-    transform: translateY(-50%) translateX(-35%) scale(.6);
+    transform: translateY(-50%) translateX(-50%) scale(.6);
   }
   .page__advantages._about {
     padding: 50px 0 30px;
@@ -2855,7 +2857,7 @@ font-family: 'Oswald', sans-serif;
     display: none;
   }
   .banner-content {
-    transform: translateY(-50%) translateX(-33%) scale(.6);
+    transform: translateY(-50%) translateX(-50%) scale(.6);
   }
   .modal-block {
     padding: 20px 30px 30px;
@@ -2955,7 +2957,7 @@ font-family: 'Oswald', sans-serif;
     height: auto;
   }
   .banner-content._about {
-    transform: translateY(-50%) translateX(-37%) scale(.5);
+    transform: translateY(-50%) translateX(-50%) scale(.5);
   }
   .advantages-page__features.features-page._about {
     margin: 0px 0px 40px 0px;
@@ -2981,10 +2983,10 @@ font-family: 'Oswald', sans-serif;
 }
 @media (max-width: 390px) {
   .banner-content {
-    transform: translateY(-50%) translateX(-36%) scale(.5);
+    transform: translateY(-50%) translateX(-50%) scale(.5);
   }
   .banner-content._about {
-    transform: translateY(-50%) translateX(-38.5%) scale(.44);
+    transform: translateY(-50%) translateX(-50%) scale(.44);
   }
   .title {
     line-height: 50px;
