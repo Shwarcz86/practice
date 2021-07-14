@@ -1550,6 +1550,9 @@ font-family: 'Oswald', sans-serif;
 .other-page__item:hover .other-page__item-inner {
   background: #fff;
 }
+.other-page__items-bg._about {
+  bottom: 100px;
+}
 /*/////////////////////////////////////About///////////////////////////////////////*/
 .page__about {
   background-color: #fafafa;
@@ -2480,6 +2483,9 @@ font-family: 'Oswald', sans-serif;
   }
   .other-page__item-title {
     margin: 0px 0px 20px 0px;
+  }
+  .other-page__items-bg._about {
+    display: none;
   }
 }
 @media (max-width: 760px) {
