@@ -2002,19 +2002,27 @@ font-family: 'Oswald', sans-serif;
   left: 10px;
   border: 0;
 }
-.article-page article img {
+article img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
   width: 100%;
   object-fit: contain;
   border-radius: 3px;
 }
-.article-page article h4 + img {
+article img.alignleft {
+  max-width: 50%;
+  float: left;
+}
+article img.alignright {
+  max-width: 50%;
   float: right;
-  width: 350px;
-  object-fit: contain;
-  border-radius: 3px;
   padding: 0px 55px 0px 30px;
-  margin: -35px 0px 0px 0px;
-  box-sizing: content-box;
+}
+article img.aligncenter {
+  margin: 0 auto;
 }
 .article-page article h1 {
   font-weight: 700;
@@ -2199,11 +2207,10 @@ font-family: 'Oswald', sans-serif;
     line-height: 25px;
     margin: 0px 0px 20px 0px;
   }
-  .article-page article h4 + img {
-    float: right;
+  article img.alignright {
     padding: 0px 0px 0px 30px;
     margin: -20px 0px 0px 0px;
-  }
+    }
   .article-page article table {
     margin: 0;
     width: 100%;
@@ -2349,12 +2356,6 @@ font-family: 'Oswald', sans-serif;
   }
   .news-page__title {
     margin: 0px 0px 50px 0px;
-  }
-  .article-page article h4 + img {
-    float: inherit;
-    padding: 0;
-    margin: 0;
-    width: 100%;
   }
   .page__article {
     padding: 0 0 40px;
@@ -2563,7 +2564,7 @@ font-family: 'Oswald', sans-serif;
   .article-page__inner {
     display: block;
   }
-  .article-page article h4 + img {
+  .article img.alignright  {
     width: 350px;
     margin: 0px 0px 20px 0px;
   }
@@ -3049,6 +3050,15 @@ font-family: 'Oswald', sans-serif;
   .contacts-page__info-mail._contacts {
     margin: 0px auto 20px auto;
   }
+  article img.alignleft,
+  article img.alignright,
+  article img.aligncenter {
+    float: none;
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
+  }
+
 }
 @media (max-width: 560px) {
   .products__item._catalog {
@@ -3236,9 +3246,6 @@ font-family: 'Oswald', sans-serif;
   }
   .news-page__item-line {
     height: 15px;
-  }
-  .article-page article h4 + img {
-    width: 100%;
   }
   .article-page article {
     padding: 40px 0 20px;
