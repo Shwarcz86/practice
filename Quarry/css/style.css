@@ -2020,6 +2020,7 @@ article img.alignright {
   max-width: 50%;
   float: right;
   padding: 0px 55px 0px 30px;
+  margin: -20px 0px 0px 0px;
 }
 article img.aligncenter {
   margin: 0 auto;
@@ -2564,8 +2565,7 @@ article img.aligncenter {
   .article-page__inner {
     display: block;
   }
-  .article img.alignright  {
-    width: 350px;
+  article img.alignright  {
     margin: 0px 0px 20px 0px;
   }
 }
@@ -3051,13 +3051,10 @@ article img.aligncenter {
     margin: 0px auto 20px auto;
   }
   article img.alignleft,
-  article img.alignright,
-  article img.aligncenter {
+  article img.alignright {
     float: none;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
-    margin: 20px 0px 20px 0px;
-  }
 
 }
 @media (max-width: 560px) {
