@@ -2437,7 +2437,7 @@ body._no-scroll {
     width: 15px;
     background-color: #baa87d;
     height: 1px;
-    right: 10px;
+    right: 11px;
     top: 50%;
     transform: translate(0,-50%) rotate(45deg);
     transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
