@@ -1962,7 +1962,7 @@ body._no-scroll {
     transition: transform .5s;
     overflow: auto;
     padding: 45px 0px 0px 0px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     transform: translateY(-100%);
   }
   .bottom-header._active {
@@ -2437,7 +2437,7 @@ body._no-scroll {
     width: 15px;
     background-color: #baa87d;
     height: 1px;
-    right: 11px;
+    right: 10px;
     top: 50%;
     transform: translate(0,-50%) rotate(45deg);
     transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
