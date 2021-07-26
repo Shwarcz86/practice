@@ -22,12 +22,14 @@ $(document).ready(function() {
     $(this).toggleClass('open');
     $('.bottom-header').toggleClass('_active');
     $('body').toggleClass('_no-scroll');
+    $('.top-btn').toggleClass('_disabled');
   })
 
   $('.bottom-header__navigation-list li a').on('click', function() {
     $('.menu-toggle').removeClass('open');
     $('.bottom-header').removeClass('_active');
     $('body').removeClass('_no-scroll');
+    $('.top-btn').removeClass('_disabled');
   });
 
     $('.top-footer__title').on('click', function() {
