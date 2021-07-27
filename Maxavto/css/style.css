@@ -308,6 +308,13 @@ font-family: 'Inter', sans-serif;
   color: #5C5C5C;
   margin: 0px 0px 25px 0px;
 }
+
+.main-page__form .item-input {
+  margin: 0px 18px 15px 0px;
+}
+.form__column:last-child .item-input {
+  margin: 0px 0px 15px 0px;
+}
 .main-page__form .item-input input {
   padding: 15px 20px 15px 10px;
   background: rgba(255, 255, 255, 0.65);
@@ -317,7 +324,6 @@ font-family: 'Inter', sans-serif;
   /*
   border-left: 10px solid transparent;
   */
-  margin: 0px 18px 15px 0px;
 }
 .main-page__form .item-input input:focus {
   border-left: 10px solid #F65118;
