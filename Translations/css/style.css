@@ -117,7 +117,7 @@ body._no-scroll {
   font-size: 40px;
   line-height: 45px;
 }
-.title span:first-child {
+.green {
   color: #4ba34e;
 }
 .title-2 {
@@ -189,8 +189,7 @@ body._no-scroll {
   box-shadow: 0px 15px 15px 0px rgba(192, 174, 131, 0.6),
               inset 0 0 15px 0 rgba(255, 255, 255, 0.4);
 }
-.rub::after {
-  content: " ₽";
+.rub {
   font-family: 'CeraProBold',’Arial’,’Helvetica Neue’, sans-serif;
   white-space: nowrap;
 }
@@ -2437,7 +2436,7 @@ body._no-scroll {
     width: 15px;
     background-color: #baa87d;
     height: 1px;
-    right: 11px;
+    right: 10px;
     top: 50%;
     transform: translate(0,-50%) rotate(45deg);
     transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
