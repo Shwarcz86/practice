@@ -31,11 +31,12 @@ $(document).ready(function() {
     $('body').removeClass('_no-scroll');
     $('.top-btn').removeClass('_disabled');
   });
-
-    $('.top-footer__title').on('click', function() {
-      $(this).toggleClass('_active'),
-      $(this).next().slideToggle('slow');
-    });
+  
+  //Выпадания
+  $('.top-footer__title').on('click', function() {
+    $(this).toggleClass('_active'),
+    $(this).next().slideToggle('slow');
+  });
 
   //FancyBox
   $('.fancybox').fancybox();
@@ -101,9 +102,10 @@ $(document).ready(function() {
     $(this).parents().addClass('_active'); 
   });
 
-/* Плавный скролл к якорю для всех ссылок с классом "inner-link" */
+/* Плавный скролл к якорю */
   $(function(){ $('.bottom-header__navigation-list li a[href^="#"], .top-footer__navigation-list li a[href^="#"]').click(function(){
     var _href = $(this).attr('href');
     $('html, body').animate({scrollTop: $(_href).offset().top - 50 +'px'}); return false; });
   });
+
 });
