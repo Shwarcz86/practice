@@ -431,6 +431,17 @@ body._no-scroll {
 .header._page {
   background: linear-gradient(269.95deg, #8FD2EE 0.03%, #C5EAF7 99.95%);
   padding: 20px 0;
+}
+/*///////////////////////////////////DEMO-DELETE//////////////////////////////////*/
+.page .content {
+  padding: 300px 0 100px;
+}
+.page .content li {
+  padding: 10px 0;
+}
+.page .content li a {
+  font-size: 24px;
+  color: #2a579c;
 } 
 /*///////////////////////////////////FONTS///////////////////////////////////////*/
 /*Extra-Light 200*/
