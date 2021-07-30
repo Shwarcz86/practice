@@ -28,6 +28,8 @@ $(document).ready(function() {
     $('.bottom-header').toggleClass('_active');
     $('body').toggleClass('_no-scroll');
     $('.top-btn').toggleClass('_disabled');
+    $('.content-header').toggleClass('_active');
+    
   })
 
   $('.bottom-header__navigation-list li a').on('click', function() {
