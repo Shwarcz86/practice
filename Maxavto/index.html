@@ -50,18 +50,19 @@
                   <a class="top-header__phone" href="tel:+79781115859" rel="nofollow">
                     +7 (978) 111 58 59
                   </a>
-                  <a class="top-header__mail" href="mailto:ttkvladavto@yandex.ru" rel="nofollow">
+                  <a class="top-header__mail" href="mailto:ttkvladavto@yandex.ru" rel="nofollow"
+                  data-da=".bottom-header__navigation,1129,2">
                     ttkvladavto@yandex.ru
                   </a>
                 </div>
-                <a class="top-header__callback fancybox" href="#modal-form">
+                <a class="top-header__callback fancybox" href="#modal-form" data-da=".bottom-header__navigation,1129,2">
                   <img src="img/icons/callback.svg" alt="" />
                 </a>
               </div>
             </div>
-            <div class="content-header__bottom header-bottom">
-              <nav class="header-bottom__navigation">
-                <ul class="header-bottom__navigation-list">
+            <div class="content-header__bottom bottom-header">
+              <nav class="bottom-header__navigation">
+                <ul class="bottom-header__navigation-list">
                   <li><a href="#">О компании</a></li>
                   <li><a href="#">Вакансии</a></li>
                   <li><a href="#">Документация</a></li>
@@ -75,12 +76,22 @@
               </nav>
             </div>
           </div>
+          <div class="header__menu-btn menu-toggle">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="cross">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-
     <main class="page">
-      <div class="page__main main-page">
+      <section class="page__main main-page">
         <div class="container">
           <div class="main-page__inner">            
             <h1 class="title main-page__title">Доставим бетон 
@@ -107,12 +118,12 @@
                           <input type="text" placeholder="Объем бетона" required="required">
                         </div>
                         <div class="item-input">
-                          <input type="text" placeholder="Марка бетона" required="required">
+                          <input type="text" placeholder="Город" required="required">
                         </div>
                       </div>
                       <div class="form__column">
                         <div class="item-input">
-                          <input type="text" placeholder="Город" required="required">
+                          <input type="text" placeholder="Марка бетона" required="required">
                         </div>
                         <div class="item-input">
                           <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
@@ -123,28 +134,404 @@
                       <div class="checkbox">
                         <label>
                           <input type="checkbox" required="required" checked="checked" />
-                          <span>Согласие на обработку персональных данных</span>
+                          <span>Я даю согласие на обработку персональных данных</span>
                         </label>
                       </div>
                     </div>
-                    <button class="btn-main" type="submit">Заказать перевод документов</button>
+                    <button class="btn-main" type="submit">Рассчитать стоимость доставки</button>
                   </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="page__products products-page">
+        <div class="container">
+          <h2 class="title-2 products-page__title">
+            У нас можно заказать
+          </h2>
+          <div class="products-page__items">
+            <div class="products-page__item">
+              <a class="products-page__item-img" href="#">
+                <img src="img/product-1.jpg" alt="" />
+              </a>
+              <div class="products-page__item-inner">
+                <a class="products-page__item-title" href="#">
+                  Бетон и цемент
+                </a>
+                <ul class="products-page__item-list">
+                  <li>Производство</li>
+                  <li>Доставка</li>
+                  <li>Автобетононасос</li>
+                </ul>
+                <div class="products-page__item-box">
+                  <a class="products-page__item-link" href="#">Подробнее ...</a>
+                  <a class="btn-1 products-page__item-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <div class="products-page__item">
+              <a class="products-page__item-img" href="#">
+                <img src="img/product-2.jpg" alt="" />
+              </a>
+              <div class="products-page__item-inner">
+                <a class="products-page__item-title" href="#">
+                  ЖБИ
+                </a>
+                <ul class="products-page__item-list">
+                  <li>ФБС</li>
+                  <li>Кольца колодезные</li>
+                  <li>Бордюры</li>
+                </ul>
+                <div class="products-page__item-box">
+                  <a class="products-page__item-link" href="#">Подробнее ...</a>
+                  <a class="btn-1 products-page__item-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <div class="products-page__item">
+              <a class="products-page__item-img" href="#">
+                <img src="img/product-3.jpg" alt="" />
+              </a>
+              <div class="products-page__item-inner">
+                <a class="products-page__item-title" href="#">
+                  Инертные материалы
+                </a>
+                <ul class="products-page__item-list">
+                  <li>Щебень</li>
+                  <li>Песок</li>
+                  <li>Отсев</li>
+                </ul>
+                <div class="products-page__item-box">
+                  <a class="products-page__item-link" href="#">Подробнее ...</a>
+                  <a class="btn-1 products-page__item-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__advantages advantages-page">
+        <div class="container">
+          <h2 class="title-2 advantages-page__title">Основные преимущества</h2>
+          <ul class="advantages-page__list">
+            <li>
+              Собственный автопарк спецтехники
+              <span class="advantages-page__list-text">
+                В нашем автопарке более 10 единиц спецтехники: автобетоносмесители, погрузчики, самосвалы.
+              </span>
+            </li>
+            <li>
+              Собственное производство
+              <span class="advantages-page__list-text">
+                Производим бетон из интертных материалов собственного производства (щебень М1000-1200, песок 0 2.8-3мм)
+                и цемента (42,5 Д0 500 «Новороссийск»)
+              </span>
+            </li>
+            <li>
+              Качество, соответствующее ГОСТу
+              <span class="advantages-page__list-text">
+                Своя лаборатория  для подтверждения соответствия качества бетона требованиям ГОСТа, имеются декларации на бетон. Делаем бетонную смесь из инертных материалов, соответствующих ГОСТу
+              </span>
+            </li>
+            <li>
+              Индивидуальный подход
+              <span class="advantages-page__list-text">
+                Ответим на все вопросы, индивидуально подойдем к производству бетона
+                по пожеланиям заказчика
+              </span>
+            </li>
+            <li>
+              Соблюдаем сроки
+              <span class="advantages-page__list-text">
+                Производим бетон в день, когда он вам необходим для заливки и доставляем 
+                на объект четко по расписанию, для того чтобы бетон не терял свои свойства.
+              </span>
+            </li>
+            <li>
+              Самая дешевая доставка 
+              по Белогорскому району
+              <span class="advantages-page__list-text">
+                Вы получите бетон от производителя 
+                без посредников и наценок за доставку бетона на ваш строительный объект. 
+                Мы сами произведем и доставим.
+              </span>
+            </li>
+          </ul>
+          <div class="advantages-page__img">
+            <img src="img/advantages-bg2.png" alt=""/>
+          </div>
+        </div>
+      </section>
+      <div class="page__partners partners-page">
+        <div class="container">
+          <h2 class="title-2 partners-page__title">
+            <span>Наши партнеры
+          </h2>
+          <div class="partners-page__slider">
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/1.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/2.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/3.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/4.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/1.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/2.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/3.png" alt="">
+              </div>
+            </div>
+            <div class="partners-page__slider-item">
+              <div class="partners-page__slider-img">
+                <img src="img/partners/4.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <section class="page__order order-page">
+        <div class="container">
+          <h2 class="title-2 order-page__title">Как заказать?</h2>
+          <div class="order-page__inner">
+            <ul class="order-page__list">
+              <li><span>1</span> Оставьте заявку на сайте или позвоните:
+                <a class="order-page__phone" href="tel:+79781115859" rel="nofollow">
+                  +7 (978) 111 58 59
+                </a>
+              </li>
+              <li><span>2</span> С Вами свяжется менеджер и проконсультирует</li>
+              <li><span>3</span> Мы произведем необходимый объем и марку бетона 
+                в соответствии с вашей заявкой</li>
+              <li><span>4</span> Вы получите бетон точно ко времени заливки</li>
+            </ul>
+            <div class="order-page__form form-page">
+              <div class="modal-block">
+                <div class="modal-wrap">
+                  <div class="block-form">
+                    <div class="block-form__title">
+                      Заполните форму
+                    </div>
+                    <div class="block-form__subtitle">
+                      Наш менеджер свяжется с Вами
+                      в ближайшее время
+                    </div>
+                    <form>
+                      <div class="item-input">
+                        <input type="text" placeholder="Ваше имя" required="required">
+                      </div>
+                      <div class="item-input">
+                        <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                      </div>
+                      <div class="checkbox-wrap">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" required="required" checked="checked" />
+                            <span>Я даю согласие на обработку персональных данных</span>
+                          </label>
+                        </div>
+                      </div>
+                      <button class="btn-big btn-main" type="submit">Заказать</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-page__img">
+          <img src="img/car.png" alt="" />
+        </div>
+      </section>
+      <div class="page__contacts contacts-page">
+        <div class="container">
+          <h2 class="title-2 contacts-page__map-title">Мы на карте</h2>
+        </div>
+        <div class="contacts-page__map _map-grey" id="map">
+          <div class="container">
+            <div class="contacts-page__box" data-da=".contacts-page__map-title,830,2">
+              <div class="contacts-page__info">
+                <div class="contacts-page__info-main">
+                  <div class="contacts-page__info-address">
+                    <span>Адрес</span>
+                    Белогорский район, пгт. Зуя<br>
+                    ул. Шоссейная, д. 115 Б 
+                  </div>
+                  <span>Телефон</span>
+                  <a class="contacts-page__info-phone" href="tel:+79781115859" rel="nofollow">
+                    +7 (978) 111 58 59
+                  </a>
+                  <span>E-mail:</span>
+                  <a class="contacts-page__info-mail" href="mailto:kolorstudiya@yandex.ru" rel="nofollow">
+                    kolorstudiya@yandex.ru
+                  </a>
+                  <a class="btn-2 contacts-page__info-btn" href="tel:+79781115859" rel="nofollow">Позвонить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="top-btn"></button>
     </main>
-    
     <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <a class="logo" href="#">
+              <img src="img/logo2.png" alt="" />
+            </a>
+            <span class="footer__column-text">Производство и доставка бетона в Крыму</span>
+          </div>
+          <div class="footer__column">
+            <div class="footer__top">
+              <ul class="footer__top-navigation">
+                <li><a href="#">Бетон</a></li>
+                <li><a href="#">ЖБИ</a></li>
+                <li><a href="#">Инертные материалы</a></li>
+                <li><a href="#">Доставка</a></li>
+              </ul>
+            </div>
+            <div class="footer__middle">
+              <ul class="footer__middle-navigation">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Документация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__bottom-inner">
+                <a class="footer__bottom-confidentiality" href="#" rel="nofollow">
+                  Политика конфиденциальности
+                </a>
+                <div class="footer__bottom-copyright">
+                  Simferopol © Copyright 2021
+                </div> 
+                <a class="footer__bottom-development" href="#" rel="nofollow" target="_blank">Сделано в
+                  <img src="img/icons/sheer.svg" alt="logo-sheer" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__info">
+              <div class="footer__address">
+                <span>Адрес</span>
+                  Белогорский район, пгт. Зуя<br>
+                  ул. Шоссейная, д. 115 Б 
+              </div>
+              <span>Телефон</span>
+              <a class="footer__phone" href="tel:+79781115859" rel="nofollow">
+                +7 (978) 111 58 59
+              </a>
+              <span>E-mail:</span>
+              <a class="footer__mail" href="mailto:kolorstudiya@yandex.ru" rel="nofollow">
+                kolorstudiya@yandex.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
   <script src="js/libs/jquery/jquery-1.11.1.min.js"></script>
   <script src="js/libs/slick/slick.min.js"></script>
   <script src="js/libs/maskedinput/jquery.maskedinput.min.js"></script>
   <script src="js/libs/fancybox/jquery.fancybox.js"></script>
+  <script src="js/libs/dynamic_adapt/dynamic_adapt.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+  <script>
+    (function($)
+    { 
+      if (window.matchMedia('(max-width: 700px)').matches)
+      {
+        xCenter = [45.057536, 34.329029]; // Центр до 00px (мобильные), совпадает с маркером
+      }
+      else if (window.matchMedia('(max-width: 900px)').matches) {
+        xCenter = [45.057536, 34.329029]; // Центр до 1300px
+      } else {      
+        xCenter = [45.057536, 34.329029]; // Центр на десктопе
+      }
+      createMap('map', [45.057536, 34.329029]); // Координаты маркера
+
+      function createMap(xID, coords)
+      {
+        if ($("#" + xID + "").length > 0)
+        {
+          var myMap;
+          // Дождёмся загрузки API и готовности DOM.
+          ymaps.ready(init);
+  
+          function init()
+          {
+            myMap = new ymaps.Map(xID,
+            {
+              center: xCenter,
+              zoom: 17
+            },
+            {
+              searchControlProvider: 'yandex#search'
+            });
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+              myPlacemark = new ymaps.Placemark(coords,
+              {
+                hintContent: 'Белогорский район, пгт. Зуя ул. Шоссейная, д. 115 Б',
+                balloonContent: '<p class="text-map"><span>Белогорский район, пгт. Зуя,</span><br>ул. Шоссейная, д. 115 Б</p>'
+              },
+              {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/icons/map-marker.svg',
+                // Размеры метки.
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [39, 57],
+                balloonOffset: [ 4, -53 ],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -45]
+              });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+            myMap.controls.remove('searchControl'); // удаляем поиск
+            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+            myMap.controls.remove('typeSelector'); // удаляем тип
+            myMap.controls.remove('rulerControl'); // удаляем контрол правил
+            myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+          }
+        }
+      }
+    })(jQuery);
+  </script>
 </body>
 
 </html>
