@@ -2075,7 +2075,8 @@ font-family: 'Inter', sans-serif;
   }
 }
 @media(max-width: 350px) {
-  .header {
+  .header,
+  .header._page {
     padding: 10px 0;
   }
   .top-header__social {
