@@ -419,6 +419,15 @@ body._no-scroll {
 .top-btn._disabled {
   display: none !important;
 } 
+.modal-block.visually-hidden {
+  display: none;
+}
+.fancybox-skin {
+  border-radius: 32px !important;
+}
+.fancybox-skin {
+  padding: 0 !important;
+}
 /*///////////////////////////////////FONTS///////////////////////////////////////*/
 /*Extra-Light 200*/
 /*Light 300*/
@@ -1737,6 +1746,12 @@ font-family: 'Inter', sans-serif;
   }
   .footer__middle {
     padding: 0px 0px 10px 0px;
+  }
+}
+@media(max-width: 450px) {
+  .modal-block.visually-hidden {
+    width: 100%;
+    padding: 30px 30px 35px;
   }
 }
 @media(max-width: 430px) {
