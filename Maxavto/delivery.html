@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="js/libs/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
-  <title>Главная</title>
+  <title>Доставка</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                 Белогорский район, пгт. Зуя, ул.<br>Шоссейная, д. 115 Б 
               </span>
               <span class="top-header__worktime">
-                Режим рабооты:<br>
+                Режим работы:<br>
                 с 08:00 до 17:00
               </span>
               <div class="top-header__box">
@@ -70,7 +70,7 @@
                   <li><a href="#">Бетон</a></li>
                   <li><a href="#">ЖБИ</a></li>
                   <li><a href="#">Инертные материалы</a></li>
-                  <li><a href="#">Доставка</a></li>
+                  <li><a class="_active" href="#">Доставка</a></li>
                   <li><a href="#">Контакты</a></li>
                 </ul>
               </nav>
@@ -91,34 +91,84 @@
       </div>
     </header>
     <main class="page">
-
-
-      <div class= "content">
+      <section class="page__delivery delivery-page">
         <div class="container">
-        <ul>
-          <li>
-            <a class="demo" href="index.html">Главная</a>
-          </li>
-          <li>
-            <a class="demo" href="news.html">Новости</a>
-          </li>
-          <li>
-            <a class="demo" href="documentation.html">Документация</a>
-          </li>
-          <li>
-            <a class="demo" href="vacancies.html">Вакансии</a>
-          </li>
-          <li>
-            <a class="demo" href="delivery.html">Доставка</a>
-          </li>
-          <li>
-            <a class="demo" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
+          <h1 class="title-2 delivery-page__title">
+            Доставка
+          </h1>
+          <div class="delivery-page__inner">
+            <div class="delivery-page__column">
+              <h3 class="delivery-page__column-title">
+                Доставка миксерами (автобетоносмесителями) 7-9 м<sup>3</sup>
+              </h3>
+              <article>
+                <table>
+                  <tr>
+                    <th>Расстояния</th>
+                    <th>Цена за объем: 7 м<sup>3</sup></th>
+                    <th>Цена за объем: 9 м<sup>3</sup></th>
+                  </tr>
+                  <tr>
+                    <td>Пгт. Зуя:</td>
+                    <td><span>1000 ₽</span></td>
+                    <td><span>1000 ₽</span></td>
+                  </tr>
+                  <tr>
+                    <td>До 10 км:</td>
+                    <td><span>1500 ₽</span></td>
+                    <td><span>2000 ₽</span></td>
+                  </tr>
+                  <tr>
+                    <td>До 15 км:</td>
+                    <td><span>2000 ₽</span></td>
+                    <td><span>2500 ₽</span></td>
+                  </tr>
+                  <tr>
+                    <td>До 20 км:
+                      <i>(г.Белогорск)</i> 
+                    </td>
+                    <td><span>2500 ₽</span></td>
+                    <td><span>3000 ₽</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1">Свыше 20 км:</td>
+                    <td colspan="2"><span>150 ₽/км</span></td>
+                  </tr>
+                </table>
+              </article>
+            </div>
+            <div class="delivery-page__column">
+              <h3 class="delivery-page__column-title">
+                Простой миксера
+              </h3>
+              <div class="delivery-page__column-box">
+                <div class="delivery-page__column-subtitle">
+                  1 час <span>бесплатно</span>
+                </div>
+                <div class="delivery-page__column-img">
+                  <img src="img/car-2.png" alt="" />
+                </div>
+                <article>
+                  <table>
+                    <tr>
+                      <th>
+                        Цена за объем: 7 м<sup>3</sup>
+                      </th>
+                      <th>
+                        Цена за объем: 9 м<sup>3</sup>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Свыше 20 км:</td>
+                      <td><span>150 ₽/км</span></td>
+                    </tr>
+                  </table>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <button class="top-btn"></button>
     </main>
     <footer class="footer">

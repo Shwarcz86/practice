@@ -97,7 +97,14 @@ $(document).ready(function() {
     ]
   });
 
+  //Выпадания
+  $('.vacancies-page__item-title').on('click', function() {
+    $(this).toggleClass('_active'),
+    $(this).next().slideToggle('slow');
+  });
 
+    //Обвертка для таблицы в article
+    $('article table').wrap('<div class="some-class"></div>');
 });
 
 
