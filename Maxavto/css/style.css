@@ -1531,7 +1531,7 @@ font-family: 'Inter', sans-serif;
 .delivery-page {
   position: relative;
   z-index: 1;
-  background: url('../img/delivery-bg-min.png') 0 0 no-repeat;
+  background: url('../img/delivery-bg.png') 0 0 no-repeat;
   background-size: cover;
 }
 .delivery-page__title {
