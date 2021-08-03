@@ -103,8 +103,36 @@ $(document).ready(function() {
     $(this).next().slideToggle('slow');
   });
 
-    //Обвертка для таблицы в article
-    $('article table').wrap('<div class="some-class"></div>');
+  //Обвертка для таблицы в article
+  $('article table').wrap('<div class="some-class"></div>');
+
+  //Слайдер - "О нас"
+  $('.about-page__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    infinite: false,
+    /*
+    variableWidth: true,
+    */
+    dots: true,
+    prevArrow: '<button class="about-slider__btn about-slider__btnprev"><img src="img/icons/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button class="about-slider__btn about-slider__btnnext"><img src="img/icons/arrow-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 431,
+        settings: {
+          dots: false,
+          arrows: true,
+          speed: 500
+        }
+      },
+    ]
+  });
+
+
+
+
 });
 
 
