@@ -1640,6 +1640,149 @@ font-family: 'Inter', sans-serif;
   color: #434345;
   font-weight: 700;
 }
+/*//////////////////////////////////////about///////////////////////////////////////////*/
+.page__about {
+  padding: 240px 0 90px;
+}
+.about-page{
+  position: relative;
+  z-index: 1;
+  background: url('../img/page-bg.png') 0 0 no-repeat;
+  background-size: cover;
+}
+.about-page__title {
+  margin: 0px 0px 50px 0px;
+}
+.about-page__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 40px 0px;
+}
+.about-page article {
+  flex: 0 1 770px;
+  margin: 0px 30px 0px 0px;
+}
+.about-page article h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0px 0px 20px 0px;
+}
+.about-page article p {
+  margin: 0px 0px 20px 0px;
+}
+.about-page__img {
+  flex: 0 0 410px;
+}
+.about-page__img img {
+  object-fit: contain;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0px 33px 46px -44px rgba(0, 0, 0, 0.15);
+}
+.about-slider__item {
+  border-radius: 20px;
+}
+.about-slider__item-img {
+  border-radius: 20px;
+}
+.about-slider__item-img img {
+  object-fit: contain;
+  box-shadow: 0px 33px 46px -44px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.about-slider__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+}
+.about-slider__btnprev {
+  left: -25px;
+}
+.about-slider__btnnext {
+  right: -25px;
+}
+.about-slider .slick-arrow.slick-disabled {
+  opacity: 0.4;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -53px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 0;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #414245;
+}
+.slick-dots li button {
+  background-color: transparent;
+  border: 0;
+}
+.slick-dots li.slick-active {
+  background-color: #F65118;
+}
+.about-page__form {
+  padding: 90px 0;
+  background: url('../img/about-form-bg.png') 0 0 no-repeat;
+}
+/*//////////////////////////////////////general-form///////////////////////////////////////////*/
+@media(min-width: 700px) {
+  .general-form .modal-block {
+    position: relative;
+    width: 100%;
+    padding: 40px 55px 38px;
+  }
+  .general-form .block-form {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .block-form__img {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: -47px;
+  }
+  .block-form__img img {
+    object-fit: contain;
+  }
+  .block-form__content {
+    position: relative;
+    z-index: 1;
+    flex: 0 1 230px;
+    margin: 0px 60px 0px 0px;
+  }
+  .form-column {
+    position: relative;
+    z-index: 1;
+    display: flex;
+  }
+  .general-form .item-input input {
+    width: 260px;
+  }
+  .general-form .item-input {
+    margin: 0px 10px 10px 0px;
+  }
+  .general-form .item-input:last-child {
+    margin: 0px 0px 10px 0px;
+  }
+  .general-form .checkbox-wrap {
+    flex: 0 0 260px;
+  }
+  .general-form .btn-main {
+    margin: 0px 0px 0px 0px;
+  }
+}
 /*//////////////////////////////////////Pagination///////////////////////////////////////////*/
 .pagination {
   padding: 10px 0px 0px 0px;
@@ -1795,6 +1938,12 @@ font-family: 'Inter', sans-serif;
   .order-page__list {
     padding: 80px 0px 0px 0px !important;
   }
+  .about-slider__btnprev {
+    left: 0;
+  }
+  .about-slider__btnnext {
+    right: 0;
+  }
 }
 @media(max-width: 1300px) {
   .bottom-header__navigation-list li a {
@@ -1818,6 +1967,9 @@ font-family: 'Inter', sans-serif;
   }
   .delivery-page__img {
     display: none;
+  }
+  .general-form .block-form {
+    justify-content: space-between;
   }
 }
 @media(max-width: 1129px) {
@@ -1976,7 +2128,8 @@ font-family: 'Inter', sans-serif;
   .partners-page__title,
   .news-page__title,
   .advantages-page__title,
-  .delivery-page__title {
+  .delivery-page__title,
+  .about-page__title {
     margin: 0px 0px 30px 0px;
   }
   .page__order {
@@ -2017,8 +2170,12 @@ font-family: 'Inter', sans-serif;
   .page__news,
   .page__documentation,
   .page__vacancies,
-  .page__delivery  {
+  .page__delivery,
+  .page__about  {
     padding: 90px 0 40px;
+  }
+  .about-page__form {
+    padding: 20px 0 40px;
   }
   .page__contacts._page {
     padding: 90px 0px 0px 0px;
@@ -2036,6 +2193,9 @@ font-family: 'Inter', sans-serif;
   }
   .documentation-page__item:nth-child(3n) {
     margin: 0px 0px 20px 0px;
+  }
+  .slick-dots {
+    bottom: -30px;
   }
 }
 @media(max-width: 1024px) {
@@ -2112,6 +2272,29 @@ font-family: 'Inter', sans-serif;
   }
   .delivery-page__column {
     margin: 0px 0px 30px 0px;
+  }
+}
+@media(max-width: 950px) {
+  .block-form__img {
+    display: none;
+  }
+  .general-form .block-form {
+    display: block;
+  }
+  .general-form .modal-block {
+    margin: 0 auto;
+  }
+  .about-page__form {
+    padding: 0 0 40px;
+  }
+  .general-form .item-input,
+  .general-form .item-input input {
+    width: 100%;
+  }
+  .general-form .checkbox-wrap {
+    flex: none;
+    width: 50%;
+    margin: 0px 10px 0px 0px;
   }
 }
 @media(max-width: 830px) {
@@ -2235,6 +2418,9 @@ font-family: 'Inter', sans-serif;
   .vacancies-page__item-text {
     margin: 0px 0px 20px 0px;
   }
+  .about-page__inner {
+    display: block;
+  }
 }
 @media(max-width: 700px) {
   .block-form__inner {
@@ -2265,6 +2451,9 @@ font-family: 'Inter', sans-serif;
   .vacancies-page__column {
     width: 100%;
     margin: 0px 0px 0px 0px;
+  }
+  .general-form .checkbox-wrap {
+    width: 100%;
   }
 }
 @media(max-width: 640px) {
@@ -2377,7 +2566,8 @@ font-family: 'Inter', sans-serif;
     margin: 0px 0px 20px 0px;
   }
   .page__main,
-  .page__delivery {
+  .page__delivery,
+  .page__about {
     padding: 80px 0px 30px 0px;
   }
   .page__contacts._page {
@@ -2496,6 +2686,13 @@ font-family: 'Inter', sans-serif;
   .page__vacancies {
     padding: 80px 0 40px;
   }
+  .about-page article h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .general-form .modal-block {
+    width: 100%;
+  }
 }
 @media(max-width: 450px) {
   .modal-block.visually-hidden {
@@ -2553,7 +2750,8 @@ font-family: 'Inter', sans-serif;
     width: 190px;
     height: 190px;
   }
-  .order-page__form .modal-block {
+  .order-page__form .modal-block,
+  .general-form .modal-block {
     padding: 30px 30px 35px;
   }
   .checkbox-wrap {
