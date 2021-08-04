@@ -1929,7 +1929,12 @@ font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #434345;
 }
-.page__articles article table p {
+.page__articles article p b {
+  font-weight: 700;
+}
+.page__articles article p a {
+  color: #F65118;
+  text-decoration: underline;
 }
 .page__news._page {
   padding: 60px 0px 35px;
