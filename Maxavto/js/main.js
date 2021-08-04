@@ -103,8 +103,10 @@ $(document).ready(function() {
     $(this).next().slideToggle('slow');
   });
 
+  if (window.matchMedia('(max-width: 580px)').matches) {
   //Обвертка для таблицы в article
-  $('article table').wrap('<div class="some-class"></div>');
+    $('article table').wrap('<div class="some-class"></div>');
+  }
 
   //Слайдер - "О нас"
   $('.about-page__slider').slick({
