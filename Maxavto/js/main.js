@@ -108,6 +108,8 @@ $(document).ready(function() {
     $('article table').wrap('<div class="some-class"></div>');
   }
 
+  $('.concrete-page article table a').addClass('btn-1 fancybox');
+
   //Слайдер - "О нас"
   $('.about-page__slider').slick({
     slidesToShow: 1,
@@ -131,9 +133,6 @@ $(document).ready(function() {
       },
     ]
   });
-
-
-
 
 });
 
