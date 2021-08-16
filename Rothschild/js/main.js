@@ -31,6 +31,7 @@ $(document).ready(function() {
     $('.bottom-header').removeClass('_active');
     $('body').removeClass('_no-scroll');
     $('.top-btn').removeClass('_disabled');
+    $('.top-header').toggleClass('_active');
   });
   
   //ТЕЛЕФОН МАСКА
