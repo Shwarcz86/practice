@@ -75,6 +75,7 @@ $(document).ready(function() {
           slidesToScroll: 1,
           variableWidth: false,
           arrows: true,
+          speed: 500,
         }
       },
     ]
@@ -94,9 +95,6 @@ $(document).ready(function() {
     variableWidth: true,
     speed: 1500,
     autoplay: true,
-    /*
-    appendArrows:'.webinar-slider__item.slick-center',
-    */
     autoplaySpeed: 5000,
     prevArrow: '<button class="webinar-slider__btn webinar-slider__btn-prev"><img src="img/arrow-prev.png" alt=""></button>',
     nextArrow: '<button class="webinar-slider__btn webinar-slider__btn-next"><img src="img/arrow-next.png" alt=""></button>',
@@ -107,9 +105,7 @@ $(document).ready(function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           variableWidth: false,
-          /*
-          centerMode: false,
-          */
+          speed: 500,
           arrows: true,
         }
       },
@@ -121,6 +117,7 @@ $(document).ready(function() {
           variableWidth: false,
           centerMode: false,
           arrows: true,
+          speed: 500,
         }
       },
     ]
@@ -132,6 +129,17 @@ $(document).ready(function() {
     speed: 1500,
     prevArrow: '<button class="meditation-slider__btn meditation-slider__btn-prev"><img src="img/arrow-prev.png" alt=""></button>',
     nextArrow: '<button class="meditation-slider__btn meditation-slider__btn-next"><img src="img/arrow-next.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 831,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          speed: 500,
+        }
+      },
+    ]
   });
 
   $('.social-page__slider').slick({
@@ -158,6 +166,7 @@ $(document).ready(function() {
           slidesToScroll: 1,
           variableWidth: false,
           arrows: true,
+          speed: 500,
         }
       },
       {
@@ -167,19 +176,20 @@ $(document).ready(function() {
           slidesToScroll: 1,
           variableWidth: false,
           arrows: true,
+          speed: 500,
         }
       },
     ]
   });
 
-    //Выпадания
-    $('.questions-page__item-title').on('click', function() {
-      $(this).parents().toggleClass('_active'); 
-      $(this).toggleClass('_enable'); 
-      $(this).next().slideToggle('slow');
-    });
+  //Выпадания
+  $('.questions-page__item-title').on('click', function() {
+    $(this).parents().toggleClass('_active'); 
+    $(this).toggleClass('_enable'); 
+    $(this).next().slideToggle('slow');
+  });
 
-        //Кнопка вверх
+  //Кнопка вверх
   var button = $('.top-btn');	
   $(window).scroll (function () {
     if ($(this).scrollTop () > 600) {
