@@ -4176,6 +4176,7 @@ body._no-scroll {
     opacity: 1;
     transform: scale(1);
     pointer-events: all;
+    margin: 0 5px;
   }
   .webinar-slider {
     padding: 0 45px;
