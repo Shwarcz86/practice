@@ -2352,6 +2352,9 @@ form .button-wrapper3::before {
   .contacts-page__social { 
     justify-content: center;
   }
+  .contacts-page__address .nowrap {
+    white-space: nowrap;
+  }
 }
 @media(max-width: 400px) {
   .top-header__column:nth-child(2) {
