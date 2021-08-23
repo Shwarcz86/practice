@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="js/libs/slick/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
+  <title>Главная</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top top-header">
+        <div class="container">
+          <div class="top-header__inner">
+            <div class="top-header__column">
+              <a class="logo" href="#">
+                <img src="img/icons/logo.svg" alt="" />
+              </a>
+              <div class="top-header__text">
+                Строительная
+                компания
+              </div>
+            </div>
+            <div class="top-header__column">
+              <div class="top-header__social">
+                <span>Задайте вопрос в:</span>
+                <a class="top-header__social-item _whatsapp" href="https://api.whatsapp.com/send?phone=79780113366" rel="nofollow" target="_blank">
+                  <img src="img/icons/whatsapp.svg" alt="" />
+                </a>
+                <a class="top-header__social-item _viber" href="viber://chat?number=79780113366" rel="nofollow" target="_blank">
+                  <img src="img/icons/viber.svg" alt="" />
+                </a>
+              </div>
+              <a class="top-header__phone" href="tel:+79780113366" rel="nofollow">
+                +7 (978) 011-33-66
+              </a>
+              <a class="btn-1 top-header__callback fancybox" href="#modal-form-1" rel="nofollow" data-da=".bottom-header__navigation,970,2">
+                Заказать звонок
+              </a>
+            </div>
+            <div class="header__menu-btn menu-toggle">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="cross">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom bottom-header">
+        <div class="container">
+          <nav class="bottom-header__navigation">
+            <ul class="bottom-header__menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Отзывы о работе</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="page__main main-page">
+        <div class="container">
+          <div class="main-page__body">
+            <h1 class="title-1 main-page__title">
+              Спроектируем и построим <br> дом <span class="blue">за 90 дней</span> 
+            </h1>
+            <div class="main-page__subtitle">
+              с гарантией по договору <span class="blue">до 10 лет!</span>
+            </div>
+            <div class="main-page__text">
+              <b>Строительная компания полного цикла:</b> от анализа возможности 
+              реализации проекта и оформления необходимой документации, до строительно-монтажных работ с подключением инженерных сетей
+            </div>
+            <div class="main-page__buttons">
+              <div class="button-wrapper2">
+                <a class="btn-2 main-page__btn" href="#">
+                  Рассчитать стоимость 
+                </a>
+              </div>
+              <div class="button-wrapper3">
+                <a class="btn-3 main-page__btn" href="#">
+                  Смотреть тарифы
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main-page__features">
+            <div class="main-page__features-item item-features">
+              <h5 class="blue item-features__title">Твердая смета</h5>
+              <div class="item-features__text">
+                Расходы не изменяются в процессе работ и жестко фиксируются в договоре.
+              </div>
+            </div>
+            <div class="main-page__features-item item-features">
+              <h5 class="item-features__title blue">Поэтапная система оплаты</h5>
+              <div class="item-features__text">
+                Платите только за выполненные работы. Благодаря используемому нами подходу, мы можем предложить поэтапную систему оплаты. 
+              </div>
+            </div>
+            <div class="main-page__features-item item-features">
+              <h5 class="item-features__title blue">Гарантия</h5>
+              <div class="item-features__text">
+                Предоставляем гарантию до 10 лет не только на дом, но и на используемые материалы
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__tariffs tariffs-page">
+        <div class="container">
+          <h2 class="title-2 tariffs-page__title">
+            Тарифы и сроки строительства:
+          </h2>
+          <div class="tariffs-page__inner">
+            <div class="tariffs-page__item">
+              <a class="tariffs-page__img" href="#">
+                <img src="img/house-1.png" alt="" />
+              </a>
+              <div class="tariffs-page__item-box">
+                <a class="blue tariffs-page__item-title" href="#">
+                  Строительство коробки дома
+                </a>
+                <ul class="tariffs-page__item-list">
+                  <li>Фундамент</li>
+                  <li>Монолитный каркас ж/б</li>
+                  <li>Стены – ракушечник / газоблок / кирпич</li>
+                  <li>Перекрытие между этажами монолитное</li>
+                </ul>
+                <span class="blue tariffs-page__item-time">от 30 дней</span>
+                <span class="tariffs-page__item-price">от 15 000 ₽</span>
+                <div class="button-wrapper3">
+                  <a class="btn-3 tariffs-page__item-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <div class="tariffs-page__item">
+              <a class="tariffs-page__img" href="#">
+                <img src="img/house-2.png" alt="" />
+              </a>
+              <div class="tariffs-page__item-box">
+                <a class="blue tariffs-page__item-title" href="#">
+                  Тепловой контур
+                </a>
+                <ul class="tariffs-page__item-list">
+                  <li>Фундамент</li>
+                  <li>Монолитный каркас</li>
+                  <li>Стены - ракушечник / газоблок / кирпич</li>
+                  <li>Перекрытие между этажами монолитное</li>
+                  <li>Устройство кровли</li>
+                  <li>Монтаж окон и входных групп</li>
+                </ul>
+                <span class="blue tariffs-page__item-time">от 50 дней</span>
+                <span class="tariffs-page__item-price">от 25 000 ₽</span>
+                <div class="button-wrapper3">
+                  <a class="btn-3 tariffs-page__item-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <div class="tariffs-page__item">
+              <a class="tariffs-page__img" href="#">
+                <img src="img/house-3.png" alt="" />
+              </a>
+              <div class="tariffs-page__item-box">
+                <a class="blue tariffs-page__item-title" href="#">
+                  строительство Под ключ
+                </a>
+                <ul class="tariffs-page__item-list">
+                  <li>Фундамент</li>
+                  <li>Монолитный каркас</li>
+                  <li>Стены - ракушечник / газоблок / кирпич</li>
+                  <li>Перекрытие между этажами монолитное</li>
+                  <li>Устройство кровли</li>
+                  <li>Монтаж окон и входных групп</li>
+                  <li>Устройство сетей</li>
+                  <li>Внешняя и внутренняя отделка</li>
+                </ul>
+                <span class="blue tariffs-page__item-time">от 70 дней</span>
+                <span class="tariffs-page__item-price">от 50 000 ₽</span>
+                <div class="button-wrapper3">
+                  <a class="btn-3 tariffs-page__item-btn" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__advantages advantages-page">
+        <div class="container">
+          <div class="advantages-page__inner">
+            <h2 class="title-2 advantages-page__title">Экономим
+              <span class="blue">Ваше время</span>
+              при строительстве дома и закупках материалов
+            </h2>
+            <div class="advantages-page__text-box">
+              Делаем это честно и на совесть, 
+              как для себя
+            </div>
+          </div>
+          <div class="advantages-page__subtitle">
+            в <span class="blue">90% случаев</span> мы предлагаем
+            Вам <b class="blue">не самую низкую цену</b> <br>
+            на рынке 
+          </div>
+          <div class="advantages-page__text">
+            Ведь это будет означать что мы сэкономим на материалах, <br>
+            не уложимся в срок и сделаем свою работу не по ГОСТ, СНиП
+          </div>
+          <div class="advantages-page__subtitle-2">
+            Но в замен мы предлагаем множество 
+            преимуществ:
+          </div>
+          <div class="advantages-page__items">
+            <div class="advantages-page__item">
+              <h5 class="blue advantages-page__item-title">
+                Не поднимаем стоимость
+              </h5>
+              <div class="advantages-page__item-text">
+                Жестко фиксируем смету в договоре и не поднимаем ее в процессе выполняемых работ
+              </div>
+            </div>
+            <div class="advantages-page__item">
+              <h5 class="blue advantages-page__item-title">
+                Поэтапная оплата
+              </h5>
+              <div class="advantages-page__item-text">
+                Оплата каждого вида работ разбита на 
+                два платежа: 50% аванс, 50% по факту сдачи
+              </div>
+            </div>
+            <div class="advantages-page__item">
+              <h5 class="blue advantages-page__item-title">
+                Соблюдаем сроки
+              </h5>
+              <div class="advantages-page__item-text">
+                Мы несем ответсвенность за соблюдение сроков, за  день просрочки - начисляется пеня
+              </div>
+            </div>
+            <div class="advantages-page__item">
+              <h5 class="blue advantages-page__item-title">
+                Доставка материалов
+              </h5>
+              <div class="advantages-page__item-text">
+                При необходимости, мы самостоятельно закупаем и доставляем материалы на объект
+              </div>
+            </div>
+            <div class="advantages-page__item">
+              <h5 class="blue advantages-page__item-title">
+                Проводим уборку
+              </h5>
+              <div class="advantages-page__item-text">
+                В процессе работ и на этапе сдачи 
+                в эксплуатацию
+              </div>
+            </div>
+            <div class="advantages-page__item">
+              <h5 class="blue advantages-page__item-title">
+                Двойной контроль качества
+              </h5>
+              <div class="advantages-page__item-text">
+                Ваш объект одновременно курирует прораб и руководитель компании
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__consultation consultation-page">
+        <div class="container">
+          <div class="consultation-page__inner">
+            <div class="consultation-page__column">
+              <h2 class="consultation-page__title">
+                Запишитесь на <br>
+                <b class="blue">бесплатную консультацию</b> <br>
+                <span>и получите расчет стоимости дома</span>
+              </h2>
+              <div class="consultation-page__text-box">
+                Вас проконсультирует наш архитектор
+                <b>с опытом 10 лет</b> 
+              </div>
+              <div class="blue consultation-page__subtitle">
+                На консультации вы узнаете:
+              </div>
+              <ul class="consultation-page__list">
+                <li>Приблизительные сроки постройки вашего дома</li>
+                <li>Примерную стоимость строительства дома</li>
+                <li>На каких условиях мы работаем с клиентом</li>
+                <li>Особенности строительства в крымском регионе</li>
+              </ul>
+            </div>
+            <div class="consultation-page__column">
+              <div class="consultation-page__form form-page">
+                <div class="modal-block">
+                  <div class="modal-wrap">
+                    <div class="block-form">
+                      <div class="blue block-form__title">
+                        Запишитесь и получите 
+                        бесплатный расчет
+                      </div>
+                      <div class="block-form__subtitle">
+                        Выберите удобный способ связи
+                      </div>
+                      <div class="block-form__social">
+                        <a class="block-form__social-item _viber" href="viber://chat?number=79780113366" rel="nofollow" target="_blank">
+                          <img src="img/icons/viber.svg" alt="" />
+                        </a>
+                        <a class="block-form__social-item _whatsapp" href="https://api.whatsapp.com/send?phone=79780113366" rel="nofollow" target="_blank">
+                          <img src="img/icons/whatsapp.svg" alt="" />
+                        </a>
+                        <a class="block-form__social-item _telegram" href="https://t.me/79780113366" rel="nofollow" alt="" target="_blank">
+                          <img src="img/icons/telegram.svg" alt="" />
+                        </a>
+                      </div>
+                      <form>
+                        <div class="item-input">
+                          <input type="text" placeholder="Имя" required="required">
+                        </div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                        </div>
+                        <div class="button-wrapper2">
+                          <button class="btn-2 btn-main" type="submit">
+                            получить расчет
+                          </button>
+                        </div>
+                        <div class="checkbox-wrap">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" required="required" checked="checked" />
+                              <span>Согласие на обработку персональных данных</span>
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="consultation-page__img">
+              <img src="img/consultation-bg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__projects projects-page">
+        <div class="container">
+          <div class="projects-page__inner">
+            <h2 class="title-2 projects-page__title">
+              Выберите готовый проект дома
+              или закажите индивидуальный
+            </h2>
+            <div class="projects-page__text-box">
+              Каталог готовых, а так же уже реализованных проектов
+            </div>
+          </div>
+          <div class="projects-page__items">
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/1.jpg" alt="" />
+                <span class="projects-page__item-size">96 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">
+                    Одноэтажный дом с террасой в пригороде
+                  </a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>6 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/2.jpg" alt="" />
+                <span class="projects-page__item-size">150 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">
+                    Двухэтажный дом с камином и внутренним двором
+                  </a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>8 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/3.jpg" alt="" />
+                <span class="projects-page__item-size">135 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">
+                    Двухэтажный дом с верандой
+                  </a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>10 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/4.jpg" alt="" />
+                <span class="projects-page__item-size">72 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">Одноэтажный дом с террасой
+                    в пригороде</a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>6 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/3.jpg" alt="" />
+                <span class="projects-page__item-size">135 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">
+                    Двухэтажный дом с верандой
+                  </a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>10 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/4.jpg" alt="" />
+                <span class="projects-page__item-size">72 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">Одноэтажный дом с террасой
+                    в пригороде</a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>6 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/1.jpg" alt="" />
+                <span class="projects-page__item-size">96 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">
+                    Одноэтажный дом с террасой в пригороде
+                  </a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>6 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a class="projects-page__item-img" href="#">
+                <img src="img/products/2.jpg" alt="" />
+                <span class="projects-page__item-size">150 м<sup>2</sup></span>
+              </a>
+              <div class="projects-page__item-box">
+                <article>
+                  <a href="#">
+                    Двухэтажный дом с камином и внутренним двором
+                  </a>
+                    <table>
+                      <tr>
+                        <td>Материалы стен:</td>
+                        <td>газобетон</td>
+                      </tr>
+                      <tr>
+                        <td>Срок реализации:</td>
+                        <td>8 месяцев</td>
+                      </tr>
+                      <tr>
+                        <td>Спальни: </td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                </article>
+                <a class="btn-1 projects-page__item-btn" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrapper3">
+            <button class="btn-3 projects-page__more">Смотреть еще</button>
+          </div>
+        </div>
+      </section>
+      <section class="page__stages stages-page">
+        <div class="container">
+          <h2 class="title-2 stages-page__title">Этапы работ</h2>
+          <div class="stages-page__inner">
+            <div class="stages-page__item">
+              <div class="stages-page__item-number">
+                <span>01</span>
+              </div>
+              <h4 class="stages-page__item-title">
+                Согласование с вами всех 
+                предварительных вопросов
+              </h4>
+              <span class="stages-page__item-subtitle">
+                В этап входит: 
+              </span>
+              <ul class="stages-page__item-list">
+                <li>Подбор проекта дома, при необходимости</li>
+                <li>Консультация по выбору материалов</li>
+                <li>Предварительный расчет строительства</li>
+              </ul>
+            </div>
+            <div class="stages-page__item">
+              <div class="stages-page__item-number">
+                <span>02</span>
+              </div>
+              <h4 class="stages-page__item-title">
+                Детально изучаем ваш проект
+              </h4>
+              <div class="stages-page__item-text">
+                По итогам встречи направляем Бриф. Ваша задача прочитать, правильно ли мы поняли Ваш проект, предоставить необходимые документы (КП поставщиков, технологический процесс, штатное расписание, документы на недвижимость и земельные участки, сметы и т.д.). Также направляем Вам договор на согласование и счет на оплату.
+              </div>
+            </div>
+            <div class="stages-page__item">
+              <div class="stages-page__item-number">
+                <span>03</span>
+              </div>
+              <h4 class="stages-page__item-title">
+                Подписание договора
+              </h4>
+              <div class="stages-page__item-text">
+                На третьем этапе ждем от Вас подписанный договор, оплату, полностью заполненный и подписанный Бриф, необходимые документы. После оплаты, даже если Вы еще работаете над сбором документов и заполенением Брифа, мы уже начинаем подготовительную работу по проекту.
+              </div>
+            </div>
+            <div class="stages-page__item">
+              <div class="stages-page__item-number">
+                <span>04</span>
+              </div>
+              <h4 class="stages-page__item-title">
+                Работа над проектом
+              </h4>
+              <div class="stages-page__item-text">
+                На четвертом этапе работаем над проектом. <br> В среднем три недели. Срок зависит от сложности проекта, ваших требований, полноты исходных данных. Предоставляем промежуточные результаты работы, чтобы оперативно учитывать ваши пожелания и замечания. 
+              </div>
+            </div>
+            <div class="stages-page__item">
+              <div class="stages-page__item-number">
+                <span>05</span>
+              </div>
+              <h4 class="stages-page__item-title">
+                Согласование проекта
+              </h4>
+              <div class="stages-page__item-text">
+                На пятом этапе предоставляем Вам на согласование проект бизнес-плана и финансовую модель. Согласовываем доработки. Работаем до достижения 100% Вашей удовлетворенности проектом.
+              </div>
+            </div>
+            <div class="stages-page__item">
+              <div class="stages-page__item-number">
+                <span>06</span>
+              </div>
+              <h4 class="stages-page__item-title">
+                Презентация проекта
+              </h4>
+              <div class="stages-page__item-text">
+                На шестом этапе, если это необходимо, помогаем Вам в презентации проекта, отвечаем на вопросы заинтересованных лиц, дополняем проект
+              </div>
+            </div>
+          </div>
+          <div class="stages-page__form form-page">
+            <form>
+              <div class="form-page__box">
+                <div class="item-input">
+                  <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                </div>
+                <div class="button-wrapper3">
+                  <button class="btn-3 btn-main" type="submit">
+                    получить расчет
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="page__social social-page">
+        <div class="container">
+          <div class="social-page__inner">
+            <h2 class="title-2 social-page__title">Мы в Instagram</h2>
+            <div class="social-page__text-box">
+              Подписывайтесь на нас в Instagram
+              <a href="#">@stroy_dom</a>
+            </div>
+          </div>
+          <div class="social-page__slider social-slider">
+            <div class="social-slider__item">
+              <a class="social-slider__item-img" href="#" >
+                <img src="img/house-4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="social-slider__item">
+              <a class="social-slider__item-img" href="#" >
+                <img src="img/house-5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="social-slider__item">
+              <a class="social-slider__item-img" href="#" >
+                <img src="img/house-6.jpg" alt="" />
+              </a>
+            </div>
+            <div class="social-slider__item">
+              <a class="social-slider__item-img" href="#" >
+                <img src="img/house-7.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__contacts contacts-page">
+        <div class="container">
+          <h2 class="title-2 contacts-page__title">
+            У вас <span class="blue">остались вопросы?</span> <br>
+            Свяжитесь с нами удобным способом
+          </h2>
+          <div class="contacts-page__inner">
+            <div class="contacts-page__box">
+              <div class="contacts-page__address">
+                <span>Адрес:</span>
+                г. Севастополь, ул.  Вакуленчука 53 / 11
+              </div>
+              <div class="contacts-page__container">
+                <div class="contacts-page__phone">
+                  <span>Телефон:</span>
+                  <a href="tel:+79780113366" rel="nofollow">
+                    +7 (978) 011-33-66
+                  </a>
+                </div>
+                <div class="contacts-page__social">
+                  <a class="contacts-page__social-item _viber" href="viber://chat?number=79780113366" rel="nofollow" target="_blank">
+                    <img src="img/icons/viber.svg" alt="" />
+                  </a>
+                  <a class="contacts-page__social-item _whatsapp" href="https://api.whatsapp.com/send?phone=79780113366" rel="nofollow" target="_blank">
+                    <img src="img/icons/whatsapp.svg" alt="" />
+                  </a>
+                  <a class="contacts-page__social-item _telegram" href="https://t.me/79780113366" rel="nofollow" alt="" target="_blank">
+                    <img src="img/icons/telegram.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="contacts-page__email">
+                <span>Почта:</span>
+                <a href="mailto:stroy_dom@mail.ru" rel="nofollow">
+                  stroy_dom@mail.ru
+                </a>
+              </div>
+              <div class="contacts-page__worktime">
+                <span>График работы:</span>
+                Пн-пт: 09:00 - 18:00 <br>
+                Сб: 10:00 - 17:00 
+              </div>
+              <div class="button-wrapper3">
+                <button class="btn-3 contacts-page__btn">проложить маршрут</button>
+              </div>
+            </div>
+            <div class="contacts-page__map" id="map-1"></div>
+          </div>
+        </div>
+      </section>
+      <button class="top-btn"></button>
+    </main>
+    <footer class="footer">
+      <div class="footer__top top-footer">
+        <div class="container">
+          <div class="top-footer__inner">
+            <div class="top-footer__column">
+              <div class="top-footer__box">
+                <a class="logo" href="#">
+                  <img src="img/icons/logo.svg" alt="" />
+                </a>
+                <div class="top-footer__text">
+                  Строительная
+                  компания
+                </div>
+              </div>
+              <div class="top-footer__email">
+                <span>Почта:</span>
+                <a href="mailto:stroy_dom@mail.ru" rel="nofollow">
+                  stroy_dom@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="top-footer__column">
+              <div class="top-footer__social">
+                <span>Задайте вопрос в:</span>
+                <a class="top-footer__social-item _whatsapp" href="https://api.whatsapp.com/send?phone=79780113366" rel="nofollow" target="_blank">
+                  <img src="img/icons/whatsapp.svg" alt="" />
+                </a>
+                <a class="top-footer__social-item _viber" href="viber://chat?number=79780113366" rel="nofollow" target="_blank">
+                  <img src="img/icons/viber.svg" alt="" />
+                </a>
+              </div>
+              <a class="top-footer__phone" href="tel:+79780113366" rel="nofollow">
+                +7 (978) 011-33-66
+              </a>
+              <a class="btn-1 top-footer__callback fancybox" href="#modal-form-1" rel="nofollow">
+                Заказать звонок
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__medium medium-footer">
+        <div class="container">
+          <nav class="medium-footer__navigation">
+            <ul class="medium-footer__navigation-list">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Отзывы о работе</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <a class="footer__bottom-confidentiality" href="#" rel="nofollow">
+              Политика конфиденциальности
+            </a>
+            <p class="footer__bottom-copyright">
+              г. Симферополь © Copyright  2021 г.
+            </p> 
+            <a class="footer__bottom-development" href="#" rel="nofollow" target="_blank">Сделано в
+              <img src="img/icons/sheer.svg" alt="logo-sheer" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/libs/jquery/jquery-1.11.1.min.js"></script>
+  <script src="js/libs/slick/slick.min.js"></script>
+  <script src="js/libs/maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="js/libs/fancybox/jquery.fancybox.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/libs/dynamic_adapt/dynamic_adapt.js"></script>
+  <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+  <script>
+    (function($)
+    { 
+      if (window.matchMedia('(max-width: 700px)').matches)
+      {
+        xCenter = [44.583788, 33.477579]; // Центр до 00px (мобильные), совпадает с маркером
+      }
+      else if (window.matchMedia('(max-width: 900px)').matches) {
+        xCenter = [44.583788, 33.477579]; // Центр до 1300px
+      } else {      
+        xCenter = [44.583788, 33.477579]; // Центр на десктопе
+      }
+      createMap('map-1', [44.583788, 33.477579]); // Координаты маркера
+
+      function createMap(xID, coords)
+      {
+        if ($("#" + xID + "").length > 0)
+        {
+          var myMap;
+          // Дождёмся загрузки API и готовности DOM.
+          ymaps.ready(init);
+  
+          function init()
+          {
+            myMap = new ymaps.Map(xID,
+            {
+              center: xCenter,
+              zoom: 17
+            },
+            {
+              searchControlProvider: 'yandex#search'
+            });
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+              myPlacemark = new ymaps.Placemark(coords,
+              {
+                hintContent: 'г. Севастополь, ул. Вакуленчука 53 / 11',
+                balloonContent: '<p class="text-map"><span>г. Севастополь,</span><br>ул. Вакуленчука 53 / 11'
+              },
+              {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/icons/map-marker.svg',
+                // Размеры метки.
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [23, 32],
+                balloonOffset: [ 4, -53 ],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -45]
+              });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+            myMap.controls.remove('searchControl'); // удаляем поиск
+            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+            myMap.controls.remove('typeSelector'); // удаляем тип
+            myMap.controls.remove('rulerControl'); // удаляем контрол правил
+            myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+          }
+        }
+      }
+    })(jQuery);
+  </script>
+</body>
+
+</html>
