@@ -2209,11 +2209,12 @@ form .button-wrapper3::before {
   }
   .stages-page__item-number span {
     font-size: 26px;
+    line-height: 26px;
   }
   .stages-page__item-number span::before {
     width: 4px;
     height: 4px;
-    bottom: 7px;
+    bottom: 3px;
   }
   .stages-page__item-number {
     width: 65px;
@@ -2376,5 +2377,8 @@ form .button-wrapper3::before {
   }
   .social-slider__item-img img {
     width: 100%;
+  }
+  .main-page__subtitle {
+    line-height: 24px;
   }
 }
