@@ -34,6 +34,9 @@ $(document).ready(function() {
     $('.top-header').toggleClass('_active');
   });
 
+  //FancyBox
+  $(".fancybox").fancybox();
+
   //ТЕЛЕФОН МАСКА
   $(function() {
     $("[type=tel]").mask("+7 (999) 999-99-99");
@@ -88,6 +91,75 @@ $(document).ready(function() {
       },
       {
         breakpoint: 401,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          arrows: true,
+          speed: 500,
+        }
+      },
+    ]
+  });
+
+  //ТАБЫ
+  $('.tab').on('click', function(e) { 
+    e.preventDefault();
+
+    $($(this).siblings()).removeClass('tab_active'); 
+    $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content_active');
+
+    $(this).addClass('tab_active'); 
+    $($(this).attr('href')).addClass('tabs-content_active');
+
+    if (window.matchMedia('(max-width: 580px)').matches) { // аналог media-queries
+      $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
+    }
+  });
+
+  /* Анимация чисел */
+  if ($('body').hasClass('home')) {
+    var show = true;
+    var countbox = ".home .about-page__numbers";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 850 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.home .about-page__numbers .about-page__item-number').css('opacity', '1');
+            $('.home .about-page__numbers .about-page__item-number').spincrement({
+                thousandSeparator: " ",
+                duration: 2400
+            });           
+            show = false;
+        }
+    });
+  }
+
+  $('.team-page__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1500,
+    prevArrow: '<button class="team-page__slider-btn team-page__slider-btnprev"><img src="img/icons/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button class="team-page__slider-btn team-page__slider-btnnext"><img src="img/icons/arrow-right.svg" alt=""></button>',
+    responsive: [
+
+      {
+        breakpoint: 971,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+          arrows: true,
+          speed: 500,
+        }
+      },
+      {
+        breakpoint: 501,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
