@@ -667,9 +667,10 @@ body._no-scroll {
     padding: 55px 18px 20px;
   }
 }
-@media(max-width: 1366px) {
-}
 @media(max-width: 1250px) {
+  .main-page {
+    height: 100%;
+  }
   .top-header__address {
     display: none;
   }
@@ -720,9 +721,6 @@ body._no-scroll {
   }
 }
 @media(max-width: 630px) {
-  .main-page {
-    height: 100%;
-  }
   .top-header__callback {
     display: none;
   }
