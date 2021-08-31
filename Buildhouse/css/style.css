@@ -3293,7 +3293,8 @@ article img {
     overflow-x: auto;
   }
   .breadcrumbs ol {
-    width: 800px;
+    max-width: 100%;
+    white-space: nowrap;
   }
   .contacts-page__inner._page {
     margin: 30px 0px 0px 0px;
