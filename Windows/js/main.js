@@ -66,25 +66,37 @@ $(document).ready(function() {
     });
 
     if (window.matchMedia('(max-width: 630px)').matches) {
+      //Скроллбар
+      $(window).on("load",function() {
+        $(".catalog-page__item").mCustomScrollbar({
+          theme: "dark"
+        });
+      });
+    }
+    /*
       $('.catalog-page__items').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        /*
-        variableWidth: true,
-        */
+  
         speed: 1500,
         prevArrow: '<button class="catalog-page__items__btn catalog-page__items__btnprev"><img src="img/icons/arrow-left.svg" alt=""></button>',
         nextArrow: '<button class="catalog-page__items__btn catalog-page__items__btnnext"><img src="img/icons/arrow-right.svg" alt=""></button>',
+        responsive: [
+            {
+              breakpoint: 2048,
+              settings: "unslick"
+            },
+            {
+             breakpoint: 631,
+             settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500
+            }
+          },
+        ]
       });
-
-    //Скроллбар
-    $(window).on("load",function() {
-      $(".catalog-page__item").mCustomScrollbar({
-        theme: "dark"
-      });
-    });
-  }
-
+    */
 });
 
 
