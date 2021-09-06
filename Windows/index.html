@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="js/libs/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="js/libs/scrollbar/jquery.mCustomScrollbar.min.css">
   <title>Главная</title>
 </head>
 
@@ -36,14 +37,14 @@
                 </a>
               </div>
                 <div class="top-header__phone-box">
-                  <a class="top-header__phone" href="tel:+79785255577" rel="nofollow">
+                  <a class="top-header__phone" href="tel:+79785255577" rel="nofollow" data-da=".bottom-header__navigation,1150,2">
                     +7 (978) 525-55-77
                   </a>
                   <a class="top-header__phone-btn" href="tel:+79785255577" rel="nofollow">
                     <img src="img/icons/phone.svg" alt="">
                   </a>
               </div>
-              <a class="btn-1 top-header__callback fancybox" href="#modal-form-1" rel="nofollow">
+              <a class="btn-1 top-header__callback fancybox" href="#modal-form-1" rel="nofollow" data-da=".bottom-header__navigation,1150,3">
                 Вызвать замерщика
               </a>
               <div class="header__menu-btn menu-toggle">
@@ -60,12 +61,34 @@
             </div>
           </div>
         </div>
-        <div class="header__botoom bottom-header">
-
+        <div class="header__bottom bottom-header">
+          <nav class="bottom-header__navigation">
+            <ul class="bottom-header__menu">
+              <li class="menu-item-has-children">
+                <a href="#">Каталог</a>
+                <div>
+                  <ul class="sub-menu">
+                    <li><a href="#">Окна</a></li>
+                    <li><a href="#">Двери</a></li>
+                    <li><a href="#">Шторы и жалюзи</a></li>
+                    <li><a href="#">Роллеты и ворота</a></li>
+                    <li><a href="#">Остекление балконов</a></li>
+                    <li><a href="#">Фасадные системы</a></li>
+                    <li><a href="#">Раздвижные системы</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Акции и скидки</a></li>
+              <li><a href="#">Рассрочка</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-
     <main class="page">
       <section class="page__main main-page">
         <div class="container">
@@ -132,9 +155,553 @@
           </div>
         </div>
       </section>
+      <section class="page__catalog catalog-page">
+        <div class="container">
+          <h2 class="title-2 catalog-page__title">Каталог продукции</h2>
+          <div class="catalog-page__subtitle">
+           <b>Предлагаем широкий ассортимент продукции:</b> от окон и дверей до фасадных систем и раздвижных ворот. 
+           <b>Подберём оптимальную комплектацию</b> именно под ваши нужды с лучшим соотношением цена/качество.
+          </div>
+          <div class="catalog-page__items">
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg1.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <div class="catalog-page__item-wrapper">
+              <h5 class="catalog-page__item-title">Окна</h5>
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Металлопластиковые
+                  </li>
+                  <li>
+                    Алюминиевые
+                  </li>
+                  <li>
+                    Какие-то окна
+                  </li>
+                  <li>
+                    Какие-то окна
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg2.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <div class="catalog-page__item-wrapper">
+                <h5 class="catalog-page__item-title">Двери</h5>
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Металлопластиковые
+                  </li>
+                  <li>
+                    Межкомнатные
+                  </li>
+                  <li>
+                    Металлические
+                  </li>
+                  <li>
+                    Входные
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg3.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <div class="catalog-page__item-wrapper">
+                <h5 class="catalog-page__item-title">Шторы <br> и жалюзи</h5>
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Рулонные
+                  </li>
+                  <li>
+                    Какие-то жалюзи
+                  </li>
+                  <li>
+                    Какие-то шторы
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg4.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <div class="catalog-page__item-wrapper">
+                <h5 class="catalog-page__item-title">Роллеты <br> и ворота</h5>
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Роллеты и ворота
+                  </li>
+                  <li>
+                    Роллеты и ворота
+                  </li>
+                  <li>
+                    Роллеты и ворота
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg5.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <h5 class="catalog-page__item-title">Остекление балконов</h5>
+              <div class="catalog-page__item-wrapper">
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Остекление балконов
+                  </li>
+                  <li>
+                    Остекление балконов
+                  </li>
+                  <li>
+                    Остекление балконов
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg6.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <div class="catalog-page__item-wrapper">
+                <h5 class="catalog-page__item-title">Фасадные системы</h5>
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Какие-то системы
+                  </li>
+                  <li>
+                    Какие-то системы
+                  </li>
+                  <li>
+                    Какие-то системы
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="catalog-page__item" style="background: url('img/catalog-item-bg7.jpg') 0 0 no-repeat; background-size: cover !important;">
+              <div class="catalog-page__item-wrapper">
+                <h5 class="catalog-page__item-title">Раздвижные системы</h5>
+                <ul class="catalog-page__item-list">
+                  <li>
+                    Раздвижные системы
+                  </li>
+                  <li>
+                    Раздвижные системы
+                  </li>
+                  <li>
+                    Раздвижные системы
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--
+      <section class="page__selection selection-page">
+        <div class="container">
+          <h2 class="title-2 selection-page__title">
+            Подберём остекление под любой бюджет
+          </h2>
+          <div class="selection-page__subtitle">
+            предложим лучший вариант, исходя из ваших потребностей и финансовых возможностей
+          </div>
+          <div class="selection-page__inner">
+            <div class="selection-page__item selection-item">
+              <div class="selection-item__wrapper">
+                <div class="selection-item__title">
+                  окна
+                </div>
+              </div>
+              <div class="selection-item__img">
+                <img src="img/selection-item-1.jpg" alt="">
+              </div>
+              <div class="selection-item__container">
+                <div class="selection-item__info">
+                  <article>
+                    <table>
+                      <tr>
+                        <td>Окна без установки</td>
+                        <td><span>от 5 390 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                      <tr>
+                        <td>Окна с установкой под ключ</td>
+                        <td><span>от 11 750 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                      <tr>
+                        <td>Одностворчатые окна</td>
+                        <td><span>от 3 850 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                      <tr>
+                        <td>Двухстворчатые окна</td>
+                        <td><span>от 6 500 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="selection-page__item selection-item">
+              <div class="selection-item__wrapper">
+                <div class="selection-item__title">
+                  Балконы и лоджии
+                </div>
+              </div>
+              <div class="selection-item__img">
+                <img src="img/selection-item-2.jpg" alt="">
+              </div>
+              <div class="selection-item__container">
+                <div class="selection-item__info">
+                  <article>
+                    <table>
+                      <tr>
+                        <td>Холодное остекление</td>
+                        <td><span>от 4 950 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                      <tr>
+                        <td>Панорамное остекление</td>
+                        <td><span>от 7 680 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                      <tr>
+                        <td>Тёплое остекление</td>
+                        <td><span>от 7 850 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                      <tr>
+                        <td>Балконные блоки</td>
+                        <td><span>от 7 400 ₽/м<sup>2</sup></span></td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="selection-page__form form-page">
+              <div class="modal-block">
+                <div class="modal-wrap">
+                  <div class="block-form">
+                    <div class="blue block-form__title">
+                      Узнайте <br> реальную стоимость 
+                    </div>
+                    <div class="block-form__subtitle">
+                      остекления, монтажа и доставки 
+                      окон без посредников <br>
+                      и переплат 
+                    </div>
+                    <form>
+                      <div class="item-input">
+                        <input type="email" placeholder="E-mail" required="required">
+                      </div>
+                      <div class="item-input">
+                        <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                      </div>
+                      <div class="form-text">
+                        Размер файла: 0,8 Mb
+                      </div>
+                      <div class="button-wrapper2">
+                        <button class="btn-2 btn-main" type="submit">
+                          Скачать прайс
+                        </button>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" required="required" checked="checked" />
+                            <span>Согласие на обработку персональных данных</span>
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <section class="page__features features-page">
+        <div class="container">
+          <div class="features-page__inner">
+            <h2 class="title-2 features-page__title">
+              Почему стоит <span class="blue">заказать остекление</span> именно у нас
+            </h2>
+            <div class="features-page__box _box1">
+              Используем в производстве 
+              только <b>качественные материалы 
+              и комплектующие</b>
+            </div>
+          </div>
+          <div class="features-page__body">
+            <ul class="features-page__list">
+              <li>
+                <div class="features-page__container">
+                  <div class="features-page__container-img">
+                    <img src="img/icons/window-1.svg" alt="">
+                  </div>
+                  <span class="features-page__container-title">Экологичность и простота в уходе</span>
+                </div>
+                <div class="features-page__container-text">
+                  Вся продукция компании PRO ОКНА изготавливается из экологически чистых профилей в которых вредный...
+                </div>
+              </li>
+              <li>
+                <div class="features-page__container">
+                  <div class="features-page__container-img">
+                    <img src="img/icons/window-2.svg" alt="">
+                  </div>
+                  <span class="features-page__container-title">Изящность и дизайнерские решения</span>
+                </div>
+                <div class="features-page__container-text">
+                  В компании Проокна 13 стандартный цветов ламинации начиная от светлого дуба шефилда и заканчивая матовым чёрным цветом...
+                </div>
+              </li>
+              <li>
+                <div class="features-page__container">
+                  <div class="features-page__container-img">
+                    <img src="img/icons/window-3.svg" alt="">
+                  </div>
+                  <span class="features-page__container-title">Теплосбережение и экономичность</span>
+                </div>
+                <div class="features-page__container-text">
+                  Все изделия комплектуются энергосберегающими стеклопакетами, что повышает теплосбережение практически...
+                </div>
+              </li>
+              <li>
+                <div class="features-page__container">
+                  <div class="features-page__container-img">
+                    <img src="img/icons/window-4.svg" alt="">
+                  </div>
+                  <span class="features-page__container-title">Современность и функциональность</span>
+                </div>
+                <div class="features-page__container-text">
+                  Возможность применения различных обвязок фурнитуры, детских замков, ступенчатого 
+                  проветривания...
+                </div>
+              </li>
+            </ul>
+            <div class="features-page__box _box2">
+              <div class="features-page__box-title">
+                <span><b>50</b> лет</span>
+                Надёжность и долговечность
+              </div>
+              <div class="features-page__box-text">
+                Окна из профиля Rehau
+                от компании PRO ОКНА 
+                будут служить вам минимум <br>
+                50 лет
+              </div>
+            </div>
+          </div>
+          <div class="features-page__img">
+            <img src="img/features-bg2.png" alt="">
+          </div>
+        </div>
+      </section>
+      <div class="page__promo promo-page">
+        <div class="container">
+          <div class="promo-page__inner">
+            <div class="promo-page__box">
+              <div class="promo-page__box-text _text1">Оформите заказ на сайте</div> 
+              <span>от<b> 10 000</b> ₽</span>
+              <div class="promo-page__box-text _text2">и получите</div> 
+            </div>
+            <div class="promo-page__title">Фирменный термометр <span class="blue">в подарок!</span> </div>
+          </div>
+          <div class="promo-page__text">
+            Небольшое описание акционного предложения и подарка – 
+            фирменного оконного термометра, характеристики или 
+            преимущества градусника и конкретное предложение по цене. 
+          </div>
+          <div class="button-wrapper2">
+            <a class="btn-2 promo-page__btn fancybox" href="#">
+              Оформить заказ
+            </a>
+          </div>
+        </div>
+        <div class="promo-page__img">
+          <img src="img/temp.png" alt="">
+        </div>
+      </div>
+      <section class="page__offers offers-page">
+        <div class="container">
+          <h2 class="title-2 offers-page__title">Акции и специальные предложения</h2>
+          <div class="offers-page__subtitle">
+            У нас регулярно проходят акции и скидки на группы товаров. Подписывайтесь на наши социальные сети, чтобы всегда быть в курсе актуальных предложений
+          </div>
+          <div class="offers-page__inner">
+            <div class="offers-page__item">
+              <a class="offers-page__item-img" href="#">
+                <img src="img/window-1.jpg" alt="">
+              </a>
+              <div class="offers-page__item-box">
+                <time class="news-page__item-time" datetime="2021-08-25">25 августа 2021</time>
+                <a class="offers-page__item-title" href="#">
+                  Шпросы на окнах. Изящная деталь или необходимость?
+                </a>
+                <div class="offers-page__item-text">
+                  Решетчатая конструкция, которая разделяет стеклянную поверхность окна на части называется шпрос.
+                </div>
+              </div>
+            </div>
+            <div class="offers-page__item">
+              <a class="offers-page__item-img" href="#">
+                <img src="img/window-2.jpg" alt="">
+              </a>
+              <div class="offers-page__item-box">
+                <time class="news-page__item-time" datetime="2021-08-25">25 августа 2021</time>
+                <a class="offers-page__item-title" href="#">
+                  Особенности и преимущества нестандартных окон
+                </a>
+                <div class="offers-page__item-text">
+                  Окна - это один из центральных элементов архитектуры здания. Все чаще звучит мнение...
+                </div>
+              </div>
+            </div>
+            <div class="offers-page__item">
+              <a class="offers-page__item-img" href="#">
+                <img src="img/window-1.jpg" alt="">
+              </a>
+              <div class="offers-page__item-box">
+                <time class="news-page__item-time" datetime="2021-08-25">25 августа 2021</time>
+                <a class="offers-page__item-title" href="#">
+                  Шпросы на окнах. Изящная деталь или необходимость?
+                </a>
+                <div class="offers-page__item-text">
+                  Решетчатая конструкция, которая разделяет стеклянную поверхность окна на части называется шпрос.
+                </div>
+              </div>
+            </div>
+            <div class="offers-page__item">
+              <a class="offers-page__item-img" href="#">
+                <img src="img/window-2.jpg" alt="">
+              </a>
+              <div class="offers-page__item-box">
+                <time class="news-page__item-time" datetime="2021-08-25">25 августа 2021</time>
+                <a class="offers-page__item-title" href="#">
+                  Особенности и преимущества нестандартных окон
+                </a>
+                <div class="offers-page__item-text">
+                  Окна - это один из центральных элементов архитектуры здания. Все чаще звучит мнение...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__contacts contacts-page">
+        <div class="contacts-page__inner">
+          <div class="container">
+            <div class="contacts-page__box">
+              <h2 class="title-2 contacts-page__title">
+                Приходите к нам в офис
+              </h2>
+              <div class="contacts-page__subtitle">
+                и наш специалист поможет подобрать лучшее 
+                остекление для вас
+              </div>
+              <div class="contacts-page__wrapper">
+                <div class="contacts-page__column">
+                  <div class="contacts-page__address">
+                    <span>Адрес:</span>
+                    <b>Симферополь, ул. Павленко, 38</b> 
+                  </div>
+                  <div class="contacts-page__phone">
+                    <span>Телефон:</span>
+                    <a href="tel:+79785255577" rel="nofollow">
+                      +7 (978) 525-55-77
+                    </a>
+                  </div>
+                </div>
+                <div class="contacts-page__column">
+                  <div class="contacts-page__worktime">
+                    <span>График работы:</span>
+                    <b>Пн.-пт. 09:00 - 18:00, Сб 09:00 - 15:00</b> 
+                  </div>
+                  <div class="contacts-page__email">
+                    <span>E-mail:</span>
+                    <a href="mailto:rasim.okna2008@yandex.ru" rel="nofollow">
+                      rasim.okna2008@yandex.ru
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="button-wrapper3">
+                <a class="btn-3 contacts-page__btn" href="#">Заказать звонок</a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-page__map" id="map-1"></div>
+        </div>
+      </section>
+      <button class="top-btn"></button>
+      -->
     </main>
-    
     <footer class="footer">
+      <div class="footer__top top-footer">
+        <div class="container">
+          <div class="top-footer__inner">
+            <div class="top-footer__column">
+              <a class="logo" href="#">
+                <img src="img/icons/logo-footer.svg" alt="">
+              </a>
+              <div class="top-footer__social">
+                <a class="top-footer__social-item _viber" href="viber://chat?number=79785255577" rel="nofollow" target="_blank">
+                  <img src="img/icons/viber.svg" alt="" />
+                </a>
+                <a class="top-footer__social-item _whatsapp" href="https://api.whatsapp.com/send?phone=79785255577" rel="nofollow" target="_blank">
+                  <img src="img/icons/whatsapp.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="top-footer__column">
+              <h4 class="top-footer__column-title">КАТАЛОГ</h4>
+              <ul class="top-footer__list">
+                <li><a href="#">Окна</a></li>
+                <li><a href="#">Двери</a></li>
+                <li><a href="#">Шторы и жалюзи</a></li>
+                <li><a href="#">Остекление балконов</a></li>
+                <li><a href="#">Фасадные системы</a></li>
+                <li><a href="#">Раздвижные системы</a></li>
+                <li><a href="#">Роллеты и ворота</a></li>
+              </ul>
+            </div>
+            <div class="top-footer__column">
+              <ul class="top-footer__navigation-list">
+                <li><a href="#">ЦЕНЫ НА ПРОДУКЦИЮ</a></li>
+                <li><a href="#">АКЦИИ И СКИДКИ</a></li>
+                <li><a href="#">КРЕДИТ И РАССРОЧКА</a></li>
+                <li><a href="#">ВЫПОЛНЕННЫЕ РАБОТЫ</a></li>
+                <li><a href="#">О КОМПАНИИ</a></li>
+              </ul>
+            </div>
+            <div class="top-footer__column">
+              <h4 class="top-footer__column-title">Контакты</h4>
+              <div class="top-footer__address">
+                <span>Адрес:</span>
+                Симферополь, ул. Павленко, 38
+              </div>
+              <div class="top-footer__phone">
+                <span>Телефон:</span>
+                <a href="tel:+79785255577" rel="nofollow">
+                  +7 (978) 525-55-77
+                </a>
+              </div>
+              <div class="top-footer__worktime">
+                <span>График работы:</span>
+                Пн.-пт. 09:00 - 18:00, Сб 09:00 - 15:00
+              </div>
+              <div class="top-footer__email">
+                <span>E-mail:</span>
+                <a href="mailto:rasim.okna2008@yandex.ru" rel="nofollow">
+                  rasim.okna2008@yandex.ru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <a class="footer__bottom-confidentiality" href="#" rel="nofollow">
+              Политика конфиденциальности
+            </a>
+            <p class="footer__bottom-copyright">
+              г. Симферополь © Copyright  2021 г.
+            </p> 
+            <a class="footer__bottom-development" href="#" rel="nofollow" target="_blank">
+              Сделано в
+              <img src="img/icons/sheer.svg" alt="logo-sheer" />
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div class="modal-block visually-hidden" id="modal-form-1">
         <div class="modal-wrap">
@@ -191,7 +758,76 @@
   <script src="js/libs/slick/slick.min.js"></script>
   <script src="js/libs/maskedinput/jquery.maskedinput.min.js"></script>
   <script src="js/libs/fancybox/jquery.fancybox.js"></script>
+  <script src="js/libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/libs/dynamic_adapt/dynamic_adapt.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+  <script>
+    (function($)
+    { 
+      if (window.matchMedia('(max-width: 700px)').matches)
+      {
+        xCenter = [44.955439, 34.086268]; // Центр до 00px (мобильные), совпадает с маркером
+      }
+      else if (window.matchMedia('(max-width: 900px)').matches) {
+        xCenter = [44.955439, 34.086268]; // Центр до 1300px
+      } else {      
+        xCenter = [44.955439, 34.086268]; // Центр на десктопе
+      }
+      createMap('map-1', [44.955439, 34.086268]); // Координаты маркера
+
+      function createMap(xID, coords)
+      {
+        if ($("#" + xID + "").length > 0)
+        {
+          var myMap;
+          // Дождёмся загрузки API и готовности DOM.
+          ymaps.ready(init);
+  
+          function init()
+          {
+            myMap = new ymaps.Map(xID,
+            {
+              center: xCenter,
+              zoom: 17
+            },
+            {
+              searchControlProvider: 'yandex#search'
+            });
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+              myPlacemark = new ymaps.Placemark(coords,
+              {
+                hintContent: 'г. Симферополь, ул. Павленко, 38',
+                balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br>ул. Павленко, 38'
+              },
+              {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/icons/map-marker.svg',
+                // Размеры метки.
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [34, 45],
+                balloonOffset: [ 4, -53 ],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -45]
+              });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+            myMap.controls.remove('searchControl'); // удаляем поиск
+            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+            myMap.controls.remove('typeSelector'); // удаляем тип
+            myMap.controls.remove('rulerControl'); // удаляем контрол правил
+            myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+          }
+        }
+      }
+    })(jQuery);
+  </script>
 </body>
 
 </html>
