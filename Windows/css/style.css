@@ -2050,18 +2050,33 @@ body._no-scroll {
   .footer__top {
     padding: 30px 0px;
   }
-  .catalog-page__items {
+  /*
+  .catalog-page__items,
+  .catalog-page__item  {
     display: block;
+  }
+  */
+  .catalog-page__items {
+    /*
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px 20px;
+    */
   }
   .catalog-page__item {
+    /*
     grid-column: span 1;
     grid-row: span 1;
-  }
-  .catalog-page__item {
     margin: 0 5px;
+    */
     height: 290px;
+    margin: 0px 0px 30px 0px;
+  }
+  .catalog-page__item:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .catalog-page__items,
+  .catalog-page__item  {
+    display: block;
   }
   .catalog-page__items__btn {
     position: absolute;
