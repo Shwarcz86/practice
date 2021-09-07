@@ -2346,10 +2346,8 @@ body._no-scroll {
     padding: 30px 0px;
   }
   .catalog-page__items {
-    /*
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px 20px;
-    */
   }
   .catalog-page__item {
     /*
@@ -2361,10 +2359,12 @@ body._no-scroll {
   .catalog-page__item:last-child {
     margin: 0px 0px 0px 0px;
   }
+  /*
   .catalog-page__items,
   .catalog-page__item  {
     display: block;
   }
+  */
   .catalog-page__item {
     height: 290px;
     margin: 0 5px;
