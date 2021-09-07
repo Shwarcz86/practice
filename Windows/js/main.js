@@ -48,6 +48,7 @@ $(document).ready(function() {
     return false;
   });
 
+  /*
     //Выпадания списка в моб. меню
     $('.menu-item-has-children > a').on('click', function() {
       if (window.matchMedia('(max-width: 1150px)').matches) {
@@ -55,7 +56,6 @@ $(document).ready(function() {
         $(this).toggleClass('_active');
       }
     });
-
     //Выпадания списка в футере
     $('.top-footer__column-title').on('click', function() {
       if (window.matchMedia('(max-width: 630px)').matches) {
@@ -63,6 +63,7 @@ $(document).ready(function() {
         $(this).toggleClass('_active');
       }
     });
+*/
 
     if (window.matchMedia('(max-width: 630px)').matches) {
       //Скроллбар
