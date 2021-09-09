@@ -58,8 +58,23 @@ $(document).ready(function() {
   }
 
   //Обвертка для таблицы в article
-  $('.selection-item__info article table').wrap('<div class="some-class"></div>');
+  $('.selection-item__info article table, .article-page article table').wrap('<div class="some-class"></div>');
 
+  //ТАБЫ
+  $('.tab').on('click', function(e) { 
+    e.preventDefault();
+
+    $($(this).siblings()).removeClass('tab_active'); 
+    $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content_active');
+
+    $(this).addClass('tab_active'); 
+    $($(this).attr('href')).addClass('tabs-content_active');
+
+    if (window.matchMedia('(max-width: 580px)').matches) { // аналог media-queries
+      $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
+    }
+  });
+  
 });
 
 
