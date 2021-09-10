@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css">
   <link rel="stylesheet" href="js/libs/scrollbar/jquery.mCustomScrollbar.min.css">
-  <title>Главная</title>
+  <title>Контакты</title>
 </head>
 
 <body>
@@ -89,40 +89,125 @@
         </div>
       </div>
     </header>
-    <main class="page inner">
-
-      <div class= "content">
+    <main class="page inner _contacts">
+      <div class="breadcrumbs" id="breadcrumbs">
         <div class="container">
-        <ul>
-          <li>
-            <a class="demo" href="index.html">Главная</a>
-          </li>
-          <li>
-            <a class="demo" href="price.html">Прайс-лист</a>
-          </li>
-          <li>
-            <a class="demo" href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a class="demo" href="promotions.html">Акции</a>
-          </li>
-          <li>
-            <a class="demo" href="article.html">Статья</a>
-          </li>
-          <li>
-            <a class="demo" href="selection.html">Как выбрать окна</a>
-          </li>
-          <li>
-            <a class="demo" href="about.html">Наша команда</a>
-          </li>
-          <li>
-            <a class="demo" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
+          <ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <a itemprop="item" href="#">
+                <span itemprop="name">Главная</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <span itemprop="item">
+                <span itemprop="name">Контакты</span>
+              </span>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </div>
       </div>
-      
-    </div>
-      
+      <section class="page__information information-page">
+        <div class="container">
+          <h1 class="title-2 information-page__title">
+            Как с нами связаться?
+          </h1>
+          <div class="information-page__inner">
+            <div class="contacts contacts-page__wrapper">
+              <div class="contacts-page__column">
+                <div class="contacts-page__address">
+                  <span>Адрес:</span>
+                  <b>Симферополь, ул. Павленко, 38</b> 
+                </div>
+                <div class="contacts-page__phone">
+                  <span>Телефон:</span>
+                  <a href="tel:+79785255577" rel="nofollow">
+                    +7 (978) 525-55-77
+                  </a>
+                </div>
+              </div>
+              <div class="contacts-page__column">
+                <div class="contacts-page__worktime">
+                  <span>График работы:</span>
+                  <b>Пн.-пт. 09:00 - 18:00, Сб 09:00 - 15:00</b> 
+                </div>
+                <div class="contacts-page__email">
+                  <span>E-mail:</span>
+                  <a href="mailto:rasim.okna2008@yandex.ru" rel="nofollow">
+                    rasim.okna2008@yandex.ru
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="information-page__social">
+              <span class="information-page__social-title">
+                Мы в соцсетях:
+              </span>
+              <div class="information-page__social-box">
+                <div class="button-wrapper4">
+                  <a class="btn-4 information-page__social-btn _vk" href="#">
+                    Вконтакте
+                  </a>
+                </div>
+                <div class="button-wrapper5">
+                  <a class="btn-5 information-page__social-btn _inst" href="#">
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__contacts contacts-page _inner">
+        <div class="contacts-page__inner">
+          <div class="contacts-page__map" id="map-1"></div>
+          <div class="container">
+            <div class="contacts-page__box">
+              <h2 class="title-2 contacts-page__title">
+                Приходите к нам в офис
+              </h2>
+              <div class="contacts-page__subtitle">
+                или задайте вопрос на сайте - наш специалист свяжется с вами в ближайшее 
+                время и проконсультирует по вопросам остекления вашего дома
+              </div>
+              <div class="contacts-page__form form-contacts">
+                <form>
+                  <div class="form-contacts__inner">
+                    <div class="form-contacts__box">
+                      <div class="item-input">
+                        <input type="text" placeholder="Имя" required="required">
+                      </div>
+                      <div class="item-input">
+                        <input type="tel" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+                      </div>
+                    </div>
+                    <div class="item-textarea">
+                      <textarea placeholder="Опишите здесь ваш вопрос" required="required"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-contacts__inner">
+                    <div class="checkbox-wrap">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" required="required" checked="checked" />
+                          <span>Согласие на обработку персональных данных</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="button-wrapper3">
+                      <button class="btn-3 btn-main" type="submit">
+                        Отправить сообщение
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <button class="top-btn"></button>
     </main>
     <footer class="footer">
@@ -264,6 +349,73 @@
   <script src="js/libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/libs/dynamic_adapt/dynamic_adapt.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/common.js?ver=1.4"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
+  <script>
+    (function($)
+    { 
+      if (window.matchMedia('(max-width: 700px)').matches)
+      {
+        xCenter = [44.955439, 34.086268]; // Центр до 00px (мобильные), совпадает с маркером
+      }
+      else if (window.matchMedia('(max-width: 900px)').matches) {
+        xCenter = [44.955439, 34.086268]; // Центр до 1300px
+      } else {      
+        xCenter = [44.955439, 34.086268]; // Центр на десктопе
+      }
+      createMap('map-1', [44.955439, 34.086268]); // Координаты маркера
+
+      function createMap(xID, coords)
+      {
+        if ($("#" + xID + "").length > 0)
+        {
+          var myMap;
+          // Дождёмся загрузки API и готовности DOM.
+          ymaps.ready(init);
+  
+          function init()
+          {
+            myMap = new ymaps.Map(xID,
+            {
+              center: xCenter,
+              zoom: 17
+            },
+            {
+              searchControlProvider: 'yandex#search'
+            });
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+              myPlacemark = new ymaps.Placemark(coords,
+              {
+                hintContent: 'г. Симферополь, ул. Павленко, 38',
+                balloonContent: '<p class="text-map"><span>г. Симферополь,</span><br>ул. Павленко, 38'
+              },
+              {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/icons/map-marker.svg',
+                // Размеры метки.
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [34, 45],
+                balloonOffset: [ 4, -53 ],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -45]
+              });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+            myMap.controls.remove('searchControl'); // удаляем поиск
+            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+            myMap.controls.remove('typeSelector'); // удаляем тип
+            myMap.controls.remove('rulerControl'); // удаляем контрол правил
+            myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+          }
+        }
+      }
+    })(jQuery);
+  </script>
 </body>
 
 </html>
