@@ -74,7 +74,43 @@ $(document).ready(function() {
       $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
     }
   });
-  
+
+  $('.service-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: '<button class="service-slider__btn service-slider__btn-prev"><img src="img/pag-left.png" alt=""></button>',
+    nextArrow: '<button class="service-slider__btn service-slider__btn-next"><img src="img/pag-right.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 831,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+          speed: 500,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          centerMode: false,
+          arrows: true,
+          speed: 500,
+        }
+      },
+    ]
+  });
+
+
 });
 
 
