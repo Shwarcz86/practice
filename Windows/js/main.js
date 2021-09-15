@@ -60,6 +60,10 @@ $(document).ready(function() {
   //Обвертка для таблицы в article
   $('.selection-item__info article table, .article-page article table').wrap('<div class="some-class"></div>');
 
+  if (window.matchMedia('(max-width: 465px)').matches) {
+    $('.info-product__content-tab article table').wrap('<div class="some-class"></div>');
+  }
+
   //ТАБЫ
   $('.tab').on('click', function(e) { 
     e.preventDefault();
@@ -110,6 +114,190 @@ $(document).ready(function() {
     ]
   });
 
+  $('.portfolio-page__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 300,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
+
+  $('.big-slider').slick ({
+    asNavFor: '.small-slider',
+    slidesToShow: 1,
+    sliderToScroll: 1,
+    fade: true,
+    arrows: true,
+    dots: true,
+    prevArrow: '<button class="big-slider__btn big-slider__btn-prev"><img src="img/pag-left.png" alt=""></button>',
+    nextArrow: '<button class="big-slider__btn big-slider__btn-next"><img src="img/pag-right.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 561,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  })
+  $('.small-slider').slick ({
+    asNavFor: '.big-slider',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 446,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 390,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  })
+
+  $('.work-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: '<button class="work-slider__btn work-slider__btn-prev"><img src="img/pag-left.png" alt=""></button>',
+    nextArrow: '<button class="work-slider__btn work-slider__btn-next"><img src="img/pag-right.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 831,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+          speed: 500,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          centerMode: false,
+          arrows: true,
+          speed: 500,
+        }
+      },
+    ]
+  });
+
+    //Скроллбар
+    $(window).on("load",function() {
+      $(".doors-page .tabs-wrapper").mCustomScrollbar({
+        theme: "dark",
+        axis:"x"
+      });
+    });
+
+    $('.similar-page__slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      speed: 1500,
+      prevArrow: '<button class="similar-page__btn similar-page__btn-prev"><img src="img/pag-left.png" alt=""></button>',
+      nextArrow: '<button class="similar-page__btn similar-page__btn-next"><img src="img/pag-right.png" alt=""></button>',
+      responsive: [
+        {
+          breakpoint: 1301,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: false,
+            speed: 500,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 901,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            variableWidth: false,
+            speed: 500,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+            centerMode: false,
+            arrows: true,
+            speed: 500,
+          }
+        },
+      ]
+    });
+
+    $(window).on("load",function() {
+      $(".catalog-page._installment .catalog-page__item").mCustomScrollbar({
+        theme: "dark"
+      });
+    });
+
+    $('.slider-catalog').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      speed: 1500,
+      prevArrow: '<button class="slider-catalog__btn  slider-catalog__btn-prev"><img src="img/pag-left.png" alt=""></button>',
+      nextArrow: '<button class=" slider-catalog__btn  slider-catalog__btn-next"><img src="img/pag-right.png" alt=""></button>',
+      responsive: [
+        {
+          breakpoint: 1301,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: false,
+            speed: 500,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 901,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            variableWidth: false,
+            speed: 500,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+            centerMode: false,
+            arrows: true,
+            speed: 500,
+          }
+        },
+      ]
+    });
 
 });
 
