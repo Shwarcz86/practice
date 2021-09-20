@@ -2512,6 +2512,9 @@ input[type="submit"][disabled] {
 .program__item-wrap {
   display: flex;
 }
+.program__item-btn {
+  display: none;
+}
 /*////////////////////////////////////////adaptive/////////////////////////////////////////*/
 
 @media (max-width: 1600px) {
@@ -3029,6 +3032,7 @@ input[type="submit"][disabled] {
     align-items: center;
   }
   .program__list > li {
+    position: relative;
     padding: 0px 0px 0px 0px;
   }
   .program__item-wrap {
@@ -3055,10 +3059,25 @@ input[type="submit"][disabled] {
   display: none;
   }
   .program__item._active .program__item-wrap {
-  display: block;
+    display: block;
   }
   .program__item._active .program__info-top::before {
   transform: rotate(180deg);
+  }
+  .program__item-btn {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    background: url('../img/svg/arrow3.svg') 0 0 no-repeat;
+    bottom: 30px;
+    right: 12px;
+    transition: all .3s;
+    transform: rotate(0deg);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all .3s;
   }
 }
 @media (max-width: 420px) {
