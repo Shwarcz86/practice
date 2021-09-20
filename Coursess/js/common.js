@@ -194,16 +194,28 @@
     screenWidth = $(window).width();
   });
 
-
   if (window.matchMedia('(max-width: 1300px)').matches) {
     $('.scr_for__list').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      speed: 1500,
+      speed: 300,
       dots: true,
       arrows: false,
       variableWidth: true,
+      /*
+      adaptiveHeight: true,
+      */
+      infinite: false,
     });
   }
+
+  //Выпадания списка
+  $('.program__item').on('click', function() {
+    /*
+      $(this).next().slideToggle('slow');
+      $(this).toggleClass('_active');
+      */
+      $(this).toggleClass('_active');
+  });
 
 })(jQuery);
