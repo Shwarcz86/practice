@@ -208,14 +208,9 @@
       infinite: false,
     });
   }
-
   //Выпадания списка
-  $('.program__item').on('click', function() {
-    /*
-      $(this).next().slideToggle('slow');
-      $(this).toggleClass('_active');
-      */
-      $(this).toggleClass('_active');
+  $('.program__info-top').on('click', function() {
+    $(this).parents().toggleClass('_active');
   });
 
 })(jQuery);
