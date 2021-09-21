@@ -212,4 +212,9 @@
     $(this).parents().toggleClass('_active');
   });
 
+  $('.scr_add__link').on('click', function(evt) {
+    evt.preventDefault();
+    $(this).prev().toggleClass('_active');
+  });
+
 })(jQuery);
