@@ -2871,6 +2871,12 @@ slider-btn slider-btn__prev
   .scr1__top {
     margin: 0px 0px 50px 0px;
   }
+  .result__title {
+    font-size: 38px;
+  }
+  .result__text {
+    font-size: 26px;
+  }
 }
 @media (max-width: 900px) {
   .scr1__item:nth-child(2),
@@ -2973,6 +2979,28 @@ slider-btn slider-btn__prev
   .program__result {
     border-radius: 0;
   }
+  .result__df {
+    flex-direction: column;
+  }
+  .result__content {
+    order: -1;
+    margin: 0px 0px 30px 0px;
+  }
+  .program {
+    padding: 0px 0px 30px 0px;
+  }
+  .result__content {
+    padding: 0px 0px 0px 0px;
+  }
+  .result__title {
+    line-height: 44px;
+  }
+  .result__text {
+    margin: 0px 0px 30px 0px;
+  }
+  .result__img {
+    width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .program__item {
@@ -3001,6 +3029,14 @@ slider-btn slider-btn__prev
   }
   .program__title {
     margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 630px) {
+  .scr_add__list {
+    justify-content: flex-start;
+  }
+  .scr_add__list > li {
+    width: 33.3333%;
   }
 }
 @media (max-width: 545px) {
@@ -3117,7 +3153,58 @@ slider-btn slider-btn__prev
   .scr_for__list {
     width: 360px;
   }
+  .result__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0px 0px 20px 0px;
+  }
+  .result__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .result__text .accent {
+    white-space: nowrap;
+  }
+  .result__img {
+    margin: 0px 0px 0px 20px;
+  }
+  #scr_add .page-title {
+    font-size: 20px;
+  }
+  .scr_add__link {
+    height: 64px;
+    width: 270px;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid #fff;
+  }
+  .scr_add__link::after {
+    width: 32px;
+    height: 32px;
+    background-size: 14px 14px;
+  }
+  .scr_add__list {
+    margin: 0px 0px 0px 0px;
+  }
+  .scr_add__list._active
 }
+
+@media (max-width: 470px) {
+  .scr_add__list > li {
+    display: block;
+    width: 100%;
+  }
+  .scr_add__list._active > li {
+    display: none;
+  }
+  .scr_add__list > li:first-child,
+  .scr_add__list > li:nth-child(2),
+  .scr_add__list > li:nth-child(3) {
+    display: block;
+  }
+}
+
 @media (max-width: 420px) {
   .scr1__item._text,
   .vs-visible {
@@ -3156,6 +3243,10 @@ slider-btn slider-btn__prev
   }
   .scr_for__list {
     width: 330px;
+  }
+  .result__content {
+    max-width: 305px;
+    margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 355px) {
