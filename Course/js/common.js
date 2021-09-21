@@ -200,12 +200,11 @@
       slidesToScroll: 1,
       speed: 300,
       dots: true,
-      arrows: false,
+      arrows: true,
       variableWidth: true,
-      /*
-      adaptiveHeight: true,
-      */
       infinite: false,
+      prevArrow: '<button class="slider-btn slider-btn__prev"><img src="img/svg/arrow-left.svg" alt=""></button>',
+      nextArrow: '<button class="slider-btn slider-btn__next"><img src="img/svg/arrow-right.svg" alt=""></button>',
     });
   }
   //Выпадания списка
