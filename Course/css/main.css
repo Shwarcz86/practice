@@ -1278,6 +1278,22 @@ input[type="submit"][disabled] {
   height: 20px;
   margin-right: 22px;
   background: #707075;
+  flex: 0 0 auto;
+}
+
+.scr_for__price .decor {
+  position: relative;
+}
+
+.scr_for__price .decor::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #707075;
+  top: 9px;
+  left: -10px;
+  opacity: 0.5;
 }
 
 .scr_for__price b {
@@ -2512,8 +2528,27 @@ input[type="submit"][disabled] {
 .program__item-wrap {
   display: flex;
 }
+slider-btn slider-btn__prev
 .program__item-btn {
   display: none;
+}
+.slider-btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 45px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+}
+.slider-btn__prev {
+  left: 0px;
+}
+.slider-btn__next {
+  right: 0px;
+}
+.scr_for__list .slick-arrow.slick-disabled {
+  opacity: 0.4;
 }
 /*////////////////////////////////////////adaptive/////////////////////////////////////////*/
 
@@ -2635,7 +2670,7 @@ input[type="submit"][disabled] {
     font-size: 42px;
   }
   .scr_for__content {
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 15px;
     margin: -18px 0px 0px 0px;
   }
   .scr_for__item:first-of-type .scr_for__earn {
@@ -2686,7 +2721,7 @@ input[type="submit"][disabled] {
     width: auto;
   }
   .scr_for__item:nth-of-type(2) .scr_for__content {
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 15px;
   }
   .scr_for__content-img img:first-child {
     display: none;
@@ -3079,6 +3114,9 @@ input[type="submit"][disabled] {
     z-index: 2;
     transition: all .3s;
   }
+  .scr_for__list {
+    width: 360px;
+  }
 }
 @media (max-width: 420px) {
   .scr1__item._text,
@@ -3107,9 +3145,6 @@ input[type="submit"][disabled] {
   .scr_for__price span {
     margin: 0px 10px 0px 0px;
   }
-  .slick-dots {
-    left: 45%;
-  }
   .program__questions-list > li {
     font-size: 14px;
   }
@@ -3118,6 +3153,9 @@ input[type="submit"][disabled] {
   }
   .program__download-item::before {
     margin: 0px 10px 0px 0px;
+  }
+  .scr_for__list {
+    width: 330px;
   }
 }
 @media (max-width: 355px) {
@@ -3153,5 +3191,14 @@ input[type="submit"][disabled] {
   }
   .program__questions-list > li {
     padding: 0px 0px 0px 20px;
+  }
+  .slider-btn__prev {
+    left: 0px;
+  }
+  .slider-btn__next {
+    right: 40px;
+  }
+  .slick-dots {
+    left: 45%;
   }
 }
