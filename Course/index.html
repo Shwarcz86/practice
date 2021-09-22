@@ -59,13 +59,13 @@
 			<div class="menu-mobile">
 				<ul class="menu-mobile__list">
 					<li>
-						<a href="#">
+						<a href="#scr_program">
 						<img src="img/svg/menu-item1.svg" alt="">
 						программа
 					</a>
 				</li>
 					<li>
-						<a href="#">
+						<a href="#scr_tariffs">
 						<img src="img/svg/menu-item2.svg" alt="">
 						тарифы
 					</a>
@@ -77,7 +77,7 @@
 					</a>
 				</li>
 					<li>
-						<a href="#">
+						<a href="#scr_result2">
 						<img src="img/svg/menu-item4.svg" alt="">
 						консультация
 					</a>
@@ -132,7 +132,7 @@
 									<img src="img/for-bg-2-1.png" alt="">
 								</div>
 								<div class="scr_for__price">
-									<span></span><b>50-100</b>
+									<span class="decor"></span><b>50-100</b>
 									<p>тыс. рублей<br> дохода в месяц</p>
 								</div>
 								<ul>
@@ -160,7 +160,7 @@
 									<img src="img/for-bg-3-1.png" alt="">
 								</div>
 								<div class="scr_for__price">
-									<span></span><b>100-250</b>
+									<span class="decor"></span><b>100-250</b>
 									<p>тыс. рублей<br> дохода в месяц</p>
 								</div>
 								<ul>
@@ -183,6 +183,7 @@
 				<h2 class="page-title">программа</h2>
 				<ul class="program__list">
 					<li>
+						<!--<button class="program__item-btn"></button>-->
 						<div class="program__item">
 							<div class="program__info-top vs-hidden">
 								<div class="program__modul">
@@ -732,7 +733,6 @@
 			</div>
 		</section>
 		<!-- /.scr_program-->
-		<!--
 		<section class="scr_result result" id="scr_result">
 			<div class="container">
 				<div class="result__df">
@@ -751,13 +751,12 @@
 				</div>
 			</div>
 		</section>
-		-->
 		<!-- /.scr_result-->
-		<!--
 		<section class="scr_add with-ellipse" id="scr_add">
 			<div class="container">
 				<h2 class="page-title">20 дополнительных материалов</h2>
-				<ul class="scr_add__list">
+				<ul class="scr_add__list _active">
+					<!--В мобильной версии, должны быть видны 3 документа, остальные скрыть!-->
 					<li>
 						<a class="scr_add__item" href="#">
 							<span class="scr_add__img program__download-item"></span>
@@ -812,9 +811,7 @@
 				</a>
 			</div>
 		</section>
-		-->
 		<!-- /.scr_add-->
-		<!--
 		<section class="scr_cases cases" id="scr_cases">
 			<div class="container">
 				<h2 class="page-title">кейсы</h2>
@@ -891,9 +888,7 @@
 				</ul>
 			</div>
 		</section>
-		-->
 		<!-- /.scr_cases-->
-		<!--
 		<section class="scr_teachers teachers" id="scr_teachers">
 			<div class="container">
 				<h2 class="page-title">Преподаватели курса</h2>
@@ -982,9 +977,7 @@
 				</ul>
 			</div>
 		</section>
-		-->
 		<!-- /.scr_teachers-->
-		<!--
 		<section class="scr_tariffs tariffs" id="scr_tariffs">
 			<div class="container">
 				<h2 class="page-title">тарифы</h2>
@@ -992,9 +985,7 @@
 					<li>
 						<div class="tariffs__item">
 							<div class="program__type">
-								-->
 								<!--. Для стандарта 3 span (звёздочки), для бизнес 4 span, для vip 5 span-->
-								<!--
 								<span></span>
 								<span></span>
 								<span></span>
@@ -1028,9 +1019,7 @@
 					<li>
 						<div class="tariffs__item">
 							<div class="program__type">
-								-->
 								<!--. Для стандарта 3 span (звёздочки), для бизнес 4 span, для vip 5 span-->
-								<!--
 								<span></span>
 								<span></span>
 								<span></span>
@@ -1069,9 +1058,7 @@
 					<li>
 						<div class="tariffs__item">
 							<div class="program__type">
-								-->
 								<!--. Для стандарта 3 span (звёздочки), для бизнес 4 span, для vip 5 span-->
-								<!--
 								<span></span>
 								<span></span>
 								<span></span>
@@ -1113,9 +1100,7 @@
 				</ul>
 			</div>
 		</section>
-		-->
 		<!-- /.scr_tariffs-->
-		<!--
 		<section class="scr_faq faq" id="scr_faq">
 			<div class="container">
 				<h2 class="page-title">Вопрос-ответ</h2>
@@ -1196,13 +1181,11 @@
 				</ul>
 			</div>
 		</section>
-		-->
 		<!-- /.scr_faq-->
-		<!--
-		<section class="scr_result result result--2" id="scr_result">
+		<section class="scr_result result result--2" id="scr_result2">
 			<div class="container">
 				<div class="result__df">
-					<div class="result__img">
+					<div class="result__img" data-da=".result--2 .result__content,900,2">
 						<img src="img/result-2.png" alt="">
 					</div>
 					<div class="result__content">
@@ -1225,7 +1208,7 @@
 				</div>
 			</div>
 		</section>
-		-->
+		<button class="top-btn"></button>
 		<!-- /.scr_result-->
 		<a class="to-top" href="#page_wr">
 			<svg class="icon">
@@ -1239,6 +1222,7 @@
 	<script src="js/libs/svg4everybody.min.js"></script>
 	<script src="js/libs/ofi.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/dynamic_adapt/dynamic_adapt.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/fancybox/helpers/jquery.fancybox-buttons.js"></script>
 	<script src="libs/swiper/swiper.js"></script>
