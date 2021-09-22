@@ -87,9 +87,11 @@
     $(xParent + ' .top').click(function() {
       $(this).find('.open').toggleClass('active');
       $(this).siblings().slideToggle();
+      $(this).toggleClass('_active');
       if (hideOther) {
         $(this).parent().siblings().find('.open').removeClass('active');
         $(this).parent().siblings().find('.hidden').slideUp();
+        $(this).parent().siblings().find('.top').removeClass('_active');
       }
     });
   }
@@ -212,9 +214,34 @@
     $(this).parents().toggleClass('_active');
   });
 
+  /*
+  //Скрываем документы
   $('.scr_add__link').on('click', function(evt) {
     evt.preventDefault();
     $(this).prev().toggleClass('_active');
+  });
+*/
+
+  /* Плавный скролл к якорю */
+  $(function(){ $('.menu-mobile__list li a[href^="#"]').click(function(){
+    var _href = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(_href).offset().top - 50 +'px'}); return false; });
+  });
+
+  //Кнопка вверх
+  var button = $('.top-btn');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 600) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+  });	 
+  button.on('click', function() {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
   });
 
 })(jQuery);
