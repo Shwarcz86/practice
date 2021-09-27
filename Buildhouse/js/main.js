@@ -7,7 +7,7 @@ $(document).ready(function() {
       if (scrolled > 84) {
         if (window.matchMedia('(min-width: 971px)').matches) {
           $('.bottom-header').addClass('active');
-          $('.page').addClass('scroll');
+
           $('.bottom-header__menu-list').addClass('active');
         }
       } else if (scrolled < 84) {
@@ -25,14 +25,6 @@ $(document).ready(function() {
     $('.top-btn').toggleClass('_disabled');
     $('.top-header').toggleClass('_active');
   })
-
-  $('.bottom-header__menu li a').on('click', function() {
-    $('.menu-toggle').removeClass('open');
-    $('.bottom-header').removeClass('_active');
-    $('body').removeClass('_no-scroll');
-    $('.top-btn').removeClass('_disabled');
-    $('.top-header').toggleClass('_active');
-  });
 
   //FancyBox
   $(".fancybox").fancybox();
@@ -175,6 +167,62 @@ $(document).ready(function() {
     //Обвертка для таблицы в article
       $('.articles-page article table').wrap('<div class="some-class"></div>');
     }
+
+
+
+  $('.big-slider').slick ({
+    asNavFor: '.small-slider',
+    slidesToShow: 1,
+    sliderToScroll: 1,
+    fade: true,
+    arrows: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: '<button class="big-slider__btn big-slider__btn-prev"><img src="img/portfolio/arrow-prev.png" alt=""></button>',
+    nextArrow: '<button class="big-slider__btn big-slider__btn-next"><img src="img/portfolio/arrow-next.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 561,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+        }
+      },
+    ]
+  })
+  $('.small-slider').slick ({
+    asNavFor: '.big-slider',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+  })
+
+  $('.video-slider').slick ({
+    asNavFor: '.small-slider',
+    slidesToShow: 2,
+    sliderToScroll: 1,
+    arrows: true,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: '<button class="video-slider__btn video-slider__btn-prev"><img src="img/portfolio/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="video-slider__btn video-slider__btn-next"><img src="img/portfolio/arrow-right.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 581,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+        }
+      },
+    ]
+  })
+
 
 });
 
