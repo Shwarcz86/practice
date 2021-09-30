@@ -2454,6 +2454,12 @@ body._no-scroll {
   .top-btn {
     bottom: 20px;
   }
+  .services-page__item-text {
+    max-width: 300px;
+  }
+  ._aero .services-page__item-text br {
+    display: none;
+  }
 }
 @media(max-width: 570px) {
   .btn-1, 
@@ -2525,7 +2531,7 @@ body._no-scroll {
     margin: 0px 0px 20px 0px;
   }
   .programs__title {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     margin: 0px 0px 20px 0px;
   }
