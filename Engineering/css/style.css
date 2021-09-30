@@ -1222,6 +1222,8 @@ body._no-scroll {
   font-weight: 700;
 }
 .discussion-page__form {
+  position: relative;
+  z-index: 2;
   flex: 0 0 auto;
 }
 .discussion-page__img1,
@@ -2527,6 +2529,11 @@ body._no-scroll {
     line-height: 30px;
     margin: 0px 0px 20px 0px;
   }
+  .discussion-page__img1 {
+    top: 70px;
+    right: -80px;
+    width: 335px;
+  }
 }
 @media(max-width: 420px) {
   .main-page__buttons .buttons-wrapper1,
@@ -2596,6 +2603,9 @@ body._no-scroll {
   }
   .questions-page__item article {
     padding: 0px 0px 30px 16px;
+  }
+  .discussion-page__img1 {
+    top: 160px;
   }
 }
 @media(max-width: 360px) {
