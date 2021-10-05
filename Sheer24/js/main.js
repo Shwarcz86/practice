@@ -51,6 +51,79 @@ $(document).ready(function() {
     });
   }
 
+/*
+  $('.brand-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 1500,
+    prevArrow: '<button class="brand-slider__btn  brand-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="brand-slider__btn brand-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 951,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: true,
+        }
+      },
+    ]
+  });
+*/
+  var $slider = $('.brand-slider');
+
+  if ($slider.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement('div');
+    sliderCounter.classList.add('slider__counter');
+    
+    var updateSliderCounter = function(slick, currentIndex) {
+      currentSlide = slick.slickCurrentSlide() + 1;
+      slidesCount = slick.slideCount;
+      $(sliderCounter).text(currentSlide + '/' +slidesCount)
+    };
+  
+    $slider.on('init', function(event, slick) {
+      $slider.append(sliderCounter);
+      updateSliderCounter(slick);
+    });
+  
+    $slider.on('afterChange', function(event, slick, currentSlide) {
+      updateSliderCounter(slick, currentSlide);
+    });
+  
+    $slider.slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      speed: 1500,
+      prevArrow: '<button class="brand-slider__btn  brand-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
+      nextArrow: '<button class="brand-slider__btn brand-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
+      responsive: [
+        {
+          breakpoint: 951,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+
+
+
+  //Скроллбар
+  $(window).on("load",function() {
+    $(".brand-slider__item-box").mCustomScrollbar({
+      theme: "dark"
+    });
+  });
+
   
 });
 
