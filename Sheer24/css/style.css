@@ -639,7 +639,7 @@ body._no-scroll {
   border-radius: 6px;
   box-shadow: 0px 12px 14px 0px rgba(39, 33, 130, 0.65);
   padding: 45px 20px 45px 50px;
-  margin: 5px 12px 25px 12px;
+  margin: 0 12px;
 }
 .brand-slider__item-title {
   position: relative;
@@ -680,7 +680,7 @@ body._no-scroll {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  bottom: -70px;
+  bottom: -90px;
   right: 12px;
   border: none;
   width: 42px;
@@ -706,7 +706,7 @@ body._no-scroll {
   font-size: 16px;
   line-height: 24px;
   position: absolute;
-  bottom: -60px;
+  bottom: -80px;
   left: 12px;
 }
 /*//////////////////////////////////adaptive//////////////////////////////////*/
@@ -842,13 +842,13 @@ body._no-scroll {
     line-height: 34px;
   }
   .page__brand {
-    padding: 30px 0 70px;
+    padding: 30px 0 100px;
   }
   .brand-slider__btn {
-    bottom: -40px;
+    bottom: -60px;
   }
   .slider__counter {
-    bottom: -30px;
+    bottom: -50px;
   }
   .brand-page__title {
     margin: 0px 0px 30px 0px;
@@ -928,6 +928,9 @@ body._no-scroll {
   }
   .brand-slider__item-text {
     font-size: 14px;
+  }
+  .brand-slider__item {
+    margin: 0 7px;
   }
 }
 @media(max-width: 470px) {
