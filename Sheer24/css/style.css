@@ -527,7 +527,7 @@ body._no-scroll {
   height: 100vh;
 }
 .main-page {
-  background: #27134b url('../img/main-bg.jpg') center center no-repeat;
+  background: #5a1869 url('../img/main-bg.jpg') center center no-repeat;
   background-size: cover;
 }
 .main-page__title {
@@ -707,11 +707,9 @@ body._no-scroll {
   .header__phone {
     margin: 0px 30px 0px 0px;
   }
-  /*
   .page__main {
     height: auto;
   }
-  */
   .header__column:nth-child(2) {
     flex: none;
     margin: 0;
