@@ -527,7 +527,7 @@ body._no-scroll {
   height: 100vh;
 }
 .main-page {
-  background: #5a1869 url('../img/main-bg.jpg') center center no-repeat;
+  background: #27134b url('../img/main-bg.jpg') center center no-repeat;
   background-size: cover;
 }
 .main-page__title {
@@ -761,7 +761,7 @@ body._no-scroll {
     max-width: 340px;
   }
   .main-page {
-    background: #5a1869 url('../img/main-bg.jpg') center center no-repeat;
+    background: #27134b url('../img/main-bg.jpg') center center no-repeat;
     background-size: cover;
   }
   .main-page__img {
