@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  /*
   //Выезжающее меню
   $(window).scroll(function() {
     const scrollMenu = $('.bottom-header').offset().top;
@@ -10,6 +11,7 @@ $(document).ready(function() {
         $('.bottom-header').removeClass('_active');
       }
   });
+*/
 
   //menu
   $('.btn-menu').click(function(){
@@ -39,11 +41,7 @@ $(document).ready(function() {
 		autoScrolling:true,
     scrollHorizontally: true,
     sectionSelector: '.page-section',
-    /*
-    scrollOverflow: true,
-    menu: '#header__nav',
-    anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts']
-    */
+    fixedElements: '#header, .footer',
   });
   
 

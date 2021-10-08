@@ -278,17 +278,21 @@ body._no-scroll::before {
 .bottom-header {
   position: fixed;
   z-index: 20;
-  top: 0;
+  top:  0;
   width: 100%;
   background-color: #9aa98c;
-  /*
-  padding: 14px 0;
-  */
-  transform: translateY(-100px);
-  transition: all .5s;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all .3s;
 }
-.bottom-header._active {
-  transform: translateY(0px);
+.fp-viewing-1 .bottom-header {
+  opacity: 1;
+  overflow: visible;
+  pointer-events: all;
+}
+.fp-viewing-1 .header__top {
+  display: none;
 }
 .bottom-header__inner {
   display: flex;
@@ -378,7 +382,7 @@ body._no-scroll::before {
   bottom: 0;
   width: 100%;
   max-width: 320px;
-  min-height: 955px;
+  height: 100vh;
   background-color: #9aa98c;
   padding: 60px 0px 20px 0px;
   transform: translateX(350px);
