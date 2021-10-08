@@ -51,26 +51,6 @@ $(document).ready(function() {
     });
   }
 
-/*
-  $('.brand-slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    speed: 1500,
-    prevArrow: '<button class="brand-slider__btn  brand-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
-    nextArrow: '<button class="brand-slider__btn brand-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
-    responsive: [
-      {
-        breakpoint: 951,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          speed: 500,
-          arrows: true,
-        }
-      },
-    ]
-  });
-*/
   var $slider = $('.brand-slider');
 
   if ($slider.length) {
@@ -82,7 +62,7 @@ $(document).ready(function() {
     var updateSliderCounter = function(slick, currentIndex) {
       currentSlide = slick.slickCurrentSlide() + 1;
       slidesCount = slick.slideCount;
-      $(sliderCounter).text(currentSlide + '/' +slidesCount)
+      $(sliderCounter).text(currentSlide + ' / ' +slidesCount)
     };
   
     $slider.on('init', function(event, slick) {
@@ -98,6 +78,9 @@ $(document).ready(function() {
       slidesToShow: 2,
       slidesToScroll: 1,
       speed: 1500,
+      /*
+      infinite: false,
+      */
       prevArrow: '<button class="brand-slider__btn  brand-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
       nextArrow: '<button class="brand-slider__btn brand-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
       responsive: [
@@ -114,7 +97,21 @@ $(document).ready(function() {
     });
   }
 
-
+  //ТАБЫ
+  $('.tab').on('click', function(e) { 
+    e.preventDefault();
+  
+    $($(this).siblings()).removeClass('tab_active'); 
+    $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content_active');
+  
+    $(this).addClass('tab_active'); 
+    $($(this).attr('href')).addClass('tabs-content_active');
+  
+    if (window.matchMedia('(max-width: 950px)').matches) { // аналог media-queries
+      $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
+    }
+    $('.services-slider').slick('setPosition') //Инициализация табов
+  });
 
 
   //Скроллбар
@@ -122,6 +119,11 @@ $(document).ready(function() {
     $(".brand-slider__item-box").mCustomScrollbar({
       theme: "dark"
     });
+  });
+
+  //ТЕЛЕФОН МАСКА
+  $(function() {
+    $("[type=tel]").mask("+7 (999) 999-99-99");
   });
 
   
