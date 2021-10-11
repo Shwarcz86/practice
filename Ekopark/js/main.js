@@ -28,22 +28,47 @@ $(document).ready(function() {
   $('.banner-page__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     speed: 1500,
     infinite: true,
     fade: true,
+    /*
     autoplay: true,
     autoplaySpeed: 5000,
+    appendArrows:'.banner-page .container',
+    */
+    prevArrow: '<button class="banner-page__slider-btn banner-page__slider-btnprev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="banner-page__slider-btn banner-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
   });
 
+  $('.banner-page__slider-btn').wrap('<div class="container"></div>');
+
+  
   $('#fullpage').fullpage({
 		// Прокрутка целой страницы
-		autoScrolling:true,
+		autoScrolling: true,
     scrollHorizontally: true,
     sectionSelector: '.page-section',
-    fixedElements: '#header, .footer',
+
   });
-  
+
+  $('.offers-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    speed: 500,
+  });
+
+  $('.img-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    speed: 500,
+    prevArrow: '<button class="banner-page__slider-btn _img-slider banner-page__slider-btnprev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="banner-page__slider-btn _img-slider banner-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
+  });
+
 
 });
 
