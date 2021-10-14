@@ -43,7 +43,7 @@ $(document).ready(function() {
 
   $('.banner-page__slider-btn').wrap('<div class="container"></div>');
 
-  
+
   $('#fullpage').fullpage({
 		// Прокрутка целой страницы
 		autoScrolling: true,
@@ -55,9 +55,13 @@ $(document).ready(function() {
   $('.offers-slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: true,
     speed: 500,
+    variableWidth: true,
+    centerMode: true,
+    prevArrow: '<button class="offers-slider__btn offers-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="offers-slider__btn offers-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
   });
 
   $('.img-slider').slick({
@@ -69,7 +73,141 @@ $(document).ready(function() {
     nextArrow: '<button class="banner-page__slider-btn _img-slider banner-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
   });
 
+  /* Анимация чисел */
+  if ($('body').hasClass('home')) {
+    var show = true;
+    var countbox = ".home .text-box";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 850 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.home .text-box ._counter').css('opacity', '1');
+            $('.home .text-box ._counter').spincrement({
+                thousandSeparator: " ",
+                duration: 2400
+            });           
+            show = false;
+        }
+    });
+  }
 
+  //ТЕЛЕФОН МАСКА
+  $(function() {
+    $("[type=tel]").mask("+7 (999) 999-99-99");
+  });
+
+  $('.club-slider').slick({
+    asNavFor: '.info-slider',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    speed: 300,
+    focusOnSelect: true,
+    appendArrows:'.club-page__inner',
+    prevArrow: '<button class="club-slider__btn club-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="club-slider__btn club-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
+  });
+
+  //Счетчик
+  $(".club-slider").on('afterChange', function (event, slick, currentSlide) {
+      $(".cp").text(currentSlide<9?`0${currentSlide+1}`:currentSlide+1);
+  });
+
+  $('.info-slider').slick({
+    asNavFor: '.club-slider',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 300,
+    adaptiveHeight: true,
+  });
+
+  $('.video-page__slider').slick({
+    asNavFor: '.info-video__slider',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    speed: 300,
+    focusOnSelect: true,
+    appendArrows:'.video-page__inner',
+    prevArrow: '<button class="video-page__slider-btn video-page__slider-btnprev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="video-page__slider-btn video-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
+  });
+
+  //Счетчик
+  $(".video-page__slider").on('afterChange', function (event, slick, currentSlide) {
+    $(".cp-1").text(currentSlide<9?`0${currentSlide+1}`:currentSlide+1);
+  });
+
+  $('.info-video__slider').slick({
+    asNavFor: '.video-page__slider',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    speed: 300,
+  });
+
+  $('.gallery-page__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    speed: 500,
+    appendArrows:'.gallery-page__wrapper',
+    prevArrow: '<button class="gallery-page__slider-btn gallery-page__slider-btnprev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="gallery-page__slider-btn gallery-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
+  });
+
+
+  //Выпадания списка в меню
+  $('.menu-item-has-children button').on('click', function() {
+    $(this).next().slideToggle('fast');
+    $(this).toggleClass('active');
+  });
+
+
+
+
+/*
+  var $slider = $('.club-slider');
+
+  if ($slider.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement('div');
+    sliderCounter.classList.add('slider__counter');
+    
+    var updateSliderCounter = function(slick, currentIndex) {
+      currentSlide = slick.slickCurrentSlide() + 1;
+      slidesCount = slick.slideCount;
+      $(sliderCounter).text(currentSlide + ' / ' +slidesCount)
+    };
+  
+    $slider.on('init', function(event, slick) {
+      $slider.append(sliderCounter);
+      updateSliderCounter(slick);
+    });
+  
+    $slider.on('afterChange', function(event, slick, currentSlide) {
+      updateSliderCounter(slick, currentSlide);
+    });
+  
+    $slider.slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      speed: 500,
+      prevArrow: '<button class="banner-page__slider-btn _img-slider banner-page__slider-btnprev"><img src="img/arrow-left.png" alt=""></button>',
+      nextArrow: '<button class="banner-page__slider-btn _img-slider banner-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
+    });
+  }
+
+*/
 });
 
 
