@@ -24,6 +24,8 @@ $(document).ready(function() {
     $('body').removeClass('_no-scroll');
   })
 
+
+  $(window).load(function() {
   //Слайдер-баннер
   $('.banner-page__slider').slick({
     slidesToShow: 1,
@@ -42,14 +44,13 @@ $(document).ready(function() {
   });
 
   $('.banner-page__slider-btn').wrap('<div class="container"></div>');
-
+  });
 
   $('#fullpage').fullpage({
 		// Прокрутка целой страницы
 		autoScrolling: true,
     scrollHorizontally: true,
     sectionSelector: '.page-section',
-
   });
 
   $('.offers-slider').slick({
@@ -163,15 +164,18 @@ $(document).ready(function() {
     nextArrow: '<button class="gallery-page__slider-btn gallery-page__slider-btnnext"><img src="img/arrow-right.png" alt=""></button>',
   });
 
-
   //Выпадания списка в меню
-  $('.menu-item-has-children button').on('click', function() {
+  $('.header__top-menu .menu-item-has-children button').on('click', function() {
     $(this).next().slideToggle('fast');
     $(this).toggleClass('active');
   });
 
-
-
+  //Скроллбар
+  $(window).on("load",function() {
+    $(".map-page__objects-list").mCustomScrollbar({
+      theme: "dark",
+    });
+  });
 
 /*
   var $slider = $('.club-slider');
