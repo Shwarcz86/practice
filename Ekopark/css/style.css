@@ -571,7 +571,7 @@ body._no-scroll::before {
 .bottom-header__menu .menu-item-has-children button {
   font-size: 17px;
   color: inherit;
-  padding: 34px 15px;
+  padding: 34px 15p 35px;
   transition: all 0.3s;
   cursor: pointer;
   border: none;
