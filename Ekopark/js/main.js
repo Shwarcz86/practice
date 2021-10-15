@@ -75,6 +75,7 @@ $(document).ready(function() {
   });
 
   /* Анимация чисел */
+  /*
   if ($('body').hasClass('home')) {
     var show = true;
     var countbox = ".home .text-box";
@@ -95,7 +96,7 @@ $(document).ready(function() {
         }
     });
   }
-
+*/
   //ТЕЛЕФОН МАСКА
   $(function() {
     $("[type=tel]").mask("+7 (999) 999-99-99");
