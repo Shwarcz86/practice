@@ -1969,7 +1969,7 @@ body._no-scroll::before {
   }
   .text-box__number {
     font-size: 110px;
-    line-height: 88px;
+    line-height: 110px;
   }
   .text-box__container > span {
     font-size: 18px !important;
