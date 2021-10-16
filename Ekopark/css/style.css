@@ -2067,6 +2067,9 @@ body._no-scroll::before {
   .main-page {
     height: 100vh;
   }
+  .banner-page__slider-box img {
+    height: calc(100vh - 66px);
+  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -2150,7 +2153,9 @@ body._no-scroll::before {
   }
 }
 @media (max-width: 800px) {
-
+  .main-page__wrapper {
+    padding: 160px 0 20px;
+  }
 }
 @media (max-width: 500px) {
   .main-page__wrapper {
