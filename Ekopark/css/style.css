@@ -2154,13 +2154,10 @@ body._no-scroll::before {
 }
 @media (max-width: 800px) {
   .main-page__wrapper {
-    padding: 160px 0 20px;
+    padding: 130px 0 20px;
   }
 }
 @media (max-width: 500px) {
-  .main-page__wrapper {
-    padding: 200px 0 20px;
-  }
   .header__top .header__phone-btn {
     display: flex;
     margin: 0;
