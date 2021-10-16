@@ -1,17 +1,21 @@
 $(document).ready(function() {
 
-  /*
   //Выезжающее меню
   $(window).scroll(function() {
     const scrollMenu = $('.bottom-header').offset().top;
     const scrolled = $(this).scrollTop();
-      if (scrolled > 1) {
+      if (scrolled > 200) {
         $('.bottom-header').addClass('_active');
-      } else if(scrolled < 1) {
+      } else if(scrolled < 200) {
         $('.bottom-header').removeClass('_active');
       }
   });
-*/
+
+  //menuHamburger
+  $('.menu-toggle').click(function() {
+    $('.header__top-menu._hidden').addClass('_active');
+    $('body').addClass('_no-scroll');
+  })
 
   //menu
   $('.btn-menu').click(function(){
@@ -23,7 +27,6 @@ $(document).ready(function() {
     $('.header__top-menu._hidden').toggleClass('_active');
     $('body').removeClass('_no-scroll');
   })
-
 
   $(window).load(function() {
   //Слайдер-баннер
