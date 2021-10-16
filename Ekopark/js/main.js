@@ -46,17 +46,19 @@ $(document).ready(function() {
   $('.banner-page__slider-btn').wrap('<div class="container"></div>');
   });
 
-  $('#fullpage').fullpage({
-		// Прокрутка целой страницы
-		autoScrolling: true,
-    scrollHorizontally: true,
-    sectionSelector: '.page-section',
-    responsiveWidth: true,
-    responsiveHeight: true,
-    /*
-    scrollOverflow: true,
-    */
-  });
+  if (window.matchMedia('(min-width: 800px)').matches) {
+    $('#fullpage').fullpage({
+      // Прокрутка целой страницы
+      autoScrolling: true,
+      scrollHorizontally: true,
+      sectionSelector: '.page-section',
+      /*
+      responsiveWidth: true,
+      responsiveHeight: true,
+      scrollOverflow: true,
+      */
+    });
+  }
 
   $('.offers-slider').slick({
     slidesToShow: 5,
