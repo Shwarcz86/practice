@@ -703,7 +703,7 @@ body._no-scroll::before {
   bottom: 0;
   width: 100%;
   max-width: 320px;
-  height: 100vh;
+  height: 100%;
   background-color: #9aa98c;
   padding: 60px 0px 20px 0px;
   transform: translateX(350px);
