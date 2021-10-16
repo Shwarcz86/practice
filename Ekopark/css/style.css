@@ -924,9 +924,7 @@ body._no-scroll::before {
 .banner-page__slider-box img {
   object-fit: cover;
   width: 100%;
-  /*
-  height: 100vh;
-  */
+  height: 90vh;
 }
 .banner-page__slider-box {
 }
