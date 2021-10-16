@@ -49,7 +49,7 @@ $(document).ready(function() {
   $('.banner-page__slider-btn').wrap('<div class="container"></div>');
   });
 
-  if (window.matchMedia('(min-width: 800px)').matches) {
+  if (window.matchMedia('(min-width: 1271px)').matches) {
     $('#fullpage').fullpage({
       // Прокрутка целой страницы
       autoScrolling: true,
