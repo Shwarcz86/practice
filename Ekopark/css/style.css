@@ -661,7 +661,8 @@ body._no-scroll::before {
   margin: 0px 50px 0px 0px;
   flex: 0 0 auto;
 }
-.bottom-header__column:last-child {
+.bottom-header__column:last-child,
+.bottom-header__column:nth-child(3) {
   flex: 0 0 auto;
 }
 .bottom-header__column:nth-child(2) {
@@ -1988,6 +1989,9 @@ body._no-scroll::before {
   .main-page__wrapper {
     padding: 160px 0 90px;
   }
+  .bottom-header__menu li a, .bottom-header__menu .menu-item-has-children button {
+    font-size: 15px;
+  }
 }
 @media (max-width: 1366px) {
   .main-page__title {
@@ -2014,88 +2018,12 @@ body._no-scroll::before {
     font-size: 16px;
     line-height: 22px;
   }
-}
-
-@media (max-width: 1024px) {
-  .container {
-    max-width: 1530px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  .container-2 {
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  .header__wrapper {
-    padding: 10px 0px 0px 0px;
-  }
-  .header__top-inner .logo {
-    width: 40px;
-  }
-  .header__top-inner .logo-box {
-    width: 120px;
-  }
-  .header__top-inner .logo-box {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .header__phone {
+  .bottom-header__column:nth-child(2),
+  .bottom-header__column:first-child {
     margin: 0px 25px 0px 0px;
   }
-  .header__phone .phone {
-    font-size: 24px;
-    line-height: 24px;
-  }
-  .header__phone .phone span {
-    font-size: 20px;
-  }
-  .header__phone-text {
-    font-size: 14px;
-  }
-  .logo-box span {
-    width: 67px;
-  }
 }
-@media (max-width: 800px) {
-  .main-page {
-    height: 100vh;
-  }
-  .main-page__wrapper {
-    padding: 200px 0 20px;
-  }
-  .main-page__title {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  .main-page__subtitle {
-    font-size: 25px;
-    line-height: 40px;
-  }
-  .text-box__number {
-    font-size: 110px;
-    line-height: 110px;
-  }
-  .text-box__container > span {
-    font-size: 18px !important;
-    line-height: 24px;
-  }
-  .text-box__container span {
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0px 0px 0px 0px;
-  }
-  .text-box__info {
-    font-size: 14px;
-    line-height: 18px;
-    max-width: 310px;
-  }
-  .text-box__info br {
-    display: none;
-  }
-  .main-page .text-box__number {
-    margin: 10px 10px 0px 0px;
-  }
+@media (max-width: 1270px) {
   .bottom-header__column:nth-child(2) {
     display: none;
   }
@@ -2133,6 +2061,83 @@ body._no-scroll::before {
   .bottom-header__column .header__phone-btn {
     margin: 0px 0px 0px 0px;
   }
+  .logo-box span {
+    width: 67px;
+  }
+  .main-page {
+    height: 100vh;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1530px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .container-2 {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .header__wrapper {
+    padding: 10px 0px 0px 0px;
+  }
+  .header__top-inner .logo {
+    width: 40px;
+  }
+  .header__top-inner .logo-box {
+    width: 120px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .header__phone {
+    margin: 0px 25px 0px 0px;
+  }
+  .header__phone .phone {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .header__phone .phone span {
+    font-size: 20px;
+  }
+  .header__phone-text {
+    font-size: 14px;
+  }
+  .main-page__wrapper {
+    padding: 180px 0 20px;
+  }
+  .main-page__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .main-page__subtitle {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .text-box__number {
+    font-size: 110px;
+    line-height: 110px;
+  }
+  .text-box__container > span {
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+  .text-box__container span {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px 0px 0px 0px;
+  }
+  .text-box__info {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 310px;
+  }
+  .text-box__info br {
+    display: none;
+  }
+  .main-page .text-box__number {
+    margin: 10px 10px 0px 0px;
+  }
   .header__top-menu._hidden {
     max-width: 100%;
     transform: translateX(100%);
@@ -2140,6 +2145,12 @@ body._no-scroll::before {
   .text-box._slider {
     top: 40%;
   }
+  .header__top-menu._hidden {
+    overflow-y: auto;
+  }
+}
+@media (max-width: 800px) {
+
 }
 @media (max-width: 500px) {
   .main-page__wrapper {
