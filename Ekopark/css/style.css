@@ -1989,6 +1989,9 @@ body._no-scroll::before {
   .text-box__info br {
     display: none;
   }
+  .main-page .text-box__number {
+    margin: 10px 10px 0px 0px;
+  }
 }
 @media (max-width: 500px) {
   .header__top .header__phone-btn {
