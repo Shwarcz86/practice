@@ -266,6 +266,12 @@ $(document).ready(function() {
     });
   });
 
+    //Выпадания футтер
+    $('.top-footer__submenu-title').on('click', function() {
+      $(this).toggleClass('_active'),
+      $(this).next().slideToggle('fast');
+    });
+
 /*
   var $slider = $('.club-slider');
 
