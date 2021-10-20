@@ -32,7 +32,7 @@ $(document).ready(function() {
   /* Анимация чисел */
   if ($('body').hasClass('home')) {
     var show = true;
-    var countbox = ".home .main-page__list";
+    var countbox = ".home .main-page__list, .home .social-page__profile-item";
     $(window).on("scroll load resize", function () {
         if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
         var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
@@ -41,8 +41,8 @@ $(document).ready(function() {
         var d_height = $(document).height(); // Высота всего документа
         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
         if (w_top + 850 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-            $('.home .main-page__list b').css('opacity', '1');
-            $('.home .main-page__list b').spincrement({
+            $('.home .main-page__list b, .home .social-page__profile-item .item-profile__number').css('opacity', '1');
+            $('.home .main-page__list b, .home .social-page__profile-item .item-profile__number').spincrement({
                 thousandSeparator: " ",
                 duration: 2400
             });           
@@ -116,7 +116,7 @@ $(document).ready(function() {
 
   //Скроллбар
   $(window).on("load",function() {
-    $(".brand-slider__item-box").mCustomScrollbar({
+    $(".brand-slider__item-box, .scroll-images__container").mCustomScrollbar({
       theme: "dark"
     });
   });
@@ -126,6 +126,22 @@ $(document).ready(function() {
     $("[type=tel]").mask("+7 (999) 999-99-99");
   });
 
+  $('.team-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    prevArrow: '<button class="team-slider__btn team-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
+    nextArrow: '<button class="team-slider__btn team-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  });  
   
 });
 
