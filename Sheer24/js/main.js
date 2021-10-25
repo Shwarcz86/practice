@@ -116,7 +116,7 @@ $(document).ready(function() {
 
   //Скроллбар
   $(window).on("load",function() {
-    $(".brand-slider__item-box, .scroll-images__container").mCustomScrollbar({
+    $(".scroll-images__container").mCustomScrollbar({
       theme: "dark"
     });
   });
@@ -155,7 +155,34 @@ $(document).ready(function() {
         }
       },
     ]
-  });  
+  });
+
+  if (window.matchMedia('(max-width: 700px)').matches) { // аналог media-queries
+    $('.video-stories__slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      speed: 300,
+      variableWidth: true,
+      centerMode: true,
+      dots: true,
+      arrows: false,
+      /*
+      prevArrow: '<button class="team-slider__btn team-slider__btn-prev"><img src="img/arrow-left.png" alt=""></button>',
+      nextArrow: '<button class="team-slider__btn team-slider__btn-next"><img src="img/arrow-right.png" alt=""></button>',
+      */
+      responsive: [
+        {
+          breakpoint: 701,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            variableWidth: false,
+            centerMode: false,
+          }
+        },
+      ]
+    });
+  }  
   
 });
 
