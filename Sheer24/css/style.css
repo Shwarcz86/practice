@@ -346,6 +346,29 @@ body._no-scroll {
 .btn-2:hover::before {
   transform: translateX(0);
 }
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slick-dots li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 11px;
+  font-size: 0;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+}
+.slick-dots li button {
+  background-color: transparent;
+  border: 0;
+}
+.slick-dots li.slick-active {
+  background-color: #e2306c;
+}
 /*///////////////////////////////////FONTS///////////////////////////////////////*/
 /*Light 300*/
 /*Regular, Normal 400*/
@@ -727,8 +750,11 @@ body._no-scroll {
   width: 190px;
 }
 .brand-slider__item-box {
+  /*
   height: 185px;
   overflow-y: auto;
+  */
+  min-height: 200px;
 }
 .brand-page__slider.slick-slider .slick-list {
   overflow: visible;
@@ -1043,6 +1069,14 @@ body._no-scroll {
   border-radius: 30px;
 }
 .video-stories {
+  /*
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  */
+}
+.video-stories__slider {
   position: relative;
   z-index: 1;
   display: flex;
@@ -1868,6 +1902,25 @@ body._no-scroll {
   .attracting-page__column:first-child {
     margin: 0px 0px 20px 0px;
   }
+  .video-stories {
+    width: 100%;
+  }
+  .video-stories__slider {
+    display: block;
+    min-width: 0;
+  }
+  .video-stories__slider-item {
+    min-width: 0;
+    width: 140px;
+    margin: 0px 5px 30px 5px;
+    box-shadow: none;
+  }
+  .social-page__stories-number {
+    margin: 10px 0px 0px 0px;
+  }
+  .video-stories__item {
+    width: auto;
+  }
 }
 @media(max-width: 650px) {
   .attracting-page__item {
@@ -1985,6 +2038,7 @@ body._no-scroll {
   .video-stories {
     flex-wrap: wrap;
   }
+  /*
   .video-stories__item {
     width: calc((100% - 20px) / 2);
     margin: 0px 20px 20px 0px;
@@ -1992,6 +2046,7 @@ body._no-scroll {
   .video-stories__item:nth-child(2n) {
     margin: 0px 0px 20px 0px;
   }
+  */
   .social-page__title br {
     display: none;
   }
@@ -2119,6 +2174,9 @@ body._no-scroll {
   }
   .attracting-page__item:nth-child(3n) {
     margin: 0px 0px 20px 0px;
+  }
+  .video-stories__item {
+    box-shadow: none;
   }
 }
 @media(max-width: 360px) {
