@@ -19,7 +19,7 @@ $(document).ready(function() {
       $('#block-2').addClass('bl-hide');
     });
   });
-
+ 
   //menuHamburger
   $('.menu-toggle').click(function(){
     $(this).toggleClass('open');
@@ -31,6 +31,22 @@ $(document).ready(function() {
     $('.header__navigation._active').toggleClass('_active');
     $('body').removeClass('_no-scroll');
   })
+
+  //Кнопка вверх
+  var button = $('.top-btn');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 600) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+  });	 
+  button.on('click', function() {
+  $('body, html').animate({
+  scrollTop: 0
+  }, 800);
+  return false;
+  });		
 
   // Выпадающий список
   $(".system-page__item-title").click(function(e) {
