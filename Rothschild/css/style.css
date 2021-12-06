@@ -3729,7 +3729,7 @@ body._no-scroll {
     padding: 30px 0 30px;
   }
   .value-page {
-    background-attachment: none;
+    background-attachment: inherit;
   }
   .products-content__items {
     display: block;
