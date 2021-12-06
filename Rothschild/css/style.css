@@ -3728,8 +3728,9 @@ body._no-scroll {
   .page__retreat {
     padding: 30px 0 30px;
   }
-
-
+  .value-page {
+    background-attachment: none;
+  }
   .products-content__items {
     display: block;
     padding: 65px 30px 40px 110px;
